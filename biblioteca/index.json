@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "versao": "1.0",
+    "descricao": "Índice da Biblioteca Luz Divina — todos os livros apócrifos, deuterocanónicos e textos sagrados disponíveis",
+    "total_livros": 14,
+    "ultima_actualizacao": "2026-05-14"
+  },
+  "categorias": ["deuterocanónico","apocalipse","sabedoria","historia","angelologia","gnóstico","infancia"],
+  "livros": [
+    {"id":"sedrach",     "ficheiro":"../sedrach.json",         "tipo":"json_completo",  "categoria":"apocalipse",     "disponivel":true},
+    {"id":"apocrif_idx", "ficheiro":"../apocrif.json",         "tipo":"json_indice",    "categoria":"varios",         "disponivel":true},
+    {"id":"tobias",      "ficheiro":"tobias.json",             "tipo":"json_completo",  "categoria":"deuterocanónico","disponivel":true},
+    {"id":"judite",      "ficheiro":"judite.json",             "tipo":"json_completo",  "categoria":"historia",       "disponivel":true},
+    {"id":"sabedoria",   "ficheiro":"sabedoria.json",          "tipo":"json_completo",  "categoria":"sabedoria",      "disponivel":true},
+    {"id":"siracida",    "ficheiro":"siracida.json",           "tipo":"json_resumo",    "categoria":"sabedoria",      "disponivel":true},
+    {"id":"macabeus",    "ficheiro":"macabeus.json",           "tipo":"json_resumo",    "categoria":"historia",       "disponivel":true},
+    {"id":"enoque",      "ficheiro":"enoque.json",             "tipo":"json_completo",  "categoria":"angelologia",    "disponivel":true},
+    {"id":"jubileus",    "ficheiro":"jubileus.json",           "tipo":"json_resumo",    "categoria":"historia",       "disponivel":true},
+    {"id":"hermas",      "ficheiro":"pastor_hermas.json",      "tipo":"json_resumo",    "categoria":"apocalipse",     "disponivel":true},
+    {"id":"tiago_proto", "ficheiro":"protoevangelho_tiago.json","tipo":"json_completo", "categoria":"infancia",       "disponivel":true},
+    {"id":"apocal_pedro","ficheiro":"apocalipse_pedro.json",   "tipo":"json_resumo",    "categoria":"apocalipse",     "disponivel":true},
+    {"id":"evangelho_tome","ficheiro":"evangelho_tome.json",   "tipo":"json_completo",  "categoria":"gnóstico",       "disponivel":true},
+    {"id":"baruc",       "ficheiro":"baruc.json",              "tipo":"json_resumo",    "categoria":"deuterocanónico","disponivel":true}
+  ]
+}
