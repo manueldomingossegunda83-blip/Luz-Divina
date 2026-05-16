@@ -1,0 +1,41 @@
+{
+  "id": "apocal_pedro",
+  "titulo": "Apocalipse de Pedro",
+  "periodo": "Séc. II d.C. (c. 100-135)",
+  "lingua_original": "Grego / Etíope",
+  "categorias": ["apocalipse cristão","inferno","paraíso","juízo","escatologia"],
+  "resumo": "O primeiro texto cristão a descrever em detalhe as penas do Inferno e as glórias do Paraíso — influência directa na Divina Comédia de Dante. Jesus revela a Pedro os destinos das almas após a morte.",
+  "descricao_paraiso": {
+    "aparencia": "Campo luminoso cheio de flores e árvores perfumadas. Luz intensa, mas suave. Fragrância que enche de alegria.",
+    "bemaventurados": "Vestem roupas de luz, têm cabelos brancos como neve, pele luminosa como o sol. Dois homens brilhantes guiam Pedro — identificados como Moisés e Elias.",
+    "atmosfera": "Alegria indizível, paz perfeita, comunhão directa com Deus."
+  },
+  "descricao_inferno": {
+    "atmosfera": "Escuridão profunda, chamas, mau cheiro.",
+    "punições_específicas": [
+      "Blasfemos — pendurados pela língua sobre chamas.",
+      "Fornicadores — pendurados pelos cabelos (mulheres) ou pelos pés sobre poço de lama flamejante.",
+      "Assassinos — em lugar cheio de répteis venenosos.",
+      "Quem perseguiu os justos — vestidos com vestes de fogo.",
+      "Idólatras — perseguidos pelos próprios ídolos em chamas.",
+      "Quem abandonou os pais — crianças que ficaram chorar ante Deus acusando os pais.",
+      "Usurários — afogados até ao pescoço em lagos de matéria corruptível."
+    ]
+  },
+  "influencia_cultural": [
+    "Dante Alighieri — a Divina Comédia inspira-se directamente nas descrições deste apocalipse.",
+    "Michelangelo — o Juízo Final na Capela Sistina ecoa estas imagens.",
+    "Milton — O Paraíso Perdido partilha elementos.",
+    "Tradição cristã popular — a ideia de punições proporcionais ao pecado vem daqui."
+  ],
+  "personagens": [
+    {"nome":"Jesus","papel":"Revela tudo a Pedro — os campos do Paraíso e os tormentos do Inferno."},
+    {"nome":"Pedro","papel":"Receptor da revelação — fica perturbado com os tormentos e pede misericórdia."},
+    {"nome":"Moisés e Elias","papel":"Os dois homens brilhantes que aparecem no Paraíso — ligação com a Transfiguração."}
+  ],
+  "versiculos_chave": [
+    {"ref":"Apoc. Pedro 3","texto":"E o Senhor mostrou-me uma ampla extensão para além deste mundo, toda brilhante de luz, e o ar ali iluminado pelos raios do sol, e a própria terra florescendo com flores que não murcham."},
+    {"ref":"Apoc. Pedro 8","texto":"E do outro lado do rio vi homens e mulheres, mastigando as suas línguas, e no lugar havia fogo."},
+    {"ref":"Apoc. Pedro 14","texto":"E o Senhor disse-me: As suas obras são o fogo que nunca se apaga."}
+  ]
+}

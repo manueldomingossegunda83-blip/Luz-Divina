@@ -1,0 +1,113 @@
+{
+  "id": "enoque",
+  "titulo": "Livro de Enoque (1 Enoque)",
+  "subtitulo": "O Livro Apócrifo mais Influente",
+  "lingua_original": "Aramaico / Etíope (Ge'ez)",
+  "periodo": "Séc. III a.C. — Séc. I d.C.",
+  "canonico_para": ["Igreja Etíope Ortodoxa", "Igreja Eritreia Ortodoxa"],
+  "citado_no_nt": "Judas 1:14-15 cita directamente 1 Enoque 1:9",
+  "categorias": ["angelologia","apocalipse","cosmologia","vigilantes","nephilim","filho do homem"],
+  "partes": [
+    {
+      "nome": "Livro dos Vigilantes",
+      "capitulos": "1–36",
+      "tema": "Os 200 anjos Vigilantes que abandonaram o céu, tomaram esposas humanas e geraram os Nephilim gigantes. O julgamento divino e o papel dos quatro arcanjos.",
+      "personagens_chave": ["Semyaza (líder dos Vigilantes)","Azazel (ensinou guerra e vaidade)","Miguel","Gabriel","Rafael","Uriel","Enoque","Noé"],
+      "versiculos_chave": [
+        {"ref":"1 Enoque 1:9","texto":"Eis que o Senhor vem com dez mil dos seus santos, para executar julgamento sobre todos e destruir todos os ímpios."},
+        {"ref":"1 Enoque 6:1-2","texto":"E aconteceu que, quando a multidão de homens cresceu, naqueles dias nasceram-lhes filhas belas e graciosas. E os Vigilantes, os filhos do céu, viram-nas e as desejaram."},
+        {"ref":"1 Enoque 8:1","texto":"Azazel ensinou os homens a fazer espadas e facas e escudos e couraças; e mostrou-lhes os metais da terra e a arte de trabalhar com eles."},
+        {"ref":"1 Enoque 10:4","texto":"Ao Senhor disse: Vai, Rafael, e amarra Azazel mãos e pés, e lança-o nas trevas; faz uma abertura no deserto que está em Dudael, e lança-o lá."},
+        {"ref":"1 Enoque 10:11","texto":"E o Senhor disse a Miguel: Vai e anuncia a Semyaza e aos outros que estão com ele que se uniram às mulheres — eles estarão destruídos por todas as gerações."}
+      ]
+    },
+    {
+      "nome": "Livro das Parábolas (Similitudes)",
+      "capitulos": "37–71",
+      "tema": "Visões do trono celestial, o Eleito/Filho do Homem pré-existente, julgamento dos reis e poderosos, segredos da cosmologia celeste.",
+      "conceitos_chave": [
+        "O Filho do Homem pré-existente — figura messiânica central",
+        "Os segredos dos trovões, relâmpagos e ventos",
+        "O julgamento dos anjos caídos e dos reis ímpios",
+        "O Jardim dos Justos com a Árvore da Vida"
+      ],
+      "versiculos_chave": [
+        {"ref":"1 Enoque 46:1","texto":"Ali vi Aquele que tinha uma Cabeça de Dias, e Sua cabeça era branca como lã, e com Ele havia outro cuja face tinha a aparência de um homem."},
+        {"ref":"1 Enoque 48:2-3","texto":"E naquele momento esse Filho do Homem recebeu o nome na presença do Senhor dos Espíritos, antes que o sol e as constelações fossem criados. Ele será um bastão para os justos."},
+        {"ref":"1 Enoque 62:2","texto":"E o Senhor dos Espíritos colocou-O sobre o trono da sua glória, e o espírito de justiça foi derramado sobre Ele."}
+      ]
+    },
+    {
+      "nome": "Livro da Astronomia (Livro das Luminárias)",
+      "capitulos": "72–82",
+      "tema": "O anjo Uriel guia Enoque pelos segredos do cosmos: o calendário solar de 364 dias, os portões do sol e da lua, as estações, os ventos.",
+      "conceitos_chave": [
+        "Calendário solar de 364 dias (vs lunar de 354) — causa de conflito entre judeus",
+        "Os seis portões do sol no horizonte leste e oeste",
+        "O movimento das estrelas governado por anjos",
+        "Uriel como anjo da astronomia e da sabedoria"
+      ],
+      "versiculos_chave": [
+        {"ref":"1 Enoque 72:1","texto":"O livro da trajectória das luminárias do céu, cada uma delas conforme é, seus nomes e seus lugares de origem, seus períodos e seus meses."},
+        {"ref":"1 Enoque 75:3","texto":"Uriel mostrou-me e fez-me ver todos os regulamentos destes e como é cada ano do mundo para sempre, até que a nova criação seja feita."}
+      ]
+    },
+    {
+      "nome": "Livro dos Sonhos",
+      "capitulos": "83–90",
+      "tema": "Dois sonhos proféticos: o Dilúvio, e a história de Israel simbolizada em animais (a 'Apocalipse Animal') — desde Adão até ao Juízo Final.",
+      "simbolos_animais": {
+        "bois_brancos": "Patriarcas (Adão, Set, Noé)",
+        "touros": "Israel",
+        "ovelhas": "Povo de Israel",
+        "leões_lobos": "Impérios pagãos",
+        "aguia_branca": "O Messias",
+        "cordeiro": "O Justo"
+      },
+      "versiculos_chave": [
+        {"ref":"1 Enoque 90:37","texto":"E vi que um touro branco nasceu, e os seus chifres eram grandes; e todos os animais do campo e todas as aves do céu o temiam e o suplicavam em todo momento."}
+      ]
+    },
+    {
+      "nome": "Epístola de Enoque",
+      "capitulos": "91–108",
+      "tema": "Exortação moral, a Apocalipse das Semanas (história do mundo dividida em 10 semanas cósmicas), e avisos aos ricos e injustos.",
+      "apocalipse_semanas": [
+        "1ª semana — Enoque nasce na justiça",
+        "2ª semana — Grande malícia, o Dilúvio",
+        "3ª semana — A Lei dada a Abraão",
+        "4ª semana — Visões dos santos e da Lei (Moisés)",
+        "5ª semana — O Templo construído",
+        "6ª semana — Os que apostataem, o Templo queimado",
+        "7ª semana — Geração apóstata, eleitos da sabedoria",
+        "8ª semana — Espada contra os injustos, o Templo construído novamente",
+        "9ª semana — Julgamento justo revelado ao mundo inteiro",
+        "10ª semana — Grande julgamento eterno, novos céus"
+      ]
+    }
+  ],
+  "teologia": {
+    "vigilantes_e_queda": "Os Vigilantes (Benei Elohim de Génesis 6) são identificados como a fonte da maldade humana — ensinaram magia, astrologia, cosméticos sedutores, forja de armas. Azazel é responsabilizado como o principal corruptor.",
+    "filho_do_homem": "O conceito do 'Filho do Homem' pré-existente em Enoque influenciou directamente a auto-identificação de Jesus como 'Filho do Homem' nos Evangelhos.",
+    "angelologia": "Enoque é a fonte principal da angelologia judaico-cristã: os quatro arcanjos, a hierarquia dos anjos caídos, o julgamento específico de cada anjo.",
+    "influencia_no_nt": "Para além de Judas 1:14, Pedro 2:4 ('anjos que pecaram') e Génesis 6:1-4 são compreendidos à luz de Enoque. Apocalipse 20 partilha imagens com Enoque 10."
+  },
+  "personagens_apocrifos": [
+    {
+      "nome": "Semyaza",
+      "papel": "Líder dos 200 Vigilantes que desceram ao Monte Hermon. Jurou com os outros nunca recuar. Após o julgamento, foi aprisionado sob as montanhas até o Juízo Final.",
+      "simbolismo": "Representa a rebelião angélica colectiva e organizada"
+    },
+    {
+      "nome": "Azazel",
+      "papel": "O mais culpado dos Vigilantes — ensinou a forja de armas de guerra e os cosméticos sedutores às mulheres. Rafael foi enviado especificamente para o acorrentar no deserto de Dudael.",
+      "ligacao_biblica": "Levítico 16 — o bode expiatório enviado para Azazel é uma memória desta figura",
+      "simbolismo": "A corrupção da civilização humana através do conhecimento mal usado"
+    },
+    {
+      "nome": "Noé (em Enoque)",
+      "papel": "Noé é apresentado como filho de um Vigilante segundo algumas tradições — nasceu com pele e cabelos brancos como neve, olhos como raios de sol. Lamec, seu pai, ficou alarmado e foi questionar o avô Matusalém que consultou Enoque.",
+      "versiculos_chave": [{"ref":"1 Enoque 106:2","texto":"E a carne do menino era branca como a neve e vermelha como a flor da rosa."}]
+    }
+  ]
+}

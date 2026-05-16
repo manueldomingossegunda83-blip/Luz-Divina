@@ -1,0 +1,31 @@
+{
+  "id": "hermas",
+  "titulo": "O Pastor de Hermas",
+  "periodo": "Séc. II d.C. (c. 100-150)",
+  "lingua_original": "Grego",
+  "categorias": ["apocalipse cristão","penitência","visões","anjos","igreja primitiva"],
+  "resumo": "Quase canónico nos primeiros séculos — incluído no Codex Sinaiticus. Hermas, liberto em Roma, recebe visões de uma mulher idosa (a Igreja) e do Anjo do Arrependimento disfarçado de pastor. Tema central: é possível um segundo arrependimento após o baptismo.",
+  "estrutura": [
+    {"parte":"5 Visões","conteudo":"A Igreja aparece como mulher idosa que vai rejuvenescendo à medida que os cristãos se arrependem. Visão do apocalipse da besta."},
+    {"parte":"12 Mandamentos","conteudo":"O Pastor (Anjo do Arrependimento) dita mandamentos morais: fé, temperança, veracidade, paciência, abstenção do mal, alegria, reverência, autodomínio, rectidão, pureza, oração, abstenção do desejo mau."},
+    {"parte":"10 Parábolas","conteudo":"Parábolas sobre dois tipos de espíritos, a vinha e a árvore, as montanhas com 12 povos diferentes, o brilho do Filho de Deus, os salgueiros."}
+  ],
+  "personagens": [
+    {"nome":"Hermas","papel":"Liberto cristão em Roma, comerciante. Marido e pai laxista que negligenciou a educação espiritual da família. Receptor das visões."},
+    {"nome":"A Igreja (mulher idosa)","papel":"A Igreja personificada como mulher que envelhece com os pecados dos cristãos e rejuvenesce com o seu arrependimento. Ditou o livro a Hermas."},
+    {"nome":"O Pastor","papel":"O Anjo do Arrependimento — enviado para guiar Hermas. Ditou os Mandamentos e as Parábolas. A figura mais importante do texto."},
+    {"nome":"Rode","papel":"Antiga escrava de Hermas, agora livre. Hermas nutriu desejos por ela — o pecado de coração que iniciou as visões."}
+  ],
+  "teologia": {
+    "segundo_arrependimento": "A doutrina central — é possível um arrependimento sincero após o baptismo, mas apenas uma vez. Resposta pastoral aos lapsi (cristãos que apostataem sob perseguição).",
+    "dois_anjos": "Cada pessoa tem dois anjos: o da justiça (traz paz e alegria) e o da iniquidade (traz ira e amargura). O espírito que domina a pessoa é o que a guia.",
+    "espírito_santo": "Em algumas partes identificado com o Filho de Deus pré-existente — teologia cristológica ainda em formação.",
+    "ecclesiologia": "A Igreja foi criada antes de tudo — 'o livro mais antigo diz que o mundo foi criado para ela.'"
+  },
+  "versiculos_chave": [
+    {"ref":"Pastor Vis.2:4","texto":"O Anjo do Arrependimento disse: Aqueles que se arrependeram de coração de todos os seus pecados — Deus perdoa todos os pecados anteriores, se não voltarem a pecar."},
+    {"ref":"Pastor Mand.1","texto":"Primeiro de tudo, crê que Deus é um, que criou todas as coisas e as organizou, e que fez todas as coisas existirem a partir do nada."},
+    {"ref":"Pastor Sim.9:12","texto":"O nome do Filho de Deus é grande e ilimitado, e sustenta o mundo inteiro."},
+    {"ref":"Pastor Vis.3:3","texto":"A torre que vês construir sou eu, a Igreja."}
+  ]
+}

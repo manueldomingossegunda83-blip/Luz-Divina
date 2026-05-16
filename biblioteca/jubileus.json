@@ -1,0 +1,29 @@
+{
+  "id": "jubileus",
+  "titulo": "Livro dos Jubileus",
+  "subtitulo": "A Pequena Génesis",
+  "periodo": "Séc. II a.C.",
+  "lingua_original": "Hebraico (fragmentos em Qumran) / Etíope",
+  "canonico_para": ["Igreja Etíope Ortodoxa","Igreja Eritreia Ortodoxa"],
+  "categorias": ["reescrita bíblica","calendário","anjos","patriarcas","Génesis","Êxodo"],
+  "resumo": "Reescrita de Génesis–Êxodo dividida em jubileus (períodos de 49 anos). Revela o calendário solar de 364 dias como instituted por Deus. Dá nomes a figuras anónimas da Bíblia e expande histórias patriarcais com detalhes fascinantes.",
+  "contribuicoes_principais": [
+    "Calendário solar de 364 dias — em conflito com o calendário lunar do Templo",
+    "Nome da esposa de Noé: Emzara",
+    "Nome da esposa de Adão: não diferente, mas Eva é apresentada com mais detalhe",
+    "Mastema como o 'Acusador' equivalente a Satanás",
+    "Anjos da Face e Anjos da Santificação como as duas ordens superiores",
+    "Os Vigilantes (Enoque 6) integrados na narrativa do Génesis",
+    "Fragmentos encontrados em Qumran mostram uso activo pela comunidade essênia"
+  ],
+  "personagens_unicos": [
+    {"nome":"Mastema","papel":"O príncipe dos espíritos maus — pediu a Deus para guardar um décimo dos espíritos dos filhos dos Vigilantes para o tentar e tentar os homens. Equivalente funcional a Satanás."},
+    {"nome":"Anjo da Face","papel":"O anjo que ditou o livro a Moisés no Monte Sinai — a fonte divina do relato."},
+    {"nome":"Emzara","papel":"Nome dado à esposa de Noé — uma das muitas figuras anónimas do Génesis que recebem identidade."}
+  ],
+  "versiculos_chave": [
+    {"ref":"Jubileus 2:1","texto":"E o Anjo da Face falou a Moisés por ordem do Senhor: Escreve tudo desde o começo da criação."},
+    {"ref":"Jubileus 10:8","texto":"E Deus disse a Noé: Sei que o teu coração é recto e que se abstém de todo o caminho da injustiça."},
+    {"ref":"Jubileus 23:31","texto":"E os seus ossos repousarão na terra, e o seu espírito terá muita alegria."}
+  ]
+}

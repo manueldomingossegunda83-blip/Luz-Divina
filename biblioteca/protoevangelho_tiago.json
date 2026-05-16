@@ -1,0 +1,38 @@
+{
+  "id": "tiago_proto",
+  "titulo": "Protoevangelho de Tiago",
+  "subtitulo": "A História da Infância de Maria",
+  "periodo": "Séc. II d.C.",
+  "lingua_original": "Grego",
+  "canonico_para": [],
+  "categorias": ["infancia","maria","virgindade","joaquim e ana","nascimento jesus"],
+  "resumo": "A fonte principal sobre a infância de Maria não coberta pelos Evangelhos canónicos. Apresenta os seus pais Joaquim e Ana, a apresentação no Templo, o noivado com José e o nascimento de Jesus numa gruta.",
+  "capitulos_resumo": [
+    {"caps":"1-5","titulo":"Joaquim e Ana","resumo":"Joaquim e Ana são ricos e piedosos mas estéreis — vergonha em Israel. O sumo sacerdote recusa a oferta de Joaquim por não ter filhos. Um anjo aparece a cada um separadamente prometendo uma filha. Ana concebe Maria milagrosamente."},
+    {"caps":"6-8","titulo":"Maria no Templo","resumo":"Maria é apresentada ao Templo aos 3 anos. Sobe os 15 degraus do Templo sem olhar para trás. É criada pelas virgens no Templo, alimentada por um anjo, até aos 12 anos quando podia 'manchar' o Templo com a menstruação."},
+    {"caps":"9-12","titulo":"José como Guardião","resumo":"Os sacerdotes procuram um guardião viúvo para Maria. As varas dos viúvos de Israel são recolhidas — da vara de José voou uma pomba que pousou na sua cabeça. José, velho com filhos, aceita a responsabilidade a contragosto."},
+    {"caps":"11-12","titulo":"A Anunciação","resumo":"Gabriel aparece a Maria que estava a tecer o véu escarlate do Templo. A concepção dá-se no momento em que Maria foi buscar água à fonte."},
+    {"caps":"13-16","titulo":"A Gravidez Suspeita","resumo":"José regressa da construção e encontra Maria grávida de 6 meses. Angustiado, pondera repudiá-la em segredo. Um anjo esclarece-o em sonho. Ambos são submetidos à 'água de prova' do Templo como teste de inocência — passam."},
+    {"caps":"17-20","titulo":"O Nascimento numa Gruta","resumo":"A caminho de Belém, Maria dá à luz numa gruta. A parteira Salomé desconfia da virgindade perpétua e insiste em verificar — a sua mão resseca imediatamente como castigo pela incredulidade. Um anjo ordena-lhe que toque o menino para ser curada."},
+    {"caps":"21-24","titulo":"Os Magos e a Matança","resumo":"Os Magos visitam a gruta. Herodes planeia a matança. Isabel escapa com o bebé João para as montanhas que se abrem para os esconder. Zacarias é assassinado no Templo por recusar revelar onde está o filho."}
+  ],
+  "personagens": [
+    {"nome":"Joaquim","papel":"Pai de Maria. Homem rico e piedoso humilhado por não ter filhos. Retirou-se ao deserto em penitência antes de receber a promessa angélica."},
+    {"nome":"Ana","papel":"Mãe de Maria. O seu lamento de esterilidade no jardim espelha o de Ana mãe de Samuel. Ao ver um ninho de pardais na árvore de loureiro, lamenta: 'Nem as aves do céu são mais infelizes do que eu.'"},
+    {"nome":"José","papel":"Apresentado como viúvo idoso com filhos anteriores — explicação dos 'irmãos de Jesus' como meios-irmãos. Relutante guardião, não marido no sentido pleno."},
+    {"nome":"Salomé","papel":"Parteira céptica cuja mão resecou ao tentar verificar a virgindade de Maria após o parto. Curada ao tocar o Menino Jesus."}
+  ],
+  "contribuicoes_doutrinas": [
+    "Nomes dos pais de Maria: Joaquim e Ana — base das festas de Sant'Ana e São Joaquim",
+    "Apresentação de Maria no Templo (21 de Novembro na liturgia)",
+    "José como viúvo idoso — resolução dos 'irmãos de Jesus'",
+    "Nascimento numa gruta (não estábulo) — base da iconografia do presépio",
+    "Virgindade perpétua de Maria verificada pela parteira",
+    "Origem das reflexões sobre a Imaculada Conceição de Maria"
+  ],
+  "versiculos_chave": [
+    {"ref":"PrEv Tiago 4:1","texto":"Ana foi ao jardim e orou: Senhor Deus dos nossos pais, bendize-me e ouve a minha oração, como bendizeste o ventre de Sara."},
+    {"ref":"PrEv Tiago 11:1","texto":"E ela tomou o cântaro e foi buscar água. E eis que uma voz dizia: Alegra-te, cheia de graça; o Senhor está contigo; bendita és entre as mulheres."},
+    {"ref":"PrEv Tiago 19:2","texto":"E eu José olhei para o alto e vi o ar espantado, e olhei para a abóbada do céu e vi-a parada."}
+  ]
+}

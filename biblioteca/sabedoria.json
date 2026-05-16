@@ -1,0 +1,27 @@
+{
+  "id": "sabedoria",
+  "titulo": "Livro da Sabedoria (Sabedoria de Salomão)",
+  "periodo": "Séc. I a.C. (Alexandria)",
+  "lingua_original": "Grego",
+  "canonico_para": ["Católicos","Ortodoxos"],
+  "categorias": ["deuterocanónico","sapiencial","imortalidade","criação","idolatria","sabedoria divina"],
+  "resumo": "Escrito em Alexandria para judeus helenizados tentados pelo paganismo. Desenvolve a teologia da imortalidade da alma, da Sabedoria como atributo divino personificado, e uma crítica sofisticada à idolatria.",
+  "estrutura": [
+    {"caps":"1-5","titulo":"Os Dois Caminhos","resumo":"O caminho dos justos leva à imortalidade; o dos ímpios à destruição. A morte não foi criada por Deus — 'Deus criou o homem para a incorruptibilidade.' Os ímpios perseguem os justos mas no juízo final percebem o seu erro."},
+    {"caps":"6-9","titulo":"Elogio da Sabedoria","resumo":"A Sabedoria é personificada como mulher de beleza incomparável — 'um reflexo da luz eterna, um espelho sem mancha da actividade de Deus.' Salomão descreve como a procurou e recebeu como dom. A oração de Salomão pedindo sabedoria é um dos mais belos textos do AT."},
+    {"caps":"10-19","titulo":"A Sabedoria na História de Israel","resumo":"A Sabedoria guiou os patriarcas e protegeu Israel no Egipto. Revisita o Êxodo: as mesmas pragas que puniram os egípcios beneficiaram Israel — o contraste mostra a justiça divina."}
+  ],
+  "temas_teologicos": {
+    "imortalidade": "A primeira afirmação explícita de imortalidade da alma no cânon judaico-cristão: 'As almas dos justos estão nas mãos de Deus, e nenhum tormento as tocará.'",
+    "criacao": "Deus criou todas as coisas para que existam — 'não fez a morte nem se compraz com a perda dos viventes.' A morte entrou pelo demônio.",
+    "sabedoria_personificada": "Sophia (Sabedoria) é quase uma hipóstase divina — presente na criação, companheira de Deus. Esta teologia influenciou directamente o Prólogo de João (o Logos).",
+    "critica_idolatria": "Análise psicológica da origem da idolatria: começou com o luto pelos mortos amados, depois a adulação de reis. Os ídolos são armadilhas para os homens."
+  },
+  "versiculos_chave": [
+    {"ref":"Sabedoria 1:13","texto":"Deus não fez a morte, nem se compraz com a perda dos viventes."},
+    {"ref":"Sabedoria 2:23-24","texto":"Deus criou o homem para a incorruptibilidade. Por inveja do demônio, porém, a morte entrou no mundo."},
+    {"ref":"Sabedoria 3:1","texto":"As almas dos justos estão nas mãos de Deus, e nenhum tormento as tocará."},
+    {"ref":"Sabedoria 7:26","texto":"A Sabedoria é um reflexo da luz eterna, um espelho sem mancha da actividade de Deus."},
+    {"ref":"Sabedoria 11:24","texto":"Amas a todos os seres e não aborreces nada do que fizeste."}
+  ]
+}

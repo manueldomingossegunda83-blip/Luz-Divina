@@ -1,0 +1,21 @@
+{
+  "id": "baruc",
+  "titulo": "Livro de Baruc + Carta de Jeremias",
+  "periodo": "Séc. II a.C.",
+  "lingua_original": "Hebraico/Aramaico / Grego",
+  "canonico_para": ["Católicos","Ortodoxos"],
+  "categorias": ["deuterocanónico","exílio","sabedoria","penitência","idolatria"],
+  "resumo": "Atribuído a Baruc, secretário de Jeremias, escrito durante o exílio babilónico. Contém: confissão dos pecados de Israel, elogio da Sabedoria identificada com a Torah, consolação de Jerusalém, e a Carta de Jeremias — sátira devastadora da idolatria.",
+  "estrutura": [
+    {"parte":"Baruc 1:1-3:8","titulo":"Confissão e Oração","resumo":"Os exilados em Babilónia enviam dinheiro e o livro para Jerusalém para ser lido em público. Confissão colectiva dos pecados que causaram o exílio. Oração de súplica."},
+    {"parte":"Baruc 3:9-4:4","titulo":"Elogio da Sabedoria","resumo":"A Sabedoria é o tesouro escondido que Israel recebeu — identificada com a Torah. Nenhuma nação a encontrou; Deus a revelou apenas a Israel."},
+    {"parte":"Baruc 4:5-5:9","titulo":"Consolação de Jerusalém","resumo":"Jerusalém fala aos seus filhos exilados com esperança. Deus vai trazer de volta os filhos com alegria, como numa procissão de glória."},
+    {"parte":"Baruc 6 (Carta de Jeremias)","titulo":"Contra os Ídolos","resumo":"Ironia e sarcasmo sofisticados contra a idolatria: os ídolos não podem falar, andar, ver, ouvir — são obras de artesãos que enferrujam e apodrecem."}
+  ],
+  "versiculos_chave": [
+    {"ref":"Baruc 3:9","texto":"Ouve, Israel, os mandamentos da vida; presta ouvidos para aprender prudência."},
+    {"ref":"Baruc 3:38","texto":"Depois disso apareceu sobre a terra e conviveu com os homens."},
+    {"ref":"Baruc 4:2","texto":"Volta-te para o esplendor e dirige-te para a luz que ilumina a tua face."},
+    {"ref":"Baruc 6:3","texto":"Vereis em Babilónia deuses de prata, de ouro e de madeira carregados às costas."}
+  ]
+}

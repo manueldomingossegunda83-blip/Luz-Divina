@@ -1,0 +1,49 @@
+{
+  "id": "tobias",
+  "titulo": "Livro de Tobias",
+  "periodo": "Séc. III-II a.C.",
+  "lingua_original": "Aramaico (Qumran) / Grego",
+  "canonico_para": ["Católicos","Ortodoxos"],
+  "categorias": ["deuterocanónico","anjos","cura","matrimônio","diáspora"],
+  "resumo": "Tobit, judeu piedoso deportado para Nínive, fica cego por excrementos de andorinha. O seu filho Tobias viaja com o Arcanjo Rafael (disfarçado de Azarias) para recuperar dinheiro. Tobias casa com Sara, libertada do demônio Asmodeu que matara 7 maridos anteriores. Rafael cura a cegueira de Tobit com o fel de um peixe.",
+  "capitulos": [
+    {"numero":1,"titulo":"Tobit em Nínive","resumo":"Apresentação de Tobit — homem piedoso que enterrava os mortos apesar do risco de morte. Ficou cego por excrementos de andorinha sobre os olhos enquanto dormia ao ar livre após enterrar um morto."},
+    {"numero":2,"titulo":"A Cegueira e o Sofrimento","resumo":"Tobit ficou cego e dependente. A sua esposa Ana trabalhava e um dia recebeu um cabrito como salário extra. Tobit, desconfiando que fosse roubado, discutiu com ela — a ironia de um homem justo na miséria."},
+    {"numero":3,"titulo":"As Orações de Tobit e Sara","resumo":"Tobit e Sara (em Ecbátana), ambos desesperados, oram a Deus pedindo a morte. Rafael é enviado para curar ambos simultaneamente."},
+    {"numero":4,"titulo":"Os Conselhos de Tobit ao Filho","resumo":"Crendo que vai morrer, Tobit transmite a Tobias os seus valores: honrar a mãe, casar com alguém do seu povo, pagar os trabalhadores no mesmo dia, dar esmola, não fazer aos outros o que não queres para ti."},
+    {"numero":5,"titulo":"Rafael Disfarçado de Azarias","resumo":"Tobias procura um guia para a viagem. Rafael apresenta-se como Azarias, filho de Ananias, e oferece-se. A mãe Ana chora ao ver o filho partir."},
+    {"numero":6,"titulo":"O Peixe e os seus Remédios","resumo":"Junto ao rio Tigre, um peixe enorme atacou o pé de Tobias. Rafael mandou-o capturar e guardar o coração, o fígado e o fel — remédios contra demônios e contra cegueira."},
+    {"numero":7,"titulo":"A Chegada a Ecbátana","resumo":"Chegam à casa de Raguel, pai de Sara. Tobias quer casar com ela. Raguel avisa sobre os 7 maridos mortos, mas Tobias insiste. Raguel cede, temendo outro desastre, e prepara o sepulcro durante a noite por precaução."},
+    {"numero":8,"titulo":"A Noite de Núpcias e a Derrota de Asmodeu","resumo":"Tobias queimou o coração e o fígado do peixe no quarto nupcial — o cheiro expulsou Asmodeu para o Egipto. Rafael perseguiu-o e acorrentou-o. Tobias e Sara oraram juntos. Raguel foi ver o sepulcro e encontrou o genro vivo — mandou tapá-lo antes que alguém visse."},
+    {"numero":9,"titulo":"Rafael Vai Buscar o Dinheiro","resumo":"Rafael foi a Ragés buscar o dinheiro depositado por Tobit junto de Gabael, enquanto os noivos celebravam as bodas por 14 dias."},
+    {"numero":10,"titulo":"O Regresso","resumo":"Tobit e Ana aguardavam angustiados o regresso do filho. Tobias pediu licença para regressar com a esposa."},
+    {"numero":11,"titulo":"A Cura de Tobit","resumo":"Tobias aplicou o fel do peixe nos olhos do pai — as películas brancas caíram e Tobit viu novamente. A alegria da família ao conhecer Sara."},
+    {"numero":12,"titulo":"Rafael Revela a Sua Identidade","resumo":"Quando Tobit e Tobias quiseram recompensar Azarias, ele revelou: 'Eu sou Rafael, um dos sete anjos que estão sempre presentes diante da glória do Senhor.' Desapareceu. Os dois ficaram prostrados por terra."},
+    {"numero":13,"titulo":"O Hino de Tobit","resumo":"Tobit canta um hino de louvor a Deus profetizando a restauração de Jerusalém e a conversão das nações."},
+    {"numero":14,"titulo":"Os Últimos Dias de Tobit","resumo":"Tobit morre com 112 anos. Tobias, aconselhado pelo pai, parte para a Média antes da destruição de Nínive. Viveu até aos 117 anos para ver a destruição de Nínive conforme profetizado por Naum."}
+  ],
+  "personagens": [
+    {"nome":"Tobit","papel":"Pai piedoso — modelo de fidelidade religiosa na diáspora assíria. Cego, humilhado mas fiel."},
+    {"nome":"Tobias","papel":"Filho obediente cuja viagem é o fio condutor da narrativa. Instrumentos nas mãos de Deus."},
+    {"nome":"Rafael / Azarias","papel":"Arcanjo Rafael disfarçado de jovem guia. Revela-se no cap. 12 como 'um dos sete anjos que estão diante de Deus'."},
+    {"nome":"Sara","papel":"Jovem afligida pelo demônio Asmodeu que matou 7 maridos na noite de núpcias. Libertada pelo casamento com Tobias."},
+    {"nome":"Asmodeu","papel":"Demônio dos ciúmes e da luxúria que perseguia Sara. Expulso pelo cheiro do fígado e coração do peixe, acorrentado por Rafael no Egipto."},
+    {"nome":"Ana","papel":"Esposa de Tobit — sofre com a cegueira do marido e chora o afastamento do filho."},
+    {"nome":"Raguel","papel":"Pai de Sara em Ecbátana. Escavou o sepulcro por precaução na noite de núpcias de Tobias."},
+    {"nome":"Gabael","papel":"Amigo de Tobit em Ragés que guardava o dinheiro depositado."}
+  ],
+  "temas_teologicos": {
+    "providencia": "Deus age através de mensageiros disfarçados. Rafael serve sem ser reconhecido durante toda a história.",
+    "oracao_e_jejum": "Tanto Tobit como Sara oram em momentos de desespero — a oração sincera atinge os céus imediatamente.",
+    "matrimonio_sagrado": "O casamento de Tobias e Sara é apresentado como sacramento — a oração antes da união é modelo da tradição judaica e cristã.",
+    "angelologia": "Primeira menção dos 'sete anjos diante de Deus' (cf. Apocalipse 8:2). Rafael como anjo da cura e viagem.",
+    "fidelidade_diaspora": "Tobit representa o judeu fiel que mantém a identidade religiosa em terra estrangeira."
+  },
+  "versiculos_chave": [
+    {"ref":"Tobias 3:17","texto":"Rafael foi enviado para curar os dois: para remover as manchas brancas dos olhos de Tobit, e para dar Sara a Tobias filho de Tobit, e para ligar Asmodeu, o espírito maligno."},
+    {"ref":"Tobias 4:15","texto":"Não faças a ninguém o que não queres que te façam."},
+    {"ref":"Tobias 8:5-7","texto":"Tu fizeste Adão e deste-lhe Eva sua esposa como ajuda e apoio. Deles descende toda a raça humana."},
+    {"ref":"Tobias 12:15","texto":"Eu sou Rafael, um dos sete anjos que estão sempre presentes e entram à presença da glória do Senhor."},
+    {"ref":"Tobias 12:19","texto":"Parecia que comia e bebia convosco, mas eu sirvo-me de um alimento invisível e de uma bebida que os homens não podem ver."}
+  ]
+}

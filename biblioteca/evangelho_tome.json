@@ -1,0 +1,38 @@
+{
+  "id": "evangelho_tome",
+  "titulo": "Evangelho de Tomé",
+  "subtitulo": "Os 114 Ditos Secretos de Jesus",
+  "periodo": "Séc. II d.C. (tradições do séc. I)",
+  "lingua_original": "Grego / Copta (Nag Hammadi, 1945)",
+  "canonico_para": [],
+  "categorias": ["gnóstico","logia","nag hammadi","sabedoria","autoconhecimento"],
+  "frase_abertura": "Estes são os ditos ocultos que o Jesus Vivente disse e que Dídimo Judas Tomé escreveu.",
+  "resumo": "Colecção de 114 ditos (logia) atribuídos a Jesus sem narrativa. Descoberto em Nag Hammadi (Egipto) em 1945. Metade tem paralelos nos Evangelhos canónicos; metade são únicos. Fortemente influenciado pelo pensamento gnóstico — a salvação vem do autoconhecimento.",
+  "logia_notaveis": [
+    {"num":1, "texto":"Quem encontrar a interpretação destes ditos não provará a morte."},
+    {"num":3, "texto":"O Reino está dentro de vós e fora de vós. Quando vos conhecerdes, sereis conhecidos, e sabereis que sois filhos do Pai Vivo."},
+    {"num":5, "texto":"Conhece o que está diante do teu rosto, e o que te está oculto ser-te-á revelado."},
+    {"num":13, "texto":"Tomé disse-lhe: Mestre, a minha boca é absolutamente incapaz de dizer a quem és semelhante. Jesus disse: Não sou o teu mestre, porque bebeste, ficaste embriagado do manancial borbulhante que eu medi."},
+    {"num":20, "texto":"Os discípulos disseram a Jesus: Dize-nos a que é semelhante o Reino dos Céus. Ele disse-lhes: É semelhante a um grão de mostarda, o menor de todas as sementes; mas quando cai na terra preparada, produz um grande ramo e torna-se abrigo para as aves do céu."},
+    {"num":22, "texto":"Quando fizerdes os dois um, e quando fizerdes o interior como o exterior e o exterior como o interior, então entrareis no Reino."},
+    {"num":24, "texto":"Há luz dentro de um homem de luz, e ele ilumina o mundo inteiro. Se não brilhar, há trevas."},
+    {"num":36, "texto":"Não vos preocupeis desde o amanhecer até ao anoitecer, nem do anoitecer até ao amanhecer, com o que vestireis."},
+    {"num":42, "texto":"Sede passantes."},
+    {"num":54, "texto":"Bem-aventurados os pobres, pois vosso é o Reino dos Céus."},
+    {"num":77, "texto":"Eu sou a Luz que está acima de todos. Eu sou o Todo. O Todo saiu de mim e o Todo chegou a mim. Parti um lenho, estou lá; levantai uma pedra e lá me encontrareis."},
+    {"num":82, "texto":"Quem está perto de mim está perto do fogo, e quem está longe de mim está longe do Reino."},
+    {"num":97, "texto":"O Reino do Pai é semelhante a uma mulher que transporta uma jarra cheia de farinha. Enquanto caminhava por um longo caminho, a asa da jarra quebrou-se e a farinha escoou-se atrás dela pelo caminho. Ela não sabia; não tinha notado o acidente."},
+    {"num":108, "texto":"Quem beber da minha boca tornar-se-á como eu sou, e eu próprio me tornarei ele, e as coisas ocultas ser-lhe-ão reveladas."},
+    {"num":113, "texto":"Os seus discípulos disseram-lhe: Quando virá o Reino? Não virá por expectativa. Não dirão: Vede, aqui, ou vede, ali. Mas o Reino do Pai está espalhado pela terra e os homens não o vêem."}
+  ],
+  "comparacao_com_canonicos": {
+    "paralelos_directos": ["Logia 20 ~ Marcos 4:30-32 (mostarda)","Logia 54 ~ Lucas 6:20 (bem-aventuranças)","Logia 36 ~ Mateus 6:25-34 (não vos preocupeis)","Logia 65 ~ Marcos 12:1-8 (os vinhateiros)"],
+    "logia_unicos": ["Logia 42 (sede passantes)","Logia 77 (a pedra e a madeira)","Logia 97 (a jarra de farinha)","Logia 98 (o assassino poderoso)"]
+  },
+  "teologia": {
+    "gnose": "A salvação não vem da fé ou de sacramentos externos, mas do autoconhecimento — conhecer a própria origem divina.",
+    "reino": "O Reino não é um evento futuro mas uma realidade presente a ser descoberta interiormente.",
+    "dualismo": "Tensão entre o interior (espiritual, luminoso) e o exterior (material, obscuro) — típico do pensamento gnóstico.",
+    "jesus": "Não é apresentado como Salvador que morre pelos pecados, mas como Mestre que revela a verdade oculta sobre a origem divina dos seres humanos."
+  }
+}

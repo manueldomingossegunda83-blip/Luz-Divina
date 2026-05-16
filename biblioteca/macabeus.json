@@ -1,0 +1,29 @@
+{
+  "id": "macabeus",
+  "titulo": "1 e 2 Macabeus",
+  "periodo": "Séc. I a.C. (sobre eventos de 175-134 a.C.)",
+  "lingua_original": "Hebraico (1Mac) / Grego (2Mac)",
+  "canonico_para": ["Católicos","Ortodoxos"],
+  "categorias": ["deuterocanónico","história","revolta","hanukkah","mártires","ressurreição"],
+  "resumo_1mac": "História épica da revolta dos Macabeus contra Antíoco IV Epifânio que proibiu o Judaísmo e profanou o Templo. Matatiás e os seus cinco filhos lideram a guerrilha. Judas 'Macabeu' vence, purifica o Templo — origem de Hanukkah.",
+  "resumo_2mac": "Versão mais teológica dos mesmos eventos. Contém as doutrinas da ressurreição dos mortos, da eficácia das orações pelos mortos e do martírio como testemunho.",
+  "personagens": [
+    {"nome":"Antíoco IV Epifânio","papel":"Rei selêucida que se auto-proclamou 'deus manifesto'. Profanou o Templo com sacrifício de porco no altar, proibiu Sabat, circuncisão e Torah. Causou a revolta."},
+    {"nome":"Matatiás","papel":"Sacerdote de Modeim que recusou sacrificar aos deuses gregos. Matou o apóstata e o oficial real. Iniciou a revolta com o grito: 'Quem tem zeal pela Lei, que me siga!'"},
+    {"nome":"Judas Macabeu","papel":"'O Martelo' — filho mais guerreiro de Matatiás. Conquistou Jerusalém e purificou o Templo. Venceu exércitos imensamente superiores. Morreu em batalha."},
+    {"nome":"Simão Macabeu","papel":"O estratega diplomático que obteve independência de facto para Israel."},
+    {"nome":"Eleazar o Escriba (2Mac)","papel":"Ancião de 90 anos que preferiu morrer a comer carne proibida — o primeiro mártir descrito em detalhe na Bíblia."},
+    {"nome":"A Mãe dos Sete Filhos (2Mac)","papel":"Encorajou cada um dos seus sete filhos a morrer em vez de apostatar — considerada precursora de Maria ao pé da Cruz."}
+  ],
+  "doutrinas_unicas": {
+    "ressurreicao": "2 Macabeus 7 — os sete filhos morrem afirmando que Deus os ressuscitará. Primeira afirmação clara de ressurreição corporal no AT.",
+    "oracao_pelos_mortos": "2 Macabeus 12:44 — Judas faz colecta para oferecer sacrifício pelos soldados mortos que tinham amuletos idólatras. Base da doutrina católica do Purgatório.",
+    "criacao_ex_nihilo": "2 Macabeus 7:28 — 'Deus fez o céu e a terra e tudo o que neles existe a partir do nada.' Primeira afirmação explícita de criação do nada."
+  },
+  "versiculos_chave": [
+    {"ref":"1 Macabeus 1:54","texto":"No dia quinze do mês de Quisleu o rei erigiu o horror abominável sobre o altar dos holocaustos."},
+    {"ref":"1 Macabeus 2:50","texto":"Mostrai zelo pela lei e dai a vossa vida pelo pacto dos nossos pais."},
+    {"ref":"2 Macabeus 7:9","texto":"O rei do universo ressuscitar-nos-á para uma vida eterna, a nós que morremos pelas suas leis."},
+    {"ref":"2 Macabeus 12:44","texto":"Pois se não tivesse esperança na ressurreição dos que tombaram, seria inútil e vão rezar pelos mortos."}
+  ]
+}
