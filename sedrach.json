@@ -1,0 +1,795 @@
+{
+  "titulo": "Apocalipse de Sedrach",
+  "descricao": "Texto apócrifo cristão que narra o diálogo de Sedrach com Deus sobre o livre-arbítrio, o pecado, a misericórdia divina e a morte. Preservado em manuscritos gregos medievais.",
+  "lingua_original": "Grego",
+  "periodo": "Séc. II–V d.C. (redação final)",
+  "categorias": [
+    "apócrifo",
+    "apocalipse",
+    "diálogo divino",
+    "arrependimento",
+    "misericórdia",
+    "angelologia"
+  ],
+  "temas": [
+    "amor",
+    "livre-arbítrio",
+    "pecado",
+    "misericórdia",
+    "arrependimento",
+    "morte",
+    "alma",
+    "juízo",
+    "salvação"
+  ],
+  "capitulos": [
+    {
+      "numero": 1,
+      "titulo": "O Amor como Virtude Suprema",
+      "temas": [
+        "amor",
+        "virtude",
+        "lei"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "Amados, não devemos preferir nada mais do que o amor sincero."
+        },
+        {
+          "v": 2,
+          "texto": "Cometemos muitas faltas a cada hora, de dia e de noite, e por isso adquiramos o amor, porque ele cobre uma multidão de pecados."
+        },
+        {
+          "v": 3,
+          "texto": "O que ganhamos, meus filhos, se possuímos tudo e não temos o amor que salva?"
+        },
+        {
+          "v": 4,
+          "texto": "Como beneficia alguém, meus filhos, oferecer um grande banquete e convidar reis e nobres, preparando toda sorte de iguarias caras, mas se não há sal, o banquete não pode ser comido?"
+        },
+        {
+          "v": 5,
+          "texto": "Não só se suporta o gasto, como também se desperdiçam esforços e se fica envergonhado diante dos convidados."
+        },
+        {
+          "v": 6,
+          "texto": "O mesmo acontece conosco, irmãos: o que nos aproveita, que graça possuímos sem amor?"
+        },
+        {
+          "v": 7,
+          "texto": "Toda a nossa obra é falsa, mesmo que alguém tenha virgindade, jejue, vigie, ore e dê banquete aos pobres."
+        },
+        {
+          "v": 8,
+          "texto": "Se alguém traz dons a Deus, oferece as primícias de todos os seus bens, constrói igrejas ou faz qualquer outra coisa sem amor, tudo será contado por Deus como nada, pois não é aceitável."
+        },
+        {
+          "v": 9,
+          "texto": "Assim diz o profeta: O sacrifício dos ímpios é abominação ao Senhor. Não vos aconselheis a fazer nada sem amor."
+        },
+        {
+          "v": 10,
+          "texto": "Se dizes 'Odeio meu irmão, mas amo a Cristo', és mentiroso; e João, o Teólogo, te repreende: como pode alguém que não ama o irmão que vê, amar a Deus que não viu?"
+        },
+        {
+          "v": 11,
+          "texto": "É evidente que quem odeia o irmão mas pensa que ama a Cristo é mentiroso e se engana a si mesmo."
+        },
+        {
+          "v": 12,
+          "texto": "João, o Teólogo, diz que temos este mandamento de Deus: quem ama a Deus deve também amar o seu irmão."
+        },
+        {
+          "v": 13,
+          "texto": "E o próprio Senhor diz: Nestes dois mandamentos se resume toda a Lei e os Profetas."
+        },
+        {
+          "v": 14,
+          "texto": "Oh, quão extraordinário e paradoxal é o mistério de que quem tem amor cumpre toda a lei; o amor é a plenitude da lei."
+        },
+        {
+          "v": 15,
+          "texto": "Oh, poder do amor além da imaginação; oh, poder do amor além de qualquer medida!"
+        },
+        {
+          "v": 16,
+          "texto": "Nada há mais honroso do que o amor, nem há nada maior, nem no céu nem na terra."
+        },
+        {
+          "v": 17,
+          "texto": "Este amor divino é o capital de todas as virtudes; entre todas as virtudes, o amor é a mais alta perfeição no mundo."
+        },
+        {
+          "v": 18,
+          "texto": "Habitou no coração de Abel; cooperou com os Patriarcas; guardou Moisés; fez de David a morada do Espírito Santo; fortaleceu José."
+        },
+        {
+          "v": 19,
+          "texto": "Mas para quê digo estas coisas?"
+        },
+        {
+          "v": 20,
+          "texto": "O mais importante é que este amor trouxe o Filho de Deus dos céus."
+        },
+        {
+          "v": 21,
+          "texto": "Por meio do amor todos os bens foram revelados; a morte foi pisoteada pela morte, e pelo amor formou-se um único rebanho de anjos e homens."
+        },
+        {
+          "v": 22,
+          "texto": "Pelo amor o Paraíso foi aberto; o reino dos céus é prometido; os lugares ermos tornaram-se cidades, e os montes e as cavernas encheram-se de cântico."
+        },
+        {
+          "v": 23,
+          "texto": "Ensinou homens e mulheres que trilhavam o caminho estreito e penoso. Mas por quanto tempo prolongaremos este sermão sobre as obras do amor, que nem os anjos conseguem alcançar?"
+        },
+        {
+          "v": 24,
+          "texto": "Oh, bendito amor que concede todos os bens!"
+        },
+        {
+          "v": 25,
+          "texto": "Bem-aventurado o homem que possui a fé verdadeira e o amor sincero; pois, como disse o Mestre, nada é maior do que o amor pelo qual alguém dá a vida pelos seus amigos."
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "titulo": "Sedrach É Levado ao Céu",
+      "temas": [
+        "ascensão",
+        "céu",
+        "anjo",
+        "visão divina"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "E ele ouviu uma voz oculta em seus ouvidos: Aqui estás, Sedrach, tu que desejas e queres falar com Deus e perguntar-Lhe as coisas que desejais perguntar."
+        },
+        {
+          "v": 2,
+          "texto": "E Sedrach disse: O que é, meu Senhor? E a voz disse-lhe:"
+        },
+        {
+          "v": 3,
+          "texto": "Fui enviado a ti para te elevar ao céu. E ele disse: Quero falar com Deus face a face, mas não sou capaz, Senhor, de subir aos céus."
+        },
+        {
+          "v": 4,
+          "texto": "Mas o anjo, tendo estendido as suas asas, tomou-o e subiu aos céus, e levou-o até ao terceiro céu, onde estava a chama da divindade."
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "titulo": "Sedrach Fala com Deus: A Criação do Homem",
+      "temas": [
+        "criação",
+        "propósito",
+        "homem",
+        "queixa"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "E o Senhor disse-lhe: Bem-vindo, meu querido Sedrach."
+        },
+        {
+          "v": 2,
+          "texto": "Que tipo de queixa tens contra o Deus que te criou, pois disseste: Quero falar com Deus face a face?"
+        },
+        {
+          "v": 3,
+          "texto": "Sedrach disse-lhe: Com efeito, o filho tem uma queixa contra o Pai: Meu Senhor, para quê criaste a terra?"
+        },
+        {
+          "v": 4,
+          "texto": "O Senhor disse-lhe: Para o homem."
+        },
+        {
+          "v": 5,
+          "texto": "Sedrach disse: Para quê criaste o mar e por que espalhaste todo bem sobre a terra?"
+        },
+        {
+          "v": 6,
+          "texto": "O Senhor disse: Para o homem."
+        },
+        {
+          "v": 7,
+          "texto": "Sedrach disse-lhe: Se fizeste estas coisas, por que destruíste o homem?"
+        },
+        {
+          "v": 8,
+          "texto": "E o Senhor disse: O homem é a minha obra e a criatura das minhas mãos, e eu o disciplino como acho certo."
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "titulo": "O Castigo e a Criação de Adão",
+      "temas": [
+        "pecado",
+        "adão",
+        "paraíso",
+        "desobediência",
+        "diabo"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "Sedrach disse-lhe: A tua disciplina é punição e fogo, e são muito amargos, meu Senhor."
+        },
+        {
+          "v": 2,
+          "texto": "Seria melhor para o homem não ter nascido."
+        },
+        {
+          "v": 3,
+          "texto": "O que fizeste, meu Senhor; por que razão trabalhaste com tuas mãos imaculadas e criaste o homem, se não desejaste ter misericórdia dele?"
+        },
+        {
+          "v": 4,
+          "texto": "Deus disse-lhe: Criei o primeiro homem, Adão, e coloquei-o no Paraíso no meio do qual está a árvore da vida, e disse-lhe: Come de todo o fruto, apenas guarda-te da árvore da vida, pois se dela comeres, certamente morrerás."
+        },
+        {
+          "v": 5,
+          "texto": "Porém, ele desobedeceu ao meu mandamento e, enganado pelo diabo, comeu da árvore."
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "titulo": "O Livre-Arbítrio e a Queda de Satanás",
+      "temas": [
+        "livre-arbítrio",
+        "satanás",
+        "anjo rebelde",
+        "queda",
+        "tentação"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "Sedrach disse-lhe: Foi pela tua vontade que Adão foi enganado, Mestre."
+        },
+        {
+          "v": 2,
+          "texto": "Tu ordenaste aos teus anjos que adorassem Adão, mas aquele que era o primeiro entre os anjos desobedeceu à tua ordem e não o adorou; e assim o baniste, porque transgrediu teu mandamento e não se prostrou diante da criatura das tuas mãos."
+        },
+        {
+          "v": 3,
+          "texto": "Se amavas o homem, por que não mataras o diabo, o artífice de toda iniquidade?"
+        },
+        {
+          "v": 4,
+          "texto": "Quem pode combater um espírito invisível?"
+        },
+        {
+          "v": 5,
+          "texto": "Ele entra no coração dos homens como fumaça e ensina-lhes todo tipo de pecado."
+        },
+        {
+          "v": 6,
+          "texto": "Combate até contra ti, o Deus imortal. Então, o que pode fazer o miserável homem contra ele?"
+        },
+        {
+          "v": 7,
+          "texto": "Mas tem misericórdia, Mestre, e suprime o castigo; caso contrário, recebe-me também junto com os pecadores, pois se não tiveres misericórdia dos pecadores, onde estão as tuas misericórdias e onde está a tua compaixão, ó Senhor?"
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "titulo": "A Sabedoria e Dignidade do Homem",
+      "temas": [
+        "dignidade humana",
+        "sabedoria",
+        "herança",
+        "ingratidão"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "E Deus disse-lhe: Fica sabendo que tudo o que ordenei ao homem fazer estava ao seu alcance."
+        },
+        {
+          "v": 2,
+          "texto": "Fiz-o sábio e herdeiro do céu e da terra, e submeti tudo sob ele, e todo ser vivo foge dele e da sua face."
+        },
+        {
+          "v": 3,
+          "texto": "Tendo recebido os meus dons, porém, tornou-se um estranho, um adúltero e pecador."
+        },
+        {
+          "v": 4,
+          "texto": "Diz-me, que tipo de pai daria herança ao seu filho, e tendo recebido o dinheiro o filho vai embora, abandona o pai e fica a serviço de estranhos?"
+        },
+        {
+          "v": 5,
+          "texto": "O pai, vendo que o filho o abandonou, endurece seu coração, retoma os seus bens e bane o filho da sua glória porque abandonou o pai."
+        },
+        {
+          "v": 6,
+          "texto": "Como pode ser que eu, o Deus maravilhoso e zeloso, dei tudo a ele, mas ele, tendo recebido, tornou-se adúltero e pecador?"
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "titulo": "O Diálogo Sobre a Misericórdia",
+      "temas": [
+        "misericórdia",
+        "vontade divina",
+        "intercessão",
+        "arrependimento"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "Sedrach disse-lhe: Tu, Mestre, criaste o homem; conheces o estado baixo de sua vontade e do seu conhecimento, e envias o homem ao castigo sob falso pretexto; então, remove-o."
+        },
+        {
+          "v": 2,
+          "texto": "Devo ser eu sozinho a preencher os reinos celestes?"
+        },
+        {
+          "v": 3,
+          "texto": "Se não é assim, Senhor, salva também o homem."
+        },
+        {
+          "v": 4,
+          "texto": "O miserável homem transgrediu pela tua vontade, ó Senhor."
+        },
+        {
+          "v": 5,
+          "texto": "Por que jogais palavras ao redor de mim como se fossem uma rede, Sedrach?"
+        },
+        {
+          "v": 6,
+          "texto": "Criei Adão e sua esposa e o sol e disse: Olhai um para o outro para ver quem é iluminado."
+        },
+        {
+          "v": 7,
+          "texto": "E o sol e Adão eram de igual caráter, mas a esposa de Adão era mais brilhante do que a lua em beleza, e ela lhe deu vida."
+        },
+        {
+          "v": 8,
+          "texto": "Sedrach disse: De que valem as coisas belas se se desfazem em pó?"
+        },
+        {
+          "v": 9,
+          "texto": "Como é, Senhor, que disseste: Não retribuás o mal com o mal?"
+        },
+        {
+          "v": 10,
+          "texto": "Como é, Mestre, pois a palavra da tua divindade nunca mente?"
+        },
+        {
+          "v": 11,
+          "texto": "E por que retribuíste assim ao homem, se não desejas retribuir mal com mal?"
+        },
+        {
+          "v": 12,
+          "texto": "Sei que entre os animais de quatro patas a mula é um animal astuto; ainda assim, com o freio a conduzimos onde queremos."
+        },
+        {
+          "v": 13,
+          "texto": "Tens anjos; envia-os para vigiar o homem, e quando ele se mover para o pecado, segura-lhe o pé, e ele não irá onde quer."
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "titulo": "Deus Explica o Livre-Arbítrio e o Amor",
+      "temas": [
+        "livre-arbítrio",
+        "amor divino",
+        "anjos guardiões",
+        "criação"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "Deus disse-lhe: Se segurar o seu pé, ele dirá: Não me concedeste graça alguma no mundo. Por isso o deixei com seus próprios desejos, porque o amei, e assim enviei os meus anjos justos para vigiá-lo noite e dia."
+        },
+        {
+          "v": 2,
+          "texto": "Sedrach disse: Sei que entre as tuas criaturas, Mestre, amaste primeiro o homem; entre os animais de quatro patas, a ovelha; entre as árvores, a oliveira; entre as plantas que dão fruto, a videira; entre os que voam, a abelha; entre os rios, o Jordão; entre as cidades, Jerusalém."
+        },
+        {
+          "v": 3,
+          "texto": "Mas o homem também ama tudo isso, Mestre."
+        },
+        {
+          "v": 4,
+          "texto": "Deus disse a Sedrach: Farei uma pergunta, Sedrach; se puderes responder-me, então tens razão em desafiar-me, embora tenhas tentado o teu Criador."
+        },
+        {
+          "v": 5,
+          "texto": "Sedrach disse: Fala."
+        },
+        {
+          "v": 6,
+          "texto": "O Senhor Deus disse: Desde que criei tudo, quantas pessoas nasceram, quantas morreram e quantas morrerão, e quantos cabelos têm?"
+        },
+        {
+          "v": 7,
+          "texto": "Diz-me, Sedrach, desde que o céu e a terra foram criados, quantas árvores foram feitas no mundo, e quantas cairão e quantas serão feitas, e quantas folhas têm?"
+        },
+        {
+          "v": 8,
+          "texto": "Diz-me, Sedrach, desde que fiz o mar, quantas ondas se ergueram, e quantas rolaram suavemente, e quantas surgirão, e quantos ventos sopram perto da costa do mar?"
+        },
+        {
+          "v": 9,
+          "texto": "Diz-me, Sedrach, desde a criação do mundo, quando o ar está cheio de chuva, quantas gotas caíram sobre o mundo e quantas ainda cairão?"
+        },
+        {
+          "v": 10,
+          "texto": "E Sedrach disse: Tu sozinho conheces todas estas coisas, Senhor; tu sozinho conheces tudo isso; só Te peço que livres o homem do castigo, pois caso contrário eu próprio vou ao castigo e não me separo da nossa raça."
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "titulo": "A Alma de Sedrach É Reclamada",
+      "temas": [
+        "morte",
+        "alma",
+        "paraíso",
+        "Cristo",
+        "intercessão"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "E Deus disse ao seu Filho Unigênito: Vai, toma a alma do meu amado Sedrach, e coloca-a no Paraíso."
+        },
+        {
+          "v": 2,
+          "texto": "O Filho Unigênito disse a Sedrach: Dá-me aquilo que nosso Pai depositou no ventre da tua mãe, na tua santa morada, desde que nasceste."
+        },
+        {
+          "v": 3,
+          "texto": "Sedrach disse: Não te darei a minha alma."
+        },
+        {
+          "v": 4,
+          "texto": "Deus disse-lhe: Por que fui enviado, e por que vim aqui, e tu me apresentas pretextos?"
+        },
+        {
+          "v": 5,
+          "texto": "Fui mandado pelo meu Pai para não hesitar em tomar a tua alma; portanto, dá-me a tua alma tão desejada."
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "titulo": "O Mistério da Separação da Alma",
+      "temas": [
+        "alma",
+        "morte",
+        "corpo",
+        "separação"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "E Sedrach disse a Deus: De onde tomarás a minha alma, de qual membro?"
+        },
+        {
+          "v": 2,
+          "texto": "E Deus disse-lhe: Não sabes que ela está colocada no meio dos teus pulmões e do teu coração e que se estende a todos os membros?"
+        },
+        {
+          "v": 3,
+          "texto": "É removida pela faringe, laringe e boca; e sempre que deve sair do corpo, é retirada com dificuldade no início, e ao recolher-se das unhas e de todos os membros há, necessariamente, uma grande tensão ao separar-se do corpo e desprender-se do coração."
+        },
+        {
+          "v": 4,
+          "texto": "Tendo ouvido tudo isso e recordado a memória da morte, Sedrach ficou muito perturbado e disse a Deus: Senhor, dá-me um pouco de tempo para chorar, pois ouvi dizer que as lágrimas realizam muito e podem tornar-se remédio suficiente para o humilde corpo das tuas criaturas."
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "titulo": "O Lamento de Sedrach pelo Corpo",
+      "temas": [
+        "lamento",
+        "corpo",
+        "morte",
+        "beleza",
+        "transitoriedade"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "E chorando e lamentando, começou a dizer: Ó cabeça maravilhosa, adornada como o céu; ó luz solar sobre o céu e a terra; o teu cabelo vem de Teman, os teus olhos de Bosra, os teus ouvidos do trovão, a tua língua de trombeta, e o teu cérebro é uma pequena criação; a cabeça, o movimento de todo o corpo, é digna de confiança e muito bela, amada por todos, mas assim que cai na terra fica irreconhecível."
+        },
+        {
+          "v": 2,
+          "texto": "Ó mãos que seguram tão bem, facilmente ensinadas e laboriosas, por meio das quais o corpo é alimentado."
+        },
+        {
+          "v": 3,
+          "texto": "Ó mãos tão hábeis, reunindo materiais, juntas adornastes as casas."
+        },
+        {
+          "v": 4,
+          "texto": "Ó dedos, embelezados e adornados com ouro e prata; mesmo grandes estruturas são feitas pelos dedos; as três juntas estendem as palmas e reúnem coisas boas; mas agora tornastes-vos estranhos a este mundo."
+        },
+        {
+          "v": 5,
+          "texto": "Ó pés, que caminham tão bem, movendo-se por si mesmos tão rapidamente e sem cansaço."
+        },
+        {
+          "v": 6,
+          "texto": "Ó joelhos, assim unidos, sem vós o corpo não se move; os pés correm junto com o sol e a lua, noite e dia, reunindo todas as coisas, comida e bebida que nutrem o corpo."
+        },
+        {
+          "v": 7,
+          "texto": "Ó pés tão ágeis e bem moventes, agitando a face da terra e adornando casas com todo bem."
+        },
+        {
+          "v": 8,
+          "texto": "Ó pés, que carregais o corpo inteiro, que caminham diretamente para os templos, fazendo penitência e suplicando aos santos, e agora de repente deveis ficar imóveis."
+        },
+        {
+          "v": 9,
+          "texto": "Ó cabeça, mãos e pés, até agora vos retive firmemente."
+        },
+        {
+          "v": 10,
+          "texto": "Ó alma, o que te colocou no humilde e miserável corpo?"
+        },
+        {
+          "v": 11,
+          "texto": "Mas agora, separada dele, subes para onde o Senhor te chama, e o miserável corpo vai para o julgamento."
+        },
+        {
+          "v": 12,
+          "texto": "Ó corpo belo, cabelo derramado pelas estrelas, cabeça como o céu adornado; ó rosto perfumado, olhos como janelas, voz como o som de uma trombeta, língua que fala tão facilmente, barba bem aparada, cabelo como as estrelas, cabeça alta como o céu, corpo adornado, mas agora após cair na terra, a tua beleza sob a terra está invisível."
+        }
+      ]
+    },
+    {
+      "numero": 12,
+      "titulo": "A Promessa do Paraíso e o Arrependimento",
+      "temas": [
+        "paraíso",
+        "ressurreição",
+        "arrependimento",
+        "misericórdia",
+        "perdão"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "Cristo disse-lhe: Para, Sedrach, por quanto tempo chorarás e gemirás?"
+        },
+        {
+          "v": 2,
+          "texto": "O Paraíso foi aberto para ti, e após morrer viverás."
+        },
+        {
+          "v": 3,
+          "texto": "Sedrach disse-lhe: Uma vez mais falarei contigo, Senhor, enquanto vivo, antes de morrer; e não ignores a minha súplica."
+        },
+        {
+          "v": 4,
+          "texto": "O Senhor disse-lhe: Fala, Sedrach."
+        },
+        {
+          "v": 5,
+          "texto": "E Sedrach disse: Se um homem vive oitenta, noventa ou cem anos, e os vive no pecado, mas no fim se converte e vive no arrependimento, por quantos dias de arrependimento lhe perdoas os pecados?"
+        },
+        {
+          "v": 6,
+          "texto": "Deus disse-lhe: Se após viver cem ou oitenta anos regressa e se arrepende por três anos e produz frutos de justiça, e a morte o alcança, então não me lembrarei de todos os seus pecados."
+        }
+      ]
+    },
+    {
+      "numero": 13,
+      "titulo": "Negociação da Misericórdia — De 3 Anos a 40 Dias",
+      "temas": [
+        "misericórdia",
+        "negociação",
+        "arrependimento",
+        "perdão",
+        "morte"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "Sedrach disse-lhe: Três anos são demais, meu Senhor."
+        },
+        {
+          "v": 2,
+          "texto": "Talvez a morte chegue e ele não cumpra o seu arrependimento."
+        },
+        {
+          "v": 3,
+          "texto": "Tem misericórdia, Senhor, da tua imagem, e sê compassivo, porque três anos são demais."
+        },
+        {
+          "v": 4,
+          "texto": "Deus disse-lhe: Se, após cem anos, um homem vive e se recorda da sua morte e confessa diante dos homens, e eu o encontrar, após um ano, perdoarei todos os seus pecados."
+        },
+        {
+          "v": 5,
+          "texto": "Novamente Sedrach disse: Senhor, peço a tua misericórdia novamente sobre a tua criatura; um ano é muito, e talvez a morte chegue e o arrebate de repente."
+        },
+        {
+          "v": 6,
+          "texto": "O Salvador disse-lhe: Sedrach, meu amado, uma pergunta te farei, depois poderás retomar as tuas indagações; se o pecador se arrepender por quarenta dias, não me lembrarei certamente de todos os pecados que cometeu?"
+        }
+      ]
+    },
+    {
+      "numero": 14,
+      "titulo": "Intercessão de Miguel e os Caminhos da Salvação",
+      "temas": [
+        "Miguel arcanjo",
+        "intercessão",
+        "salvação",
+        "baptismo",
+        "nações",
+        "lágrimas"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "E Sedrach disse ao arcanjo Miguel: Ouve-me, forte protetor; ajuda-me e intercede para que Deus tenha misericórdia do mundo."
+        },
+        {
+          "v": 2,
+          "texto": "E, caindo de rosto por terra, suplicaram a Deus e disseram: Senhor, ensina-nos de que maneira e por meio de que arrependimento o homem pode ser salvo, ou por qual esforço."
+        },
+        {
+          "v": 3,
+          "texto": "Deus disse: Por arrependimentos, súplicas e liturgias, por meio de lágrimas derramadas e gemidos fervorosos."
+        },
+        {
+          "v": 4,
+          "texto": "Não sabeis que o meu profeta David foi salvo por causa das lágrimas, e que os demais foram salvos num só momento?"
+        },
+        {
+          "v": 5,
+          "texto": "Sabeis, Sedrach, que há nações que não têm lei, mas cumprem a lei; não são baptizadas, mas o meu espírito divino entra nelas e elas se convertem ao meu baptismo, e eu as recebo com os meus justos no seio de Abraão."
+        },
+        {
+          "v": 6,
+          "texto": "E há alguns que foram baptizados com o meu baptismo e ungidos com o meu divino myron, mas ficaram cheios de desespero e não mudarão de ideia."
+        },
+        {
+          "v": 7,
+          "texto": "No entanto, aguardo-os com muita piedade e muita misericórdia abundante, para que se arrependam."
+        },
+        {
+          "v": 8,
+          "texto": "Mas fazem o que a minha divindade odeia, e não ouviram o sábio que perguntou e disse: De modo nenhum justificamos o pecador."
+        },
+        {
+          "v": 9,
+          "texto": "Não estais cientes de que está escrito: Os que se arrependeram não verão o castigo?"
+        },
+        {
+          "v": 10,
+          "texto": "E não ouviram nem os apóstolos nem a minha palavra nos Evangelhos, e causam tristeza aos meus anjos, e certamente nas minhas assembleias e nas minhas liturgias não dão atenção ao meu anjo e não permanecem nas minhas santas igrejas."
+        }
+      ]
+    },
+    {
+      "numero": 15,
+      "titulo": "A Misericórdia Para Todos os Pecadores",
+      "temas": [
+        "misericórdia",
+        "pecadores",
+        "conversão",
+        "ladrão",
+        "vida dura"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "Sedrach disse a Deus: Senhor, somente Tu és sem pecado e muito misericordioso, mostrando piedade e graça aos pecadores, mas a tua divindade disse:"
+        },
+        {
+          "v": 2,
+          "texto": "Não vim chamar os justos, mas os pecadores ao arrependimento."
+        },
+        {
+          "v": 3,
+          "texto": "E o Senhor disse a Sedrach: Não sabes, Sedrach, que após mudar de ideia o ladrão foi salvo num só instante?"
+        },
+        {
+          "v": 4,
+          "texto": "Não sabes que até o meu apóstolo e evangelista foi salvo num instante?"
+        },
+        {
+          "v": 5,
+          "texto": "Porque os seus corações são como pedra podre; são aqueles que trilham o caminho ímpio e perecem com o Anticristo."
+        },
+        {
+          "v": 6,
+          "texto": "Sedrach disse: Meu Senhor, também disseste: O meu espírito divino entrou nas nações que, embora sem lei, fazem as coisas da lei."
+        },
+        {
+          "v": 7,
+          "texto": "Porém, assim como o ladrão e o apóstolo e evangelista e os demais que tropeçaram estão no teu reino, meu Senhor, da mesma forma perdoa aqueles que em dias recentes pecaram contra Ti, Senhor, porque a vida está cheia de trabalho e é árdua."
+        }
+      ]
+    },
+    {
+      "numero": 16,
+      "titulo": "As Três Fases da Vida e a Conclusão",
+      "temas": [
+        "juventude",
+        "maturidade",
+        "velhice",
+        "nome de Sedrach",
+        "salvação final"
+      ],
+      "versiculos": [
+        {
+          "v": 1,
+          "texto": "O Senhor disse a Sedrach: Fiz o homem em três etapas; quando é jovem, ignoro os seus erros por causa da juventude; depois, quando é homem, vigio a sua mente; depois, quando envelhece, preservo-o para que se arrependa."
+        },
+        {
+          "v": 2,
+          "texto": "Sedrach disse: Senhor, conheces e estás familiarizado com tudo isso; mas tem compaixão dos pecadores."
+        },
+        {
+          "v": 3,
+          "texto": "O Senhor disse-lhe: Meu amado Sedrach, prometo ter compaixão por menos de quarenta dias, até vinte, e quem se lembrar do teu nome não verá o lugar do castigo, mas estará com os justos num lugar de refrigério e descanso."
+        },
+        {
+          "v": 4,
+          "texto": "E o pecado daquele que copiar este admirável sermão não lhe será imputado para todo o sempre."
+        },
+        {
+          "v": 5,
+          "texto": "E Sedrach disse: Senhor, também quem realizar uma liturgia em honra do teu servo, salva-o, Senhor, de todo o mal."
+        },
+        {
+          "v": 6,
+          "texto": "E o servo de Deus, Sedrach, disse: Agora, Mestre, toma a minha alma."
+        },
+        {
+          "v": 7,
+          "texto": "E Deus tomou-o e colocou-o no Paraíso com todos os santos."
+        },
+        {
+          "v": 8,
+          "texto": "A Ele seja glória e poder para todo o sempre, Amém."
+        }
+      ]
+    }
+  ],
+  "resumo": "O Apocalipse de Sedrach é um texto apócrifo cristão que apresenta um profundo diálogo teológico entre Sedrach (homem piedoso) e Deus sobre o livre-arbítrio humano, a origem do mal, a misericórdia divina e a salvação. O texto abre com um eloquente sermão sobre o amor como virtude suprema. O núcleo é uma série de argumentações onde Sedrach intercede pela humanidade, questionando Deus sobre o castigo eterno — chegando a propor que, se Deus não perdoar os pecadores, ele próprio quer ser castigado junto com eles. Deus responde reduzindo progressivamente o tempo de arrependimento necessário para o perdão: de 3 anos, para 1 ano, para 40 dias, até menos de 20 dias. O arcanjo Miguel é invocado como intercessor. O texto termina com Sedrach aceitando a morte e sendo colocado no Paraíso.",
+  "personagens": [
+    "Sedrach",
+    "Deus Pai",
+    "Cristo / Filho de Deus",
+    "Arcanjo Miguel",
+    "Adão",
+    "Eva",
+    "Diabo"
+  ],
+  "teologia": {
+    "temas_centrais": [
+      "Amor como virtude suprema",
+      "Livre-arbítrio e responsabilidade",
+      "Misericórdia e arrependimento",
+      "A queda de Adão",
+      "Intercessão angelical",
+      "A morte e a alma",
+      "Salvação universal"
+    ],
+    "posicao_soteriologica": "O texto defende uma soterologia misericordiosa — Deus perdoa mesmo o pecador que se arrepende pouco tempo antes da morte.",
+    "relacao_com_biblia": "Cita implicitamente João 4:20, Mateus 22:37-40, Romanos 13:10, Lucas 23:43, Mateus 3:17. Desenvolve Gênesis 3 e expande a angelologia."
+  }
+}

@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="theme-color" content="#c9a84c"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Blog Espiritual — Luz Divina. Artigos, reflexões e ensinamentos do universo espiritual sem restrições de crença."/>
+<link rel="canonical" href="https://luzdivina.top/blog.html"/>
+<title>Blog Espiritual — Luz Divina</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#080d18;--bg2:#0d1525;--bg3:#111e33;
+  --card:#0f1b2d;--card2:#152238;
+  --blue:#4f9cf9;--blue2:#2563eb;
+  --gold:#c9a84c;--gold2:#f0d27a;--gold3:#7a5c1e;
+  --teal:#2dd4bf;--purple:#a78bfa;--red:#f87171;--green:#4ade80;
+  --text:#e2eaf8;--text2:#94a3b8;
+  --border:rgba(79,156,249,.12);--border2:rgba(201,168,76,.18);
+  --glow-b:rgba(79,156,249,.1);--glow-g:rgba(201,168,76,.08);
+  --radius:16px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+body::before{content:'';position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.09) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%,rgba(167,139,250,.06) 0%,transparent 50%),
+    radial-gradient(ellipse 50% 30% at 10% 50%,rgba(201,168,76,.05) 0%,transparent 50%)
+}
+
+/* PAGE HERO */
+.page-hero{padding:7.5rem 1.25rem 3rem;text-align:center;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(79,156,249,.1) 0%,transparent 65%)}
+.page-hero > *{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(79,156,249,.08);border:1px solid rgba(79,156,249,.2);color:var(--blue);font-size:.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:.45rem 1.1rem;border-radius:999px;margin-bottom:1.5rem;animation:fadeUp .7s ease both}
+.page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,8vw,3.5rem);font-weight:700;line-height:1.15;margin-bottom:.9rem;animation:fadeUp .8s ease both .1s}
+.page-hero h1 em{font-style:italic;color:var(--gold)}
+.page-hero h1 .blue{color:var(--blue)}
+.page-hero p{color:var(--text2);font-size:.9rem;max-width:500px;margin:0 auto;animation:fadeUp .9s ease both .2s}
+
+/* CONTROLS */
+.blog-controls{padding:0 1.25rem 1.5rem;max-width:900px;margin:0 auto}
+.search-wrap{position:relative;margin-bottom:1rem}
+.search-wrap::before{content:'🔍';position:absolute;left:1rem;top:50%;transform:translateY(-50%);font-size:.85rem;pointer-events:none}
+.search-input{width:100%;padding:.8rem 1rem .8rem 2.5rem;background:var(--card);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-family:'Jost',sans-serif;font-size:.88rem;outline:none;transition:border-color .2s}
+.search-input:focus{border-color:rgba(79,156,249,.4)}
+.search-input::placeholder{color:var(--text2)}
+.filter-scroll{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.filter-scroll::-webkit-scrollbar{display:none}
+.filter-btn{flex-shrink:0;padding:.38rem .95rem;border-radius:999px;border:1.5px solid var(--border);background:transparent;color:var(--text2);font-size:.75rem;font-weight:600;font-family:'Jost',sans-serif;cursor:pointer;transition:all .2s;letter-spacing:.3px}
+.filter-btn:hover{border-color:rgba(79,156,249,.3);color:var(--text)}
+.filter-btn.active{background:var(--gold);border-color:var(--gold);color:var(--bg)}
+
+/* BLOG GRID */
+.blog-wrap{max-width:900px;margin:0 auto;padding:0 1.25rem 5rem}
+
+/* ── IMAGEM DOS POSTS: como usar ──────────────────────────────────
+   Coloca os ficheiros PNG/JPG dentro da pasta  public/
+   Exemplo:  public/espiritualidade-ansiedade.png
+   No campo  image  do post usa apenas o nome do ficheiro:
+             image: "espiritualidade-ansiedade.png"
+   O código adiciona  "public/"  automaticamente.
+   Se a imagem não existir aparece o emoji da categoria.
+----------------------------------------------------------------- */
+
+/* Featured card */
+.post-featured{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:1.2rem;cursor:pointer;transition:border-color .25s,transform .25s,box-shadow .25s;animation:fadeUp .6s ease both}
+.post-featured:hover{border-color:var(--border2);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.45)}
+.post-featured .post-img{height:200px;background:linear-gradient(135deg,var(--bg3) 0%,var(--card2) 100%);display:flex;align-items:center;justify-content:center;font-size:3.8rem;position:relative;overflow:hidden}
+.post-featured .post-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:1}
+.post-featured .post-img .post-emoji{position:relative;z-index:0}
+.post-featured .post-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,var(--card) 0%,transparent 55%);z-index:2;pointer-events:none}
+.post-featured .post-body{padding:1.4rem}
+
+/* Normal card */
+.posts-list{display:flex;flex-direction:column;gap:.9rem}
+.post-card{background:var(--card);border:1px solid var(--border);border-radius:14px;display:flex;overflow:hidden;cursor:pointer;transition:border-color .2s,transform .2s,box-shadow .2s;animation:fadeUp .5s ease both}
+.post-card:hover{border-color:rgba(79,156,249,.25);transform:translateX(3px);box-shadow:0 6px 24px rgba(0,0,0,.3)}
+.post-card .post-thumb{width:96px;min-width:96px;background:linear-gradient(135deg,var(--bg3),var(--card2));display:flex;align-items:center;justify-content:center;font-size:2rem;position:relative;overflow:hidden;flex-shrink:0}
+.post-card .post-thumb img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:1}
+.post-card .post-thumb .post-emoji{position:relative;z-index:0}
+.post-card .post-body{padding:.95rem 1rem;flex:1;min-width:0}
+
+/* Shared */
+.post-eyebrow{display:flex;align-items:center;gap:.4rem;font-size:.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:.35rem}
+.post-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;line-height:1.3;color:var(--text);margin-bottom:.4rem}
+.post-featured .post-title{font-size:1.45rem;margin-bottom:.5rem}
+.post-excerpt{font-size:.82rem;color:var(--text2);line-height:1.6;margin-bottom:.6rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.post-featured .post-excerpt{-webkit-line-clamp:3;font-size:.87rem}
+.post-meta{display:flex;align-items:center;gap:.5rem;font-size:.71rem;color:var(--text2)}
+.post-meta .sep{width:3px;height:3px;border-radius:50%;background:var(--border);flex-shrink:0}
+.post-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.55rem}
+.tag{font-size:.65rem;padding:2px 8px;border-radius:999px;border:1px solid var(--border);color:var(--text2);background:rgba(255,255,255,.02)}
+
+/* ARTICLE OVERLAY */
+#article-overlay{display:none;position:fixed;inset:0;z-index:2000;background:var(--bg);overflow-y:auto;animation:slideUp .3s ease}
+#article-overlay.open{display:block}
+@keyframes slideUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.article-topbar{position:sticky;top:0;background:rgba(8,13,24,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);height:54px;display:flex;align-items:center;padding:0 1.25rem;gap:1rem;z-index:10}
+.back-btn{display:flex;align-items:center;gap:.4rem;background:none;border:none;color:var(--text2);font-family:'Jost',sans-serif;font-size:.82rem;font-weight:600;cursor:pointer;padding:.4rem .7rem;border-radius:8px;transition:background .2s,color .2s}
+.back-btn:hover{background:var(--card);color:var(--text)}
+.article-topbar-title{font-family:'Cormorant Garamond',serif;font-size:.88rem;color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+
+.article-hero{position:relative;height:220px;background:linear-gradient(135deg,var(--card) 0%,var(--bg3) 100%);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.article-hero img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:1}
+.article-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,var(--bg) 0%,rgba(8,13,24,.4) 60%,transparent 100%);z-index:2;pointer-events:none}
+.article-hero-emoji{font-size:5rem;position:relative;z-index:0;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+
+.article-wrap{max-width:680px;margin:0 auto;padding:2rem 1.25rem 5rem}
+.article-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--blue);margin-bottom:.75rem}
+.article-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,6vw,2.6rem);font-weight:700;line-height:1.2;margin-bottom:.8rem}
+.article-meta{display:flex;gap:.6rem;align-items:center;font-size:.76rem;color:var(--text2);padding-bottom:1.5rem;border-bottom:1px solid var(--border);margin-bottom:1.8rem}
+.article-meta .sep{width:3px;height:3px;border-radius:50%;background:var(--border)}
+.verse-box{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(79,156,249,.04));border:1px solid var(--border2);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:1.2rem 1.4rem;margin-bottom:2rem}
+.verse-box p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--gold2);line-height:1.75;margin-bottom:.5rem}
+.verse-box span{font-size:.72rem;font-weight:700;color:var(--gold);letter-spacing:1px}
+.article-content{font-size:.92rem;color:var(--text);line-height:1.9}
+.article-content h2{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;color:var(--gold2);border-bottom:1px solid var(--border2);padding-bottom:.4rem;margin:2.2rem 0 .8rem}
+.article-content h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--text);margin:1.6rem 0 .5rem}
+.article-content p{margin-bottom:1rem}
+.article-content ul,.article-content ol{padding-left:1.5rem;margin-bottom:1rem}
+.article-content li{margin-bottom:.4rem;color:var(--text2)}
+.article-content strong{color:var(--text);font-weight:600}
+.article-content em{color:var(--gold2);font-style:italic}
+.article-content a{color:var(--blue)}
+.article-content hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
+.reflection-box{margin-top:2.5rem;background:linear-gradient(135deg,var(--card),var(--card2));border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+.reflection-box .eyebrow{font-size:.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;display:block}
+.reflection-box p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--text2);line-height:1.75}
+.article-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:2rem}
+.no-results{text-align:center;padding:4rem 1rem;color:var(--text2);font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.1rem}
+
+/* FLOATS */
+#waFloat{position:fixed;bottom:1.2rem;left:1.2rem;z-index:500;width:48px;height:48px;border-radius:50%;background:#25d366;color:#fff;border:none;font-size:1.4rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);animation:pulse-g 2s infinite;text-decoration:none}
+@keyframes pulse-g{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4)}50%{box-shadow:0 0 0 10px rgba(37,211,102,0)}}
+#scrollTop{position:fixed;bottom:1.2rem;right:1.2rem;z-index:500;width:40px;height:40px;border-radius:50%;background:var(--blue2);color:#fff;border:none;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s,transform .2s;box-shadow:0 4px 16px rgba(79,156,249,.35)}
+#scrollTop.vis{opacity:1;pointer-events:all}
+#scrollTop:hover{transform:scale(1.1)}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1.25rem 2rem;margin-top:2rem}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-bottom:2rem}
+.foot-logo{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;color:var(--gold);display:flex;align-items:center;gap:.4rem;margin-bottom:.6rem}
+.foot-logo .star{color:var(--blue);font-size:1.3rem}
+.foot-logo .div{color:var(--blue)}
+.foot-desc{color:var(--text2);font-size:.79rem;line-height:1.7;margin-bottom:.9rem}
+.foot-verse{padding:.7rem .9rem;border-left:2px solid var(--gold3);background:var(--glow-g);border-radius:0 8px 8px 0;font-style:italic;font-size:.75rem;color:var(--text2)}
+.foot-col h4{font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.foot-col a{display:block;color:var(--text2);font-size:.79rem;margin-bottom:.4rem;transition:color .2s}
+.foot-col a:hover{color:var(--text)}
+.foot-bottom{border-top:1px solid var(--border);padding-top:1.3rem;text-align:center;color:var(--text2);font-size:.73rem;line-height:1.8}
+.foot-bottom-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:.5rem}
+.foot-bottom-links a{color:var(--text2);font-size:.73rem;transition:color .2s}
+.foot-bottom-links a:hover{color:var(--gold)}
+.foot-gold{color:var(--gold)}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.post-card:nth-child(2){animation-delay:.06s}
+.post-card:nth-child(3){animation-delay:.12s}
+.post-card:nth-child(4){animation-delay:.18s}
+.post-card:nth-child(5){animation-delay:.24s}
+.post-card:nth-child(6){animation-delay:.30s}
+.post-card:nth-child(7){animation-delay:.36s}
+.post-card:nth-child(8){animation-delay:.42s}
+.post-card:nth-child(9){animation-delay:.48s}
+.post-card:nth-child(10){animation-delay:.54s}
+
+
+/* ═══ LIGHT MODE ═══ */
+:root.light-mode{--bg:#f0f4f8;--bg2:#ffffff;--bg3:#e2e8f0;--card:#ffffff;--card2:#f8fafc;--text:#1a202c;--text2:#4a5568;--border:rgba(0,0,0,0.1);--border2:rgba(201,168,76,0.4);--glow-b:rgba(79,156,249,0.05);--glow-g:rgba(201,168,76,0.1)}
+:root.light-mode body::before{background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.06) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(167,139,250,.04) 0%,transparent 50%)}
+:root.light-mode 
+:root.light-mode 
+/* MOBILE NAV */
+.mobile-nav a{color:var(--text2);font-size:.9rem;font-weight:500;padding:.72rem 1rem;border-radius:10px;transition:all .2s;display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.mobile-nav a:hover{color:var(--text);background:var(--card)}
+</style>
+<link rel="manifest" href="manifest.json"/>
+  <link rel="stylesheet" href="navbar.css"/>
+</head>
+<body>
+<!-- NAVBAR UNIVERSAL -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <span class="star">✦</span> Luz <span class="div">Divina</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="biblia.html">Bíblia</a></li>
+    <li><a href="ia-biblica.html">IA Bíblica</a></li>
+    <li><a href="oracoes.html">Orações</a></li>
+    <li><a href="devocionais.html">Devocionais</a></li>
+    <li><a href="loja.html">eBooks</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn" id="themeBtn" aria-label="Modo claro/escuro">☾</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</nav>
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <span class="m-section">Portal</span>
+  <a href="index.html"    onclick="closeMenu()">🏠 Início</a>
+  <a href="biblia.html"   onclick="closeMenu()">📖 Bíblia Sagrada</a>
+  <a href="ia-biblica.html" onclick="closeMenu()">🤖 IA Bíblica</a>
+  <span class="m-section">Espiritual</span>
+  <a href="oracoes.html"     onclick="closeMenu()">🙏 Orações</a>
+  <a href="devocionais.html" onclick="closeMenu()">🌅 Devocionais</a>
+  <span class="m-section">Conteúdo</span>
+  <a href="loja.html" onclick="closeMenu()">📚 Loja de eBooks</a>
+  <a href="blog.html" onclick="closeMenu()">✍️ Blog Espiritual</a>
+  <span class="m-section">Sobre</span>
+  <a href="sobre.html"      onclick="closeMenu()">💫 Sobre Nós</a>
+  <a href="contato.html"    onclick="closeMenu()">📬 Contacto</a>
+  <a href="privacidade.html" onclick="closeMenu()">🔒 Privacidade</a>
+</div>
+
+<div class="page-hero">
+    <div class="hero-badge">✍️ Blog Espiritual</div>
+    <h1>Artigos & <em>Reflexões</em> <span class="blue">Divinas</span></h1>
+    <p>Palavras que alimentam a alma, fortalecem a fé e iluminam o caminho espiritual.</p>
+  </div>
+  <div class="blog-controls">
+    <div class="search-wrap">
+      <input type="search" class="search-input" id="search-input" placeholder="Pesquisar artigos, versículos, categorias…"/>
+    </div>
+    <div class="filter-scroll" id="filter-bar"></div>
+  </div>
+  <div class="blog-wrap" id="blog-container"></div>
+  <footer>
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><span class="star">✦</span>Luz <span class="div">Divina</span></div>
+        <p class="foot-desc">Portal Espiritual Universal. Verdade, liberdade e união espiritual para todos os filhos da mesma Centelha Divina.</p>
+        <div class="foot-verse">"Porque em Ti está a fonte da vida; na Tua luz veremos a luz." — Salmos 36:9</div>
+      </div>
+      <div>
+        <div class="foot-col" style="margin-bottom:1.2rem">
+          <h4>Navegação</h4>
+          <a href="index.html">Início</a><a href="biblia.html">Bíblia</a>
+          <a href="ia-biblica.html">IA Bíblica</a><a href="oracoes.html">Orações</a>
+          <a href="devocionais.html">Devocionais</a><a href="loja.html">eBooks</a><a href="blog.html">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Institucional</h4>
+          <a href="sobre.html">Sobre Nós</a><a href="contato.html">Contacto</a>
+          <a href="privacidade.html">Política de Privacidade</a>
+          <a href="termos.html">Termos de Uso</a><a href="faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+    <div style="margin-bottom:1.5rem">
+      <div class="foot-col">
+        <h4>Fale Connosco</h4>
+        <div style="color:var(--text2);font-size:.79rem;margin-bottom:.35rem">✉️ contato@luzdivina.com</div>
+        <a href="https://wa.me/941271414" target="_blank" style="display:flex;align-items:center;gap:.5rem;color:#25d366;font-size:.79rem">💬 WhatsApp: +941 271 414</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-bottom-links">
+        <a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a>
+        <a href="cookies.html">Cookies</a><a href="disclaimer.html">Aviso Legal</a><a href="faq.html">FAQ</a>
+      </div>
+      <p>© 2026 <span class="foot-gold">Luz Divina</span> — Todos os direitos reservados. Feito com ❤️ e Fé.</p>
+    </div>
+  </footer>
+</div>
+
+<div id="article-overlay">
+  <div class="article-topbar">
+    <button class="back-btn" onclick="closeArticle()">← Voltar ao Blog</button>
+    <span class="article-topbar-title" id="article-topbar-title"></span>
+  </div>
+  <div class="article-hero" id="article-hero">
+    <span class="article-hero-emoji" id="article-hero-emoji"></span>
+  </div>
+  <div class="article-wrap" id="article-content"></div>
+</div>
+
+<a id="waFloat" href="https://wa.me/941271414?text=Olá!%20Vim%20pelo%20portal%20Luz%20Divina." target="_blank" title="WhatsApp">💬</a>
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+/* ════════════════════════════════════════════════════════════════
+   COMO ADICIONAR IMAGENS AOS POSTS
+   ────────────────────────────────────────────────────────────────
+   1. Cria a pasta  public/  na raiz do projeto (já existe no teu SPCK)
+   2. Coloca as imagens PNG/JPG dentro de  public/
+      Ex:  public/espiritualidade-ansiedade.png
+   3. No campo  image  do post abaixo, coloca apenas o NOME DO FICHEIRO:
+      image: "espiritualidade-ansiedade.png"
+   O código adiciona  "public/"  automaticamente.
+   Se a imagem não existir → aparece o emoji da categoria como fallback.
+════════════════════════════════════════════════════════════════ */
+
+const IMG = "public/"; /* ← pasta das imagens. Muda aqui se mudares o nome da pasta */
+
+const blogPosts = [
+  {
+    slug: "espiritualidade-e-ansiedade-como-a-fe-traz-paz-mental",
+    title: "Espiritualidade e Ansiedade: Como a Fé Pode Ajudar Você a Encontrar Paz Mental",
+    excerpt: "A ansiedade dominou a vida moderna, mas a espiritualidade oferece um caminho real de cura. Descubra como a fé, a oração e as práticas espirituais podem transformar sua saúde mental de dentro para fora.",
+    image: "espiritualidade-ansiedade.png",
+    date: "1-05-2026",
+    category: "Espiritualidade",
+    tags: ["ansiedade","espiritualidade","saúde mental","oração","paz interior","fé","meditação"],
+    verse: "Não andem ansiosos por coisa alguma, mas em tudo, pela oração e súplicas, e com ação de graças, apresentem seus pedidos a Deus. E a paz de Deus, que excede todo o entendimento, guardará os seus corações e as suas mentes.",
+    verseRef: "Filipenses 4:6-7",
+    reflection: "A ansiedade nos convida a controlar o incontrolável. A fé nos convida a confiar no que não podemos ver. É nesse espaço de entrega que a paz verdadeira nasce — não a ausência de problemas, mas a presença de Deus em meio a eles.",
+    content: `A ansiedade se tornou uma das maiores queixas da vida moderna. Ela chega silenciosa, ocupa os pensamentos, acelera o coração e rouba o sono. E, diante disso tudo, cada vez mais pessoas têm encontrado na espiritualidade um caminho de acolhimento, sentido e paz.
+
+## O que é a Ansiedade e Por que ela Está em Alta?
+
+A ansiedade é uma resposta natural do organismo a situações de incerteza ou perigo. O problema surge quando ela deixa de ser pontual e passa a dominar o dia a dia — gerando preocupação constante, dificuldade de concentração, tensão no corpo e a sensação de que algo ruim está sempre prestes a acontecer.
+
+Vivemos numa época de excesso de informação, pressão por produtividade e relações cada vez mais superficiais. Esse cenário cria um terreno fértil para que a ansiedade se instale.
+
+## Espiritualidade Não é o Mesmo que Religião
+
+**Religião** é um sistema organizado de crenças, com doutrinas, rituais e comunidades específicas. Já a **espiritualidade** é mais ampla e pessoal — é a busca individual por sentido, propósito, conexão com algo maior e paz interior.
+
+## De que Forma a Espiritualidade Ajuda na Ansiedade?
+
+### 1. Oferece um Senso de Propósito
+Uma das raízes mais profundas da ansiedade é a sensação de vazio. A espiritualidade convida a pessoa a se reconectar com o que realmente importa: seus valores, sua missão e sua razão de estar aqui.
+
+### 2. Promove o Presente pela Oração e Meditação
+A ansiedade vive no futuro. A oração e a meditação fazem o movimento contrário: trazem a atenção de volta ao momento presente.
+
+### 3. Cria Comunidade e Pertencimento
+O isolamento é um dos grandes amplificadores da ansiedade. Grupos espirituais funcionam como redes de apoio genuínas.
+
+### 4. Estimula a Entrega e o Desapego
+A espiritualidade ensina que existe algo maior sustentando a vida, mesmo quando não conseguimos enxergar como.
+
+### 5. Cultiva a Gratidão como Prática Diária
+A gratidão é um dos antídotos naturais da ansiedade. Enquanto a mente ansiosa foca no que pode dar errado, a gratidão direciona o olhar para o que já existe de bom.
+
+## Práticas Espirituais que Você Pode Começar Hoje
+
+- **Oração matinal:** Reserve 5 a 10 minutos ao acordar para orar, refletir ou sentar em silêncio.
+- **Diário espiritual:** Anote o que está sentindo e pelo que é grato.
+- **Leitura inspiradora:** Um capítulo por dia de um texto espiritual nutre a alma.
+- **Respiração consciente:** Mesmo 5 minutos de respiração intencional acalmam o sistema nervoso.
+- **Conexão com a natureza:** Uma caminhada com presença e atenção pode ser um ato espiritual profundo.
+
+## Conclusão: A Fé Como Ancoragem Interior
+
+Em um mundo que muda o tempo todo, a espiritualidade oferece algo raro: uma âncora interior que não depende das circunstâncias externas para existir.`
+  },
+  {
+    slug: "angola-recebeu-o-papa-reflexoes-profundas",
+    title: "Angola Recebeu o Papa… Mas Ninguém Se Perguntou Isto",
+    excerpt: "6 reflexões, 9 perguntas e 3 meditações sobre a visita do Papa Leão XIV que a cobertura mediática ignorou.",
+    image: "papa-angola-2026.png",
+    date: "19-04-2026",
+    category: "Reflexão Espiritual",
+    tags: ["Papa Leão XIV","Angola","Fé","Justiça Social","Espiritualidade"],
+    verse: "Não temais as divergências, nem extingais as visões dos jovens e os sonhos dos idosos.",
+    verseRef: "Papa Leão XIV, Luanda",
+    reflection: "A transformação de Angola não começa no Palácio, começa em ti — na tua recusa em aceitar a injustiça como normal.",
+    content: `As bandeiras estavam no ar, as lágrimas nas faces, os cartazes nas ruas. Angola recebeu o Papa Leão XIV com uma festa histórica. Mas enquanto as câmeras captavam o espectáculo, havia perguntas que ninguém estava a fazer.
+
+## 6 Reflexões que Ninguém Está a Fazer
+
+1. **O Papa falou contra a exploração na cara das elites.** Isso não é coragem humana — isso é unção.
+2. **Um Papa americano em solo angolano.** O primeiro pontífice dos EUA falando de pobreza num país que exporta petróleo.
+3. **Riquezas Naturais.** O Papa disse que "demasiadas vezes vieram para tirar e não para dar."
+4. **Reconciliação Pendente.** 22 anos após a guerra, a cura espiritual ainda é necessária.
+5. **Fé vs. Tradição.** 200 mil na missa é um número, mas a transformação ocorre na segunda-feira de manhã.
+6. **Servos vs. Faraós.** O contraste entre a humildade do Papa e a arrogância do poder local foi o silêncio mais barulhento da visita.
+
+## 9 Perguntas Críticas
+
+- Se o Papa veio denunciar a pobreza, por que os responsáveis por ela aplaudiram de pé?
+- Angola tem riquezas para alimentar a África; por que 1 em cada 3 angolanos tem fome?
+- Estás a celebrar a visita ou a viver o que ele ensinou?
+- Se Jesus visitasse Angola hoje, iria ao Palácio ou ao Cazenga?
+- Emoção sem transformação é apenas espectáculo. O que ficou após as lágrimas?
+- O que Deus está a pedir de TI agora, depois desta visita?
+
+## Meditações para o Coração
+
+**O Profeta Desconfortável:** Deus não envia um profeta para te aplaudir, mas para te acordar.
+
+**A Terra que Clama:** A terra angolana foi regada com sangue e suor. A intercessão do Papa é sobre uma ferida que ainda sangra.
+
+**O Espelho da Visita:** No fim, Deus não perguntará se foste à missa do Papa, mas se foste ao encontro do teu irmão que sofre.`
+  },
+  {
+    slug: "poderosa-protecao-espiritual-salmo-91-oracao-sao-bento",
+    title: "Poderosa Proteção Espiritual: Salmo 91 e a Oração de São Bento Original",
+    excerpt: "Descubra como blindar sua vida espiritual com as duas preces mais fortes da cristandade. Aprenda o Salmo 91 completo e a Oração da Medalha de São Bento.",
+    image: "protecao-espiritual.png",
+    date: "16-04-2026",
+    category: "Espiritualidade",
+    tags: ["proteção divina","Salmo 91","São Bento","oração forte","blindagem espiritual"],
+    verse: "Nenhum mal te sucederá, nem praga alguma chegará à tua tenda.",
+    verseRef: "Salmos 91:10",
+    reflection: "A proteção divina não é a ausência de batalhas, mas a garantia da vitória e da segurança no meio delas.",
+    content: `O mundo espiritual exige vigilância e fé. Muitas vezes, sentimos o peso de energias negativas ou desafios que parecem superiores às nossas forças.
+
+## O Salmo 91: O Salmo da Proteção Absoluta
+
+Este é o capítulo bíblico mais lido por quem busca socorro e segurança. Ele fala sobre habitar no "esconderijo do Altíssimo".
+
+### Texto Completo
+1. Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará.
+2. Direi do Senhor: Ele é o meu Deus, o meu refúgio, a minha fortaleza, e nele confiarei.
+3. Porque ele te livrará do laço do passarinheiro, e da peste perniciosa.
+4. Ele te cobrirá com as suas penas, e debaixo das suas asas te confiarás.
+
+## A Oração de São Bento
+
+"A Cruz Sagrada seja a minha luz, não seja o dragão o meu guia. Retira-te, Satanás! Nunca me aconselhes coisas vãs. É mau o que tu me ofereces, bebe tu mesmo o teu veneno!"`
+  },
+  {
+    slug: "trump-x-papa-leao-xiv-confronto-mundial",
+    title: "Trump x Papa Leão XIV: o confronto que está abalando o mundo",
+    excerpt: "Após o líder da Igreja Católica se posicionar abertamente contra as guerras, Donald Trump partiu para o ataque — e o Vaticano não ficou em silêncio.",
+    image: "trump-papa-leao.png",
+    date: "3-05-2026",
+    category: "Notícias da Igreja",
+    tags: ["Trump","Papa Leão XIV","Vaticano","paz","guerra","fé cristã"],
+    verse: "Bem-aventurados os pacificadores, porque eles serão chamados filhos de Deus.",
+    verseRef: "Mateus 5:9",
+    reflection: "Em tempos de conflito entre poder e fé, somos chamados a ser instrumentos de paz.",
+    content: `O que era uma tensão silenciosa tornou-se um confronto público de proporções históricas.
+
+## A Voz do Vaticano
+
+O Papa Leão XIV não recuou um centímetro. O pontífice reafirmou que defender a vida, a paz e o diálogo entre as nações não é uma opção política — é uma obrigação moral e espiritual.
+
+## O Que Dizem os Analistas
+
+Especialistas em geopolítica avaliam que o episódio expõe tensões profundas e recorrentes entre poder político e autoridade moral religiosa.
+
+## Conclusão
+
+O confronto é um espelho do tempo em que vivemos: um mundo onde a voz que clama por paz incomoda mais do que os canhões que disparam.`
+  },
+  {
+    slug: "rituais-sagrados-para-conquistar-e-reconquistar-o-amor",
+    title: "Rituais Sagrados para Conquistar e Reconquistar o Amor",
+    excerpt: "Aprenda rituais baseados em princípios bíblicos e rituais de fé para restaurar laços e fortalecer sua vida sentimental.",
+    image: "rituais-sagrados-amor.png",
+    date: "3-05-2026",
+    category: "Vida Sentimental",
+    tags: ["rituais sagrados","amor","fé cristã","restauração"],
+    verse: "O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha.",
+    verseRef: "1 Coríntios 13:4",
+    reflection: "Rituais de fé não são mágicos, são atos de obediência que alinham nosso coração ao altar de Deus.",
+    content: `No contexto da fé cristã, rituais são atos simbólicos que exteriorizam a nossa confiança nas promessas de Deus.
+
+## 1. O Ritual da Unção das Portas
+
+O uso do azeite como símbolo do Espírito Santo é uma prática de mais de 3.000 anos. Utilize um pouco de azeite consagrado para marcar suavemente os portais da sua casa e declare: "Que apenas o amor que provém de Ti entre por estas portas."
+
+## 2. O Ritual do Jejum de Ester
+
+No amor, o jejum quebra barreiras de orgulho. Escolha um período para se abster de algo que você gosta, focando esse tempo em intercessão pelo seu relacionamento.
+
+## 3. O Ritual da Ceia da Reconciliação
+
+A Santa Ceia é o ritual máximo de comunhão. Se você está em um processo de reconquista, a mesa é o lugar sagrado de restauração. Prepare uma mesa especial e use este momento para servir com humildade.`
+  },
+  {
+    slug: "como-saber-se-deus-esta-te-chamando",
+    title: "Como saber se Deus está te chamando: sinais claros que você não pode ignorar",
+    excerpt: "Descubra como identificar o propósito espiritual de Deus para sua vida através de sinais bíblicos e confirmações claras.",
+    image: "sinais-chamado-deus.png",
+    date: "4-05-2026",
+    category: "Propósito Cristão",
+    tags: ["chamado","vontade de deus","sinais","espiritualidade"],
+    verse: "Antes que te formasse no ventre, eu te conheci...",
+    verseRef: "Jeremias 1:5",
+    reflection: "O chamado de Deus não é um fardo, mas o reencontro com o motivo real da nossa existência.",
+    content: `Muitas pessoas vivem com uma pergunta silenciosa no coração: "Será que Deus está me chamando para algo maior?"
+
+## 1. Um desejo forte e constante no seu coração
+
+Quando Deus chama alguém, Ele planta um desejo que não desaparece. Mesmo que você tente ignorar, aquilo sempre volta.
+
+## 2. Inquietação espiritual
+
+Você começa a sentir que nada mais te satisfaz como antes. Existe um vazio que coisas materiais não conseguem preencher.
+
+## 3. Confirmações através da Palavra
+
+Você começa a ouvir mensagens ou ler capítulos que parecem falar diretamente com você.
+
+## 4. Portas que se abrem e se fecham
+
+Deus direciona seu caminho através de mudanças inesperadas.
+
+## 5. Paz mesmo em meio à dúvida
+
+Mesmo sem entender tudo, você sente uma paz interior profunda que guarda seu coração.
+
+## 6. Vontade de se aproximar de Deus
+
+Você começa a buscar a presença de Deus naturalmente, sentindo que sua vida tem um propósito que vai além do comum.`
+  },
+  {
+    slug: "7-chaves-biblicas-para-destravar-sua-vida-espiritual",
+    title: "7 Chaves Bíblicas para Destravar sua Vida Espiritual e Prosperar",
+    excerpt: "Sente que suas orações batem no teto? Descubra os princípios espirituais que removem bloqueios e abrem as janelas do céu.",
+    image: "chaves-prosperidade-biblica.png",
+    date: "4-05-2026",
+    category: "Crescimento Espiritual",
+    tags: ["Libertação","Prosperidade","Fé Ativa","Vitória"],
+    verse: "Pedis, e não recebeis, porque pedis mal, para o gastardes em vossos deleites.",
+    verseRef: "Tiago 4:3",
+    reflection: "A prosperidade bíblica não é apenas ter bens, mas ter a paz que excede o entendimento e ser um canal de bênção para outros.",
+    content: `Muitos cristãos vivem uma vida de escassez e desânimo porque ignoram princípios fundamentais da Palavra de Deus.
+
+## 1. Identifique as Brechas
+O pecado não confessado ou a falta de perdão são como rachaduras em um balde; você recebe a bênção, mas ela escorre.
+
+## 2. A Lei da Semeadura
+Não existe colheita sem plantio. Se você deseja colher paz, plante paz.
+
+## 3. Renove sua Mentalidade
+A vitória começa na mente. Substitua pensamentos de derrota por promessas bíblicas.
+
+## 4. O Poder da Declaração
+A palavra tem poder de vida e morte. Pare de profetizar o problema e comece a profetizar a solução.
+
+## 5. Constância na Oração
+Milagres nem sempre são imediatos. A perseverança amadurece o seu caráter.`
+  },
+  {
+    slug: "o-apagao-espiritual-de-2026-convergencia-religiosa",
+    title: "O Apagão Espiritual de 2026: Entenda a Convergência que está Mudando a Fé Digital",
+    excerpt: "Análise: Como a coincidência histórica entre o Ramadã, Quaresma e Ano Novo Lunar em 2026 revela o impacto dos algoritmos na espiritualidade moderna.",
+    image: "apagao-espiritual.png",
+    date: "4-05-2026",
+    category: "Notícias e Análise",
+    tags: ["espiritualidade 2026","tecnologia e religião","tendências espirituais"],
+    verse: "Buscai as coisas que são de cima, onde Cristo está assentado à destra de Deus.",
+    verseRef: "Colossenses 3:1",
+    reflection: "Em um mundo de cliques, a Luz Divina brilha no silêncio.",
+    content: `LUANDA, ANGOLA — Vivemos em 2026 um fenômeno inédito: a convergência global de jejuns sagrados em meio à maior aceleração tecnológica da história.
+
+## A Crise da Atenção no Sagrado
+
+Estudos recentes indicam que o tempo médio de oração e meditação caiu 40% desde a popularização massiva das IAs generativas. O problema não é a tecnologia em si, mas como o algoritmo substitui o silêncio necessário para a escuta espiritual.
+
+## 2026: O Ano da Grande Convergência
+
+O alinhamento de datas sagradas como a Quaresma, o Ramadã e o Ano Novo Lunar cria um campo de energia global focado no sacrifício e na introspecção.
+
+## Como Blindar sua Fé hoje
+
+A desintoxicação da alma começa com limites claros: estabelecer "Zonas Livres de Telas" e priorizar o contato com textos milenares antes do primeiro clique do dia.`
+  },
+  {
+    slug: "sinais-de-deus-urgente-chamado-espiritual-hoje",
+    title: "URGENTE: Muitos Ignoram este Sinal de Deus — O Chamado Espiritual que Pode Mudar sua Vida Hoje",
+    excerpt: "Você tem sentido uma inquietação incomum nos últimos dias? Saiba por que milhares de pessoas estão relatando os mesmos sinais de despertar espiritual.",
+    image: "sinais-deus.png",
+    date: "4-05-2026",
+    category: "Espiritualidade",
+    tags: ["sinais de deus","chamado espiritual","fé","mensagem urgente"],
+    verse: "Clama a mim, e responder-te-ei, e anunciar-te-ei coisas grandes e firmes que não sabes.",
+    verseRef: "Jeremias 33:3",
+    reflection: "As oportunidades espirituais são janelas que se abrem; não deixe a sua fechar por causa da correria do dia a dia.",
+    content: `Nos últimos dias, um relato tem se tornado comum entre comunidades cristãs: uma **vontade repentina de orar** e a sensação persistente de que algo importante está para acontecer.
+
+## 3 Sinais Claros de que Deus está falando com você
+
+### 1. Desejo Repentino de Oração
+Um impulso forte e súbito para falar com o Criador, além da rotina comum.
+
+### 2. Inquietação Interior e Desconforto
+Um vazio ou necessidade de mudança que o mundo material não consegue preencher.
+
+### 3. Mensagens Repetidas (Sincronicidade)
+Ver o mesmo versículo ou tema em lugares diferentes é uma forma de confirmação divina.
+
+**O que fazer hoje?** Reserve 15 minutos em silêncio, afaste-se das distrações digitais e busque uma leitura direcionada nos Salmos ou Evangelhos.`
+  },
+  {
+    slug: "versiculos-para-momentos-dificeis",
+    title: "10 Versículos Bíblicos Para Momentos Difíceis",
+    excerpt: "Encontre consolo e força na Palavra de Deus com estes versículos poderosos para enfrentar as tempestades da vida.",
+    image: "momentos-dificeis.png",
+    date: "4-05-2026",
+    category: "Estudo Bíblico",
+    tags: ["versículos","consolo","força espiritual"],
+    verse: "Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia.",
+    verseRef: "Salmos 46:1",
+    reflection: "Quando a vida nos desafia, a Palavra de Deus permanece inabalável.",
+    content: `Todos passamos por momentos de dificuldade. Nessas horas, a Palavra de Deus é o nosso refúgio e fortaleza.
+
+## 1. Josué 1:9
+"Seja forte e corajoso! Não se apavore, nem desanime, pois o Senhor, o seu Deus, estará com você por onde quer que andar."
+
+## 2. Isaías 41:10
+"Não temas, porque eu sou contigo; não te assombres, porque eu sou o teu Deus."
+
+## 3. Salmos 34:18
+"Perto está o Senhor dos que têm o coração quebrantado e salva os de espírito oprimido."
+
+## 4. Romanos 8:28
+"Sabemos que todas as coisas cooperam para o bem daqueles que amam a Deus."
+
+## 5. Filipenses 4:13
+"Tudo posso naquele que me fortalece."
+
+## 6. Salmos 46:1
+"Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia."
+
+## 7. Mateus 11:28
+"Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei."
+
+## 8. 2 Coríntios 4:17
+"Porque a nossa leve e momentânea tribulação produz para nós um peso eterno de glória."
+
+## 9. Jeremias 29:11
+"Porque eu bem sei os pensamentos que tenho a vosso respeito, diz o Senhor; pensamentos de paz e não de mal."
+
+## 10. Salmos 23:4
+"Ainda que eu andasse pelo vale da sombra da morte, não temeria mal algum, porque tu estás comigo."`
+  },
+  {
+    slug: "como-orar-todos-os-dias",
+    title: "Como Criar o Hábito de Orar Todos os Dias",
+    excerpt: "Descubra passos práticos para transformar a oração numa rotina diária que fortalece a sua fé e traz paz interior.",
+    image: "vida-de-oracao.png",
+    date: "4-05-2026",
+    category: "Vida de Oração",
+    tags: ["oração","hábitos espirituais","fé"],
+    verse: "Orai sem cessar.",
+    verseRef: "1 Tessalonicenses 5:17",
+    reflection: "A oração não é apenas um ritual religioso — é uma conversa íntima com o Criador.",
+    content: `A oração é o alicerce da vida espiritual. Muitos cristãos desejam orar com mais frequência, mas encontram dificuldades em manter a consistência.
+
+## 1. Escolha um Horário Fixo
+Defina um momento do dia dedicado exclusivamente à oração. Pode ser logo ao acordar, durante o almoço ou antes de dormir.
+
+## 2. Comece com Poucos Minutos
+Comece com 5 a 10 minutos diários e aumente gradualmente.
+
+## 3. Use um Guia de Oração
+Pode seguir o modelo ACTS: Adoração, Confissão, Agradecimento e Súplica.
+
+## 4. Crie um Espaço Sagrado
+Um local tranquilo e reservado para orar faz toda a diferença.
+
+## 5. Registe as Suas Orações
+Escrever as suas orações e as respostas que recebe fortalece a fé e cria um registo precioso da sua caminhada espiritual.`
+  },
+  {
+    slug: "5-coisas-que-os-jovens-angolanos-podem-esperar-do-papa-em-2026",
+    title: "5 Coisas que os Jovens Angolanos podem esperar do Papa em 2026",
+    excerpt: "O que o Papa Leão XIV traz para a juventude de Angola? Descubra por que esta visita será diferente de todas as outras.",
+    image: "visita-papa-angola.png",
+    date: "4-05-2026",
+    category: "Eventos",
+    tags: ["Papa em Angola","Juventude","Fé e Tecnologia"],
+    verse: "Não temas, porque eu sou contigo; não te assombres, porque eu sou o teu Deus.",
+    verseRef: "Isaías 41:10",
+    reflection: "O Papa vem lembrar-nos que a juventude africana carrega a esperança do futuro da Igreja.",
+    content: `A contagem decrescente começou! A visita do Papa Leão XIV a Angola está a gerar uma onda de entusiasmo sem precedentes.
+
+## 1. Um Convite à Inovação Digital
+O Vaticano tem reforçado que a tecnologia é um campo de missão.
+
+## 2. O Grande Encontro na Cidadela
+O momento mais aguardado pelos jovens será o encontro no Estádio da Cidadela Desportiva.
+
+## 3. Mensagem de Esperança e Emprego
+O Santo Padre traz palavras de encorajamento para quem está a entrar no mercado de trabalho.
+
+## 4. O Lema: "Jovem, Não Temas"
+Este tema será o fio condutor, apelando para vencermos o medo do futuro com fé.
+
+## 5. Uma Angola no Centro do Mundo
+É a nossa oportunidade de mostrar a hospitalidade e a resiliência do povo angolano.`
+  },
+  {
+    slug: "israel-profecias-biblicas-terceira-guerra",
+    title: "Israel Sob Ataque: As Profecias Bíblicas Estão se Cumprindo?",
+    excerpt: "Conflitos em Israel levantam perguntas sobre profecias bíblicas e o risco de uma terceira guerra mundial. Entenda os sinais espirituais.",
+    image: "israel-blog.png",
+    date: "20-04-2026",
+    category: "Profecias Bíblicas",
+    tags: ["profecias bíblicas","Israel","fim dos tempos","Apocalipse"],
+    verse: "Naquele dia farei de Jerusalém uma pedra pesada para todos os povos.",
+    verseRef: "Zacarias 12:3",
+    reflection: "Os conflitos atuais em Israel nos convidam a uma vigilância espiritual profunda e a um retorno sincero à presença de Deus.",
+    content: `Nos últimos tempos, o mundo tem acompanhado com atenção os acontecimentos envolvendo Israel.
+
+## Israel no centro das nações
+
+A Bíblia já alertava em Zacarias 12:3: "Naquele dia farei de Jerusalém uma pedra pesada para todos os povos."
+
+## O risco de um conflito maior
+
+Israel possui alianças estratégicas com grandes potências. Quando aliados entram para defender seus parceiros, um conflito regional pode crescer rapidamente.
+
+## Um chamado para despertar espiritual
+
+Independentemente de quando essas profecias se cumprirão, devemos permanecer vigilantes e próximos de Deus.`
+  },
+  {
+    slug: "papa-leao-xiv-cria-diocese-baturite",
+    title: "Histórico: Papa Leão XIV Cria a Diocese de Baturité no Brasil",
+    excerpt: "Conheça os detalhes do primeiro ato administrativo de grande impacto do Papa Leão XIV em solo brasileiro.",
+    image: "diocese-baturite.png",
+    date: "2-05-2026",
+    category: "Notícias da Igreja",
+    tags: ["Papa Leão XIV","Vaticano","Brasil","Ceará"],
+    verse: "Pois o Senhor escolheu a Sião; desejou-a para sua habitação.",
+    verseRef: "Salmos 132:13",
+    reflection: "A criação de uma nova diocese é o reconhecimento de que a comunidade cresceu em espírito e verdade.",
+    content: `O Papa Leão XIV oficializou a criação da Diocese de Baturité, no Ceará — o primeiro território eclesiástico no Brasil.
+
+## Um Marco para o Povo Cearense
+
+A decisão eleva a região a um novo status de autonomia, com gestão própria e maior proximidade com a Santa Sé.
+
+## O Que Muda?
+
+1. **Autonomia:** A região terá o seu próprio Bispo em breve.
+2. **Catedral:** A Igreja Matriz será elevada à categoria de Catedral.
+3. **Projetos Sociais:** Espera-se um fortalecimento nas obras de caridade locais.`
+  },
+  {
+    slug: "7-versiculos-poderosos-acalmar-coracao-quando-tudo-da-errado",
+    title: "7 Versículos Poderosos para Acalmar o Coração quando Tudo parece dar Errado",
+    excerpt: "Sentindo-se sobrecarregado? Descubra como encontrar paz imediata através da fé e renovar suas forças hoje.",
+    image: "paz-na-tempestade.png",
+    date: "2-05-2026",
+    category: "Reflexão Cristã",
+    tags: ["paz","ansiedade","versículos","esperança","conforto"],
+    verse: "Deixo-vos a paz, a minha paz vos dou; não vo-la dou como o mundo a dá.",
+    verseRef: "João 14:27",
+    reflection: "A paz verdadeira não é a ausência de problemas, mas a certeza de que Deus está no barco durante a tempestade.",
+    content: `Muitas vezes, a vida nos coloca em situações onde parece que todas as portas se fecharam.
+
+## 1. O Convite ao Descanso
+"Venham a mim, todos os que estão cansados e sobrecarregados, e eu darei descanso a vocês." (Mateus 11:28)
+
+## 2. A Paz que Excede o Entendimento
+"Não andem ansiosos por coisa alguma..." (Filipenses 4:6-7).
+
+## 3. A Presença no Vale Escuro
+"Ainda que eu andasse pelo vale da sombra da morte, não temeria mal algum, porque tu estás comigo." (Salmos 23:4)
+
+## 4. O Socorro Bem Presente
+"Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia." (Salmos 46:1)
+
+## 5. A Promessa do Futuro
+"Porque sou eu que conheço os planos que tenho para vocês... planos de fazê-los prosperar." (Jeremias 29:11)
+
+## 6. Coragem na Tempestade
+"No mundo tereis aflições, mas tende bom ânimo, eu venci o mundo." (João 16:33)
+
+## 7. A Força que Vem do Alto
+"Tudo posso naquele que me fortalece." (Filipenses 4:13)`
+  },
+  {
+    slug: "significado-do-perdao-cristao",
+    title: "O Verdadeiro Significado do Perdão Cristão",
+    excerpt: "Entenda por que perdoar é um dos atos mais libertadores da fé cristã e como praticá-lo no dia a dia.",
+    image: "perdao-cristao.png",
+    date: "2-05-2026",
+    category: "Reflexão Espiritual",
+    tags: ["perdão","amor cristão","libertação"],
+    verse: "Perdoai, e sereis perdoados.",
+    verseRef: "Lucas 6:37",
+    reflection: "Perdoar não é fraqueza — é a maior demonstração de força espiritual.",
+    content: `Perdoar é uma das maiores expressões do amor de Deus em nós.
+
+## O Que é o Perdão Cristão?
+
+O perdão cristão não é simplesmente esquecer o que aconteceu ou fingir que a dor não existe. É uma decisão consciente de libertar o outro — e a nós mesmos — do peso da mágoa.
+
+## Por Que Devemos Perdoar?
+
+Em Mateus 6:14-15: "Porque, se perdoardes aos homens as suas ofensas, também vosso Pai celestial vos perdoará a vós."
+
+## Como Perdoar na Prática
+
+1. **Reconheça a dor** — Não negue os seus sentimentos.
+2. **Entregue a Deus** — Confie a situação nas mãos do Senhor.
+3. **Ore pela pessoa** — Mesmo que seja difícil, orar transforma o coração.
+4. **Escolha diariamente** — O perdão pode ser um processo, não um evento único.
+5. **Busque ajuda** — Converse com um líder espiritual de confiança.
+
+## Os Frutos do Perdão
+
+Quem perdoa experimenta liberdade, paz interior e restauração.`
+  }
+];
+
+/* ════════════════════════════════════════════════════════════════
+   PARSER DE DATA  — aceita formatos:
+   "DD-MM-YYYY"  ex: "4-05-2026"
+   "YYYY-MM-DD"  ex: "2026-05-04"
+════════════════════════════════════════════════════════════════ */
+function parseDate(d) {
+  if (!d) return new Date(0);
+  /* testa se começa com 4 dígitos = ISO YYYY-MM-DD */
+  if (/^\d{4}/.test(d)) return new Date(d);
+  /* caso contrário assume DD-MM-YYYY */
+  const [day, month, year] = d.split('-');
+  return new Date(`${year}-${month.padStart(2,'0')}-${day.padStart(2,'0')}`);
+}
+
+function fmtDate(d) {
+  return parseDate(d).toLocaleDateString('pt-PT',{day:'2-digit',month:'long',year:'numeric'});
+}
+
+/* Ordena por data mais recente */
+blogPosts.sort((a,b) => parseDate(b.date) - parseDate(a.date));
+
+/* ════════════════════════════════════════════════════════════════ */
+const catEmoji = {
+  "Espiritualidade":"✨","Reflexão Espiritual":"🕊️","Notícias da Igreja":"⛪",
+  "Crescimento Espiritual":"🌱","Vida de Oração":"🙏","Estudo Bíblico":"📖",
+  "Profecias Bíblicas":"🔭","Reflexão Cristã":"💙","Vida Sentimental":"❤️",
+  "Propósito Cristão":"🌟","Notícias e Análise":"📰","Eventos":"🎺"
+};
+const getEmoji = cat => catEmoji[cat] || "✦";
+
+/* FILTROS */
+const categories = ["Todos",...new Set(blogPosts.map(p=>p.category))];
+const filterBar = document.getElementById('filter-bar');
+filterBar.innerHTML = categories.map(c =>
+  `<button class="filter-btn${c==='Todos'?' active':''}" data-cat="${c}">${c}</button>`
+).join('');
+filterBar.addEventListener('click', e=>{
+  if(!e.target.classList.contains('filter-btn')) return;
+  filterBar.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+  renderBlog();
+});
+document.getElementById('search-input').addEventListener('input', renderBlog);
+
+/* HELPER: monta img com fallback para emoji */
+function imgOrEmoji(filename, emoji, cls) {
+  if (!filename) return `<span class="${cls}">${emoji}</span>`;
+  const src = IMG + filename;
+  return `<img src="${src}" alt="" loading="lazy"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+    <span class="${cls}" style="display:none">${emoji}</span>`;
+}
+
+/* RENDER */
+function renderBlog(){
+  const cat = filterBar.querySelector('.filter-btn.active')?.dataset.cat || 'Todos';
+  const q   = document.getElementById('search-input').value.toLowerCase().trim();
+  const filtered = blogPosts.filter(p=>{
+    const matchCat = cat==='Todos' || p.category===cat;
+    const matchQ   = !q || p.title.toLowerCase().includes(q)
+                        || p.excerpt.toLowerCase().includes(q)
+                        || p.tags.some(t=>t.toLowerCase().includes(q));
+    return matchCat && matchQ;
+  });
+
+  const container = document.getElementById('blog-container');
+  if(!filtered.length){
+    container.innerHTML='<p class="no-results">Nenhum artigo encontrado.</p>';
+    return;
+  }
+
+  const [feat,...rest] = filtered;
+
+  let html = `
+    <div class="post-featured reveal" onclick="openArticle('${feat.slug}')">
+      <div class="post-img">
+        ${imgOrEmoji(feat.image, getEmoji(feat.category), 'post-emoji')}
+      </div>
+      <div class="post-body">
+        <div class="post-eyebrow">${getEmoji(feat.category)} ${feat.category}</div>
+        <div class="post-title">${feat.title}</div>
+        <div class="post-excerpt">${feat.excerpt}</div>
+        <div class="post-meta">
+          <span>📅 ${fmtDate(feat.date)}</span>
+          <span class="sep"></span>
+          <span>${feat.tags[0]||''}</span>
+        </div>
+        <div class="post-tags">${feat.tags.slice(0,4).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+      </div>
+    </div>
+    <div class="posts-list">`;
+
+  rest.forEach(p=>{
+    html += `
+      <div class="post-card reveal" onclick="openArticle('${p.slug}')">
+        <div class="post-thumb">
+          ${imgOrEmoji(p.image, getEmoji(p.category), 'post-emoji')}
+        </div>
+        <div class="post-body">
+          <div class="post-eyebrow">${getEmoji(p.category)} ${p.category}</div>
+          <div class="post-title">${p.title}</div>
+          <div class="post-excerpt">${p.excerpt}</div>
+          <div class="post-meta">
+            <span>${fmtDate(p.date)}</span>
+            <span class="sep"></span>
+            <span>${p.tags[0]||''}</span>
+          </div>
+        </div>
+      </div>`;
+  });
+
+  html += '</div>';
+  container.innerHTML = html;
+  container.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+}
+
+/* MARKDOWN → HTML */
+function mdToHtml(text){
+  return text
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/^### (.+)$/gm,'<h3>$1</h3>')
+    .replace(/^## (.+)$/gm,'<h2>$1</h2>')
+    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g,'<em>$1</em>')
+    .replace(/^---$/gm,'<hr>')
+    .replace(/^\d+\. (.+)$/gm,'<li>$1</li>')
+    .replace(/^[-*] (.+)$/gm,'<li>$1</li>')
+    .replace(/(<li>[\s\S]*?<\/li>\n?)+/g,m=>'<ul>'+m+'</ul>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank">$1</a>')
+    .split(/\n\n+/)
+    .map(block=>{
+      block=block.trim();
+      if(!block) return '';
+      if(/^<(h[23]|ul|hr)/.test(block)) return block;
+      return '<p>'+block.replace(/\n/g,' ')+'</p>';
+    }).join('\n');
+}
+
+/* OPEN ARTICLE */
+function openArticle(slug){
+  const p = blogPosts.find(x=>x.slug===slug);
+  if(!p) return;
+
+  document.getElementById('article-topbar-title').textContent = p.title;
+
+  const hero = document.getElementById('article-hero');
+  const emojiEl = document.getElementById('article-hero-emoji');
+  emojiEl.textContent = getEmoji(p.category);
+  hero.querySelectorAll('img').forEach(i=>i.remove());
+
+  if(p.image){
+    const img = document.createElement('img');
+    img.src = IMG + p.image;
+    img.alt = p.title;
+    img.style.cssText='width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:1';
+    img.onerror = ()=>img.remove();
+    hero.insertBefore(img, hero.firstChild);
+  }
+
+  document.getElementById('article-content').innerHTML = `
+    <div class="article-eyebrow">${getEmoji(p.category)} ${p.category}</div>
+    <h1 class="article-title">${p.title}</h1>
+    <div class="article-meta">
+      <span>📅 ${fmtDate(p.date)}</span>
+      <span class="sep"></span>
+      <span>✦ Luz Divina</span>
+    </div>
+    <div class="verse-box">
+      <p>"${p.verse}"</p>
+      <span>— ${p.verseRef}</span>
+    </div>
+    <div class="article-content">${mdToHtml(p.content)}</div>
+    <div class="reflection-box">
+      <span class="eyebrow">✦ Reflexão</span>
+      <p>"${p.reflection}"</p>
+    </div>
+    <div class="article-tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+  `;
+
+  const overlay = document.getElementById('article-overlay');
+  overlay.classList.add('open');
+  overlay.scrollTop = 0;
+  document.body.style.overflow='hidden';
+}
+
+function closeArticle(){
+  document.getElementById('article-overlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+/* INTERSECTION OBSERVER */
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(el=>{ if(el.isIntersecting) el.target.classList.add('visible'); });
+},{threshold:.07});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+/* SCROLL + MENU */
+window.addEventListener('scroll',()=>{
+  const st=document.getElementById('scrollTop');
+  window.scrollY>400?st.classList.add('vis'):st.classList.remove('vis');
+});
+
+document.getElementById('themeBtn').onclick=function(){this.textContent=this.textContent==='☾'?'☀️':'☾'};
+
+renderBlog();
+</script>
+
+
+
+  <script src="navbar.js"></script>
+</body>
+</html>

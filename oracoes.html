@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="theme-color" content="#c9a84c"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="canonical" href="https://luzdivina.top/oracoes.html"/>
+<title>Orações — Luz Divina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+:root {
+            --bg: #080d18; --bg2: #0d1525; --card: #0f1b2d; --card2: #152238;
+            --blue: #4f9cf9; --gold: #c9a84c; --text: #e2eaf8; --text2: #94a3b8;
+            --border: rgba(79,156,249,0.12);
+        }
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+body::before{content:'';position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.09) 0%,transparent 60%),
+             radial-gradient(ellipse 60% 40% at 80% 80%,rgba(167,139,250,.06) 0%,transparent 50%)}
+
+/* CONTAINER */
+.container{max-width:800px;margin:0 auto;padding:5rem 1.25rem 4rem}
+
+/* TYPOGRAPHY */
+.sec-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:var(--blue);display:block;margin-bottom:.55rem}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,6vw,2.8rem);
+  font-weight:700;line-height:1.2;margin-bottom:1.2rem}
+
+/* BTN BACK */
+.btn-back{background:var(--card);color:var(--text2);border:1px solid var(--border);
+  padding:.5rem 1rem;border-radius:10px;cursor:pointer;font-family:'Jost',sans-serif;
+  font-size:.8rem;font-weight:600;display:none;align-items:center;gap:.4rem;
+  margin-bottom:1.5rem;transition:all .2s}
+.btn-back:hover{border-color:var(--blue);color:var(--blue)}
+
+/* FULL TEXT (orações/devocionais) */
+.full-text{color:var(--text2);font-size:.95rem;line-height:1.9;white-space:pre-line}
+
+/* SCROLL TOP */
+#scrollTop{position:fixed;bottom:1.2rem;right:1.2rem;z-index:500;width:40px;height:40px;
+  border-radius:50%;background:var(--blue2,#2563eb);color:#fff;border:none;font-size:1rem;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .3s,transform .2s;
+  box-shadow:0 4px 16px rgba(79,156,249,.35)}
+#scrollTop.vis{opacity:1;pointer-events:all}
+#scrollTop:hover{transform:scale(1.1)}
+
+/* GRID CATEGORIAS */
+.pq-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-top:1.5rem}
+.pq-card{background:var(--card);border:1.5px solid var(--border);border-radius:14px;
+  padding:1.2rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:.9rem}
+.pq-card:hover{border-color:rgba(79,156,249,.35);transform:translateY(-3px);
+  box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.pq-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;
+  justify-content:center;font-size:1.3rem;flex-shrink:0}
+.pq-card h3{font-size:.92rem;font-weight:600;color:var(--text);margin-bottom:.2rem}
+.pq-card p{font-size:.75rem;color:var(--text2)}
+
+/* LISTA ORAÇÕES */
+.prayer-row{background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:1rem 1.2rem;cursor:pointer;transition:all .2s;display:flex;
+  align-items:center;justify-content:space-between;margin-bottom:.6rem}
+.prayer-row:hover{border-color:rgba(79,156,249,.3);transform:translateX(4px)}
+.prayer-row h4{font-size:.9rem;font-weight:600;color:var(--text)}
+.prayer-row .arrow{color:var(--blue);font-size:1rem}
+
+/* Páginas ocultas */
+#list-page,#prayer-page{display:none}
+
+</style>
+<link rel="manifest" href="manifest.json"/>
+  <link rel="stylesheet" href="navbar.css"/>
+</head>
+<body>
+<!-- NAVBAR UNIVERSAL -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <span class="star">✦</span> Luz <span class="div">Divina</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="biblia.html">Bíblia</a></li>
+    <li><a href="ia-biblica.html">IA Bíblica</a></li>
+    <li><a href="oracoes.html">Orações</a></li>
+    <li><a href="devocionais.html">Devocionais</a></li>
+    <li><a href="loja.html">eBooks</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn" id="themeBtn" aria-label="Modo claro/escuro">☾</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</nav>
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <span class="m-section">Portal</span>
+  <a href="index.html"    onclick="closeMenu()">🏠 Início</a>
+  <a href="biblia.html"   onclick="closeMenu()">📖 Bíblia Sagrada</a>
+  <a href="ia-biblica.html" onclick="closeMenu()">🤖 IA Bíblica</a>
+  <span class="m-section">Espiritual</span>
+  <a href="oracoes.html"     onclick="closeMenu()">🙏 Orações</a>
+  <a href="devocionais.html" onclick="closeMenu()">🌅 Devocionais</a>
+  <span class="m-section">Conteúdo</span>
+  <a href="loja.html" onclick="closeMenu()">📚 Loja de eBooks</a>
+  <a href="blog.html" onclick="closeMenu()">✍️ Blog Espiritual</a>
+  <span class="m-section">Sobre</span>
+  <a href="sobre.html"      onclick="closeMenu()">💫 Sobre Nós</a>
+  <a href="contato.html"    onclick="closeMenu()">📬 Contacto</a>
+  <a href="privacidade.html" onclick="closeMenu()">🔒 Privacidade</a>
+</div>
+
+<main class="container">
+        
+        <button id="main-back" class="btn-back" onclick="voltarParaHome()">← Voltar às Categorias</button>
+        <button id="prayer-back" class="btn-back" onclick="voltarParaLista()">← Voltar para a Lista</button>
+
+        <div id="home-page">
+            <span class="sec-eyebrow">Portal</span>
+            <h2 class="sec-title">Orações por <span style="color:var(--gold)">Categoria</span></h2>
+            
+            <div class="pq-grid">
+                <div class="pq-card" onclick="irParaLista('Anjos', '✦', 'rgba(79,156,249,.12)')">
+                    <div class="pq-icon" style="background:rgba(79,156,249,.12)">✦</div>
+                    <div><h3>Anjos</h3><p>Proteção angelical</p></div>
+                </div>
+                <div class="pq-card" onclick="irParaLista('Arcanjos', '🛡️', 'rgba(201,168,76,.12)')">
+                    <div class="pq-icon" style="background:rgba(201,168,76,.12)">🛡️</div>
+                    <div><h3>Arcanjos</h3><p>Miguel, Gabriel, Rafael</p></div>
+                </div>
+                <div class="pq-card" onclick="irParaLista('Cura', '💚', 'rgba(74,222,128,.12)')">
+                    <div class="pq-icon" style="background:rgba(74,222,128,.12)">💚</div>
+                    <div><h3>Cura</h3><p>Restauração e saúde</p></div>
+                </div>
+                <div class="pq-card" onclick="irParaLista('Proteção', '🔥', 'rgba(248,113,113,.12)')">
+                    <div class="pq-icon" style="background:rgba(248,113,113,.12)">🔥</div>
+                    <div><h3>Proteção</h3><p>Escudo divino</p></div>
+                </div>
+                <div class="pq-card" onclick="irParaLista('Santos', '✨', 'rgba(167,139,250,.12)')">
+                    <div class="pq-icon" style="background:rgba(167,139,250,.12)">✨</div>
+                    <div><h3>Santos</h3><p>Intercessores</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="list-page">
+            <h2 id="list-title" class="sec-title" style="color:var(--gold); border-bottom:1px solid var(--border); padding-bottom:15px;"></h2>
+            <div id="list-items"></div>
+        </div>
+
+        <div id="prayer-page">
+            <div id="prayer-content"></div>
+        </div>
+
+    </main>
+
+    <script>
+        let oracoes = [];
+        let categoriaAtual = "";
+
+        fetch('./oracoes.json')
+            .then(res => res.json())
+            .then(data => oracoes = data);
+
+        // NAVEGAÇÃO: HOME -> LISTA
+        function irParaLista(catNome) {
+            categoriaAtual = catNome;
+            document.getElementById('home-page').style.display = 'none';
+            document.getElementById('list-page').style.display = 'block';
+            document.getElementById('main-back').style.display = 'flex';
+            
+            const title = document.getElementById('list-title');
+            const output = document.getElementById('list-items');
+            
+            title.innerText = catNome;
+            
+            const filtradas = oracoes.filter(o => o.category.toLowerCase().includes(catNome.toLowerCase()));
+            
+            output.innerHTML = filtradas.map(o => `
+                <div class="prayer-row" onclick="lerOracao('${o.slug}')">
+                    <h4>${o.title}</h4>
+                    <span class="arrow">→</span>
+                </div>
+            `).join('');
+            
+            window.scrollTo(0,0);
+        }
+
+        // NAVEGAÇÃO: LISTA -> ORAÇÃO
+        function lerOracao(slug) {
+            const o = oracoes.find(x => x.slug === slug);
+            document.getElementById('list-page').style.display = 'none';
+            document.getElementById('main-back').style.display = 'none';
+            document.getElementById('prayer-page').style.display = 'block';
+            document.getElementById('prayer-back').style.display = 'flex';
+            
+            document.getElementById('prayer-content').innerHTML = `
+                <h1 class="sec-title" style="color:var(--gold); margin-bottom:10px">${o.title}</h1>
+                <span class="sec-eyebrow">${o.category}</span>
+                <div class="full-text">${o.content.replace('## ' + o.title, '').trim()}</div>
+            `;
+            window.scrollTo(0,0);
+        }
+
+        // BOTÃO VOLTAR DA ORAÇÃO PARA A LISTA
+        function voltarParaLista() {
+            document.getElementById('prayer-page').style.display = 'none';
+            document.getElementById('prayer-back').style.display = 'none';
+            document.getElementById('list-page').style.display = 'block';
+            document.getElementById('main-back').style.display = 'flex';
+        }
+
+        // BOTÃO VOLTAR DA LISTA PARA HOME
+        function voltarParaHome() {
+            document.getElementById('list-page').style.display = 'none';
+            document.getElementById('main-back').style.display = 'none';
+            document.getElementById('home-page').style.display = 'block';
+        }
+    </script>
+
+
+<script>
+
+</script>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

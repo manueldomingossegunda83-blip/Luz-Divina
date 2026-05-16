@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="theme-color" content="#c9a84c"/>
+<meta name="description" content="Loja Digital Luz Divina — Guias espirituais, ebooks de oração e libertação. Materiais de edificação cristã."/>
+<link rel="canonical" href="https://luzdivina.top/loja.html"/>
+<title>Loja Digital — Luz Divina</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="manifest" href="manifest.json"/>
+<style>
+/* ═══ VARIABLES ═══ */
+:root{--bg:#080d18;--bg2:#0d1525;--bg3:#111e33;--card:#0f1b2d;--card2:#152238;--blue:#4f9cf9;--blue2:#2563eb;--gold:#c9a84c;--gold2:#f0d27a;--gold3:#7a5c1e;--teal:#2dd4bf;--purple:#a78bfa;--red:#f87171;--green:#4ade80;--text:#e2eaf8;--text2:#94a3b8;--border:rgba(79,156,249,0.12);--border2:rgba(201,168,76,0.18);--glow-b:rgba(79,156,249,0.1);--glow-g:rgba(201,168,76,0.08);--radius:16px}
+
+/* ═══ LIGHT MODE ═══ */
+:root.light-mode{--bg:#f0f4f8;--bg2:#ffffff;--bg3:#e2e8f0;--card:#ffffff;--card2:#f8fafc;--text:#1a202c;--text2:#4a5568;--border:rgba(0,0,0,0.1);--border2:rgba(201,168,76,0.4);--glow-b:rgba(79,156,249,0.05);--glow-g:rgba(201,168,76,0.1)}
+:root.light-mode 
+:root.light-mode 
+
+/* ═══ RESET ═══ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.09) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(167,139,250,.06) 0%,transparent 50%)}
+
+
+
+
+/* ═══ MOBILE NAV ═══ */
+
+
+
+
+
+
+/* ═══ PAGE ═══ */
+.container{max-width:1200px;margin:0 auto;padding:0 1.25rem}
+.page-hero{padding:7rem 1.25rem 3rem;text-align:center}
+.sec-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:.55rem}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,6vw,3rem);font-weight:700;line-height:1.2;margin-bottom:.7rem}
+.sec-sub{color:var(--text2);font-size:.9rem;line-height:1.7;max-width:520px;margin:0 auto 1.5rem}
+
+/* ═══ FILTERS ═══ */
+.filter-bar{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-bottom:2.5rem;padding:0 1.25rem}
+.filter-btn{background:var(--card);border:1px solid var(--border);color:var(--text2);padding:.4rem .9rem;border-radius:999px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s;letter-spacing:.5px}
+.filter-btn:hover,.filter-btn.active{background:var(--gold);color:#0f1b2d;border-color:var(--gold)}
+
+/* ═══ LOJA GRID ═══ */
+.loja-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;padding:0 1.25rem 4rem}
+
+/* ═══ EBOOK CARD ═══ */
+.ebook-card{background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:all .25s;position:relative}
+.ebook-card:hover{border-color:var(--border2);transform:translateY(-6px);box-shadow:0 16px 48px rgba(0,0,0,.4)}
+
+/* CARD IMAGE */
+.card-img{position:relative;height:200px;overflow:hidden;background:linear-gradient(135deg,var(--bg3),var(--card2));display:flex;align-items:center;justify-content:center;font-size:3.5rem}
+.card-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:1;transition:transform .4s ease}
+.card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,var(--card) 0%,transparent 50%);z-index:2;pointer-events:none}
+.ebook-card:hover .card-img img{transform:scale(1.06)}
+.card-emoji{position:relative;z-index:0}
+
+.badge{position:absolute;top:12px;left:12px;z-index:3;background:var(--gold);color:#0f1b2d;padding:3px 10px;border-radius:999px;font-size:.65rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+
+/* CARD BODY */
+.card-body{padding:1.4rem;display:flex;flex-direction:column;flex:1}
+.category{color:var(--blue);font-size:.7rem;text-transform:uppercase;font-weight:700;letter-spacing:1.5px;margin-bottom:.5rem}
+.ebook-title{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;line-height:1.3;margin-bottom:.7rem;color:var(--text)}
+.ebook-desc{color:var(--text2);font-size:.83rem;line-height:1.6;flex:1;margin-bottom:1.2rem}
+
+.price-box{display:flex;align-items:center;gap:.7rem;margin-bottom:1.2rem}
+.old-price{text-decoration:line-through;color:var(--text2);font-size:.85rem}
+.current-price{color:var(--gold);font-size:1.4rem;font-weight:700}
+.discount-tag{background:rgba(74,222,128,.12);color:var(--green);font-size:.65rem;font-weight:700;padding:2px 7px;border-radius:6px;letter-spacing:.5px}
+
+.buy-btn{background:var(--gold);color:#0f1b2d;border:none;padding:.8rem 1rem;border-radius:10px;font-weight:700;cursor:pointer;text-decoration:none;text-align:center;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:all .2s;font-family:'Jost',sans-serif;font-size:.85rem;letter-spacing:.3px}
+.buy-btn:hover{filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 6px 20px rgba(201,168,76,.3)}
+
+/* ═══ FOOTER ═══ */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 1.25rem;text-align:center;color:var(--text2);font-size:.78rem}
+footer a{color:var(--text2);margin:0 .6rem}
+footer a:hover{color:var(--gold)}
+
+/* ═══ SCROLL TOP ═══ */
+#scrollTop{position:fixed;bottom:1.2rem;right:1.2rem;z-index:500;width:40px;height:40px;border-radius:50%;background:var(--blue2);color:#fff;border:none;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s,transform .2s;box-shadow:0 4px 16px rgba(79,156,249,.35)}
+#scrollTop.vis{opacity:1;pointer-events:all}
+#scrollTop:hover{transform:scale(1.1)}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+/* MOBILE NAV */
+.mobile-nav a{color:var(--text2);font-size:.9rem;font-weight:500;padding:.72rem 1rem;border-radius:10px;transition:all .2s;display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.mobile-nav a:hover{color:var(--text);background:var(--card)}
+</style>
+  <link rel="stylesheet" href="navbar.css"/>
+</head>
+<body>
+<!-- NAVBAR UNIVERSAL -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <span class="star">✦</span> Luz <span class="div">Divina</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="biblia.html">Bíblia</a></li>
+    <li><a href="ia-biblica.html">IA Bíblica</a></li>
+    <li><a href="oracoes.html">Orações</a></li>
+    <li><a href="devocionais.html">Devocionais</a></li>
+    <li><a href="loja.html">eBooks</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn" id="themeBtn" aria-label="Modo claro/escuro">☾</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</nav>
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <span class="m-section">Portal</span>
+  <a href="index.html"    onclick="closeMenu()">🏠 Início</a>
+  <a href="biblia.html"   onclick="closeMenu()">📖 Bíblia Sagrada</a>
+  <a href="ia-biblica.html" onclick="closeMenu()">🤖 IA Bíblica</a>
+  <span class="m-section">Espiritual</span>
+  <a href="oracoes.html"     onclick="closeMenu()">🙏 Orações</a>
+  <a href="devocionais.html" onclick="closeMenu()">🌅 Devocionais</a>
+  <span class="m-section">Conteúdo</span>
+  <a href="loja.html" onclick="closeMenu()">📚 Loja de eBooks</a>
+  <a href="blog.html" onclick="closeMenu()">✍️ Blog Espiritual</a>
+  <span class="m-section">Sobre</span>
+  <a href="sobre.html"      onclick="closeMenu()">💫 Sobre Nós</a>
+  <a href="contato.html"    onclick="closeMenu()">📬 Contacto</a>
+  <a href="privacidade.html" onclick="closeMenu()">🔒 Privacidade</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <span class="sec-eyebrow">📚 Loja Digital</span>
+  <h1 class="sec-title">Guias Espirituais & <br/><span style="color:var(--gold)">Materiais de Edificação</span></h1>
+  <p class="sec-sub">Recursos para aprofundar a sua vida espiritual. Adquira diretamente via WhatsApp com suporte imediato.</p>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterLoja('todos',this)">Todos</button>
+  <button class="filter-btn" onclick="filterLoja('Orações',this)">🙏 Orações</button>
+  <button class="filter-btn" onclick="filterLoja('Libertação',this)">🔓 Libertação</button>
+  <button class="filter-btn" onclick="filterLoja('Guerra Espiritual',this)">⚔️ Guerra Espiritual</button>
+  <button class="filter-btn" onclick="filterLoja('Prosperidade',this)">🌿 Prosperidade</button>
+  <button class="filter-btn" onclick="filterLoja('Devocionais',this)">🌅 Devocionais</button>
+</div>
+
+<!-- LOJA GRID -->
+<div class="loja-grid" id="lojaGrid"></div>
+
+<!-- FOOTER -->
+<footer>
+  <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold);margin-bottom:.8rem">✦ Luz <span style="color:var(--blue)">Divina</span></p>
+  <div style="margin-bottom:.8rem">
+    <a href="index.html">Início</a>
+    <a href="privacidade.html">Privacidade</a>
+    <a href="termos.html">Termos</a>
+    <a href="contato.html">Contacto</a>
+  </div>
+  <p>© 2025 Luz Divina — Portal Espiritual Universal</p>
+</footer>
+
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const IMG = 'public/';
+
+const ebooks = [
+  {
+    title: '21 Dias de Oração Poderosa',
+    description: 'Um guia completo para revolucionar a sua vida de oração com orações específicas e reflexões bíblicas profundas para cada dia.',
+    category: 'Orações',
+    price: '2.500 KZ',
+    oldPrice: '5.000 KZ',
+    badge: 'Mais Vendido',
+    image: 'vida-de-oracao.png',
+    emoji: '🙏',
+    message: 'Olá! Gostaria de adquirir o Ebook: 21 Dias de Oração Poderosa.'
+  },
+  {
+    title: 'Manual de Libertação Espiritual',
+    description: 'Aprenda a identificar e quebrar amarras espirituais através da autoridade cristã e da Palavra. Um estudo profundo e prático.',
+    category: 'Libertação',
+    price: '3.500 KZ',
+    oldPrice: '7.000 KZ',
+    badge: 'Popular',
+    image: 'protecao-espiritual.png',
+    emoji: '🔓',
+    message: 'Olá! Gostaria de adquirir o Ebook: Manual de Libertação Espiritual.'
+  },
+  {
+    title: 'Armadura de Deus: Guia de Guerra Espiritual',
+    description: 'Um estudo aprofundado sobre Efésios 6 para se proteger contra as ciladas do inimigo e viver em vitória espiritual.',
+    category: 'Guerra Espiritual',
+    price: '2.000 KZ',
+    oldPrice: null,
+    badge: null,
+    image: 'apagao-espiritual.png',
+    emoji: '⚔️',
+    message: 'Olá! Gostaria de adquirir o Ebook: Armadura de Deus.'
+  },
+  {
+    title: 'As Chaves da Prosperidade Bíblica',
+    description: 'Descubra os princípios bíblicos da prosperidade integral — espiritual, emocional e financeira — aplicados à vida moderna.',
+    category: 'Prosperidade',
+    price: '3.000 KZ',
+    oldPrice: '6.000 KZ',
+    badge: 'Novo',
+    image: 'chaves-prosperidade-biblica.png',
+    emoji: '🌿',
+    message: 'Olá! Gostaria de adquirir o Ebook: As Chaves da Prosperidade Bíblica.'
+  },
+  {
+    title: 'Paz na Tempestade: Meditações Bíblicas',
+    description: 'Reflexões diárias para encontrar paz interior em tempos de ansiedade, dúvida e dificuldade através da Palavra de Deus.',
+    category: 'Devocionais',
+    price: '2.500 KZ',
+    oldPrice: '4.500 KZ',
+    badge: null,
+    image: 'paz-na-tempestade.png',
+    emoji: '🕊️',
+    message: 'Olá! Gostaria de adquirir o Ebook: Paz na Tempestade.'
+  },
+  {
+    title: 'Sinais de Deus na Sua Vida',
+    description: 'Como reconhecer a voz e os sinais de Deus no cotidiano. Um guia prático de discernimento espiritual para o crente moderno.',
+    category: 'Devocionais',
+    price: '2.000 KZ',
+    oldPrice: null,
+    badge: null,
+    image: 'sinais-deus.png',
+    emoji: '✨',
+    message: 'Olá! Gostaria de adquirir o Ebook: Sinais de Deus na Sua Vida.'
+  }
+];
+
+const whatsappNumber = '244941271414';
+let currentFilter = 'todos';
+
+function renderLoja(filter) {
+  const grid = document.getElementById('lojaGrid');
+  const list = filter === 'todos' ? ebooks : ebooks.filter(e => e.category === filter);
+  grid.innerHTML = list.map(item => {
+    const discount = item.oldPrice
+      ? Math.round((1 - parseInt(item.price) / parseInt(item.oldPrice)) * 100) + '% OFF'
+      : null;
+    return `
+    <div class="ebook-card reveal">
+      <div class="card-img">
+        ${item.badge ? `<span class="badge">${item.badge}</span>` : ''}
+        <span class="card-emoji">${item.emoji}</span>
+        <img src="${IMG}${item.image}" alt="${item.title}" onerror="this.style.display='none'"/>
+      </div>
+      <div class="card-body">
+        <span class="category">${item.category}</span>
+        <h2 class="ebook-title">${item.title}</h2>
+        <p class="ebook-desc">${item.description}</p>
+        <div class="price-box">
+          ${item.oldPrice ? `<span class="old-price">${item.oldPrice}</span>` : ''}
+          <span class="current-price">${item.price}</span>
+          ${discount ? `<span class="discount-tag">${discount}</span>` : ''}
+        </div>
+        <a href="https://wa.me/${whatsappNumber}?text=${encodeURIComponent(item.message)}" class="buy-btn" target="_blank">
+          📲 Comprar via WhatsApp
+        </a>
+      </div>
+    </div>`;
+  }).join('');
+  // trigger reveal
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }, 50);
+}
+
+function filterLoja(cat, btn) {
+  currentFilter = cat;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderLoja(cat);
+}
+
+renderLoja('todos');
+
+// SCROLL TOP
+window.addEventListener('scroll', () => {
+  document.getElementById('scrollTop').classList.toggle('vis', window.scrollY > 300);
+});
+
+// MENU
+
+
+// SPLASH
+// TEMA
+
+</script>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

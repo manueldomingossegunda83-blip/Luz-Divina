@@ -1,0 +1,239 @@
+{
+  "titulo": "Biblioteca Apócrifa — Luz Divina",
+  "descricao": "Resumos, personagens e ensinamentos dos principais textos apócrifos e deuterocanónicos",
+  "livros": [
+    {
+      "id": "sedrach",
+      "nome": "Apocalipse de Sedrach",
+      "ficheiro": "sedrach.json",
+      "periodo": "Séc. II-V d.C.",
+      "lingua": "Grego",
+      "canonico": false,
+      "categorias": ["apocalipse","diálogo divino","misericórdia"],
+      "resumo": "Diálogo entre Sedrach e Deus sobre livre-arbítrio, pecado, misericórdia e morte. Sedrach intercede pela humanidade e Deus promete perdão a quem se arrepender.",
+      "personagens": ["Sedrach","Deus Pai","Cristo","Arcanjo Miguel","Adão","Diabo"],
+      "versiculos_chave": [
+        {"ref":"Sedrach 1:2","texto":"Cometemos muitas faltas a cada hora, de dia e de noite, e por isso adquiramos o amor, porque ele cobre uma multidão de pecados."},
+        {"ref":"Sedrach 1:20","texto":"O mais importante é que este amor trouxe o Filho de Deus dos céus."},
+        {"ref":"Sedrach 5:3","texto":"Se amavas o homem, por que não mataras o diabo, o artífice de toda iniquidade?"},
+        {"ref":"Sedrach 8:1","texto":"Deixei-o com seus próprios desejos porque o amei, e assim enviei os meus anjos justos para vigiá-lo noite e dia."},
+        {"ref":"Sedrach 16:3","texto":"Quem se lembrar do teu nome não verá o lugar do castigo, mas estará com os justos num lugar de refrigério e descanso."}
+      ]
+    },
+    {
+      "id": "enoque",
+      "nome": "Livro de Enoque (1 Enoque)",
+      "periodo": "Séc. III a.C. — Séc. I d.C.",
+      "lingua": "Aramaico / Etíope (Ge'ez)",
+      "canonico_para": ["Igreja Etíope","Igreja Eritreia"],
+      "categorias": ["apocalipse","angelologia","vigilantes","cosmologia","filho do homem"],
+      "resumo": "A obra apócrifa mais influente. Enoque (bisavô de Noé, Génesis 5:24) é levado ao céu e recebe visões sobre os anjos caídos (Vigilantes), o Juízo Final, a astronomia celestial e o misterioso 'Filho do Homem' pré-existente.",
+      "partes": [
+        {"nome":"Livro dos Vigilantes","caps":"1-36","tema":"200 anjos caem, tomam esposas humanas, geram os Nephilim gigantes"},
+        {"nome":"Livro das Parábolas","caps":"37-71","tema":"Visões do Filho do Homem, trono celeste, ressurreição dos justos"},
+        {"nome":"Livro da Astronomia","caps":"72-82","tema":"Calendário solar de 364 dias, movimento dos astros governado por anjos"},
+        {"nome":"Livro dos Sonhos","caps":"83-90","tema":"Visão da história de Israel como animais simbólicos"},
+        {"nome":"Epístola de Enoque","caps":"91-108","tema":"Exortação moral, apocalipse das semanas"}
+      ],
+      "personagens": ["Enoque","Semyaza (líder dos Vigilantes)","Azazel","Miguel","Gabriel","Rafael","Uriel","Nephilim"],
+      "citado_no_nt": "Judas 1:14-15 cita directamente o Livro de Enoque 1:9",
+      "versiculos_chave": [
+        {"ref":"1 Enoque 6:1-2","texto":"E aconteceu que, quando a multidão de homens cresceu, naqueles dias nasceram-lhes filhas belas e graciosas. E os Vigilantes, os filhos do céu, viram-nas e as desejaram."},
+        {"ref":"1 Enoque 10:4","texto":"E ao Senhor disse: Vai, Rafael, e amarra Azazel mãos e pés, e lança-o nas trevas."},
+        {"ref":"1 Enoque 46:1","texto":"Ali vi Aquele que tinha uma Cabeça de Dias — Sua cabeça era branca como lã — e com Ele havia outro cuja face era como a de um homem."},
+        {"ref":"1 Enoque 71:14","texto":"Tu és o Filho do Homem que nasceu para a justiça, e a justiça habita sobre ti."}
+      ]
+    },
+    {
+      "id": "jubileus",
+      "nome": "Livro dos Jubileus",
+      "periodo": "Séc. II a.C.",
+      "lingua": "Hebraico (fragmentos em Qumran) / Etíope",
+      "canonico_para": ["Igreja Etíope","Igreja Eritreia"],
+      "categorias": ["reescrita bíblica","calendário","anjos","patriarcas"],
+      "resumo": "Reescrita de Génesis-Êxodo dividida em 'jubileus' (períodos de 49 anos). Revela o calendário solar de 364 dias como instituted por Deus. Dá nomes a personagens anónimas da Bíblia e expande histórias patriarcais.",
+      "personagens": ["Moisés","Anjo da Face","Adão","Eva","Caim","Abel","Noé","Abraão","Jacó","Mastema (o acusador)"],
+      "contribuicoes": [
+        "Nome da esposa de Noé: Emzara",
+        "Nome da esposa de Abraão antes de Sara: não mencionado, mas expande a aliança",
+        "Mastema (equivalente a Satanás) como acusador que testa os humanos",
+        "Calendário solar de 364 dias vs calendário lunar — causa de discórdia entre judeus",
+        "Anjos ensinaram a escrita a Moisés directamente"
+      ],
+      "versiculos_chave": [
+        {"ref":"Jubileus 2:1","texto":"E o Anjo da Face falou a Moisés por ordem do Senhor: Escreve tudo desde o começo da criação até ao meu santuário ser construído entre eles para toda a eternidade."},
+        {"ref":"Jubileus 10:7-9","texto":"E Noé rogou ao Senhor seu Deus e disse: Deus dos espíritos de toda a carne, que não permitiste que nenhum espírito maligno dominasse — ordena que os espíritos malignos sejam aprisionados."},
+        {"ref":"Jubileus 23:31","texto":"E os seus ossos repousarão na terra, e o seu espírito terá muita alegria, e saberão que é o Senhor que executa o julgamento."}
+      ]
+    },
+    {
+      "id": "tobias",
+      "nome": "Livro de Tobias",
+      "periodo": "Séc. III-II a.C.",
+      "lingua": "Aramaico (original) / Grego",
+      "canonico_para": ["Católicos","Ortodoxos"],
+      "categorias": ["deuterocanónico","anjos","cura","matrimônio","Rafael"],
+      "resumo": "Tobit, judeu piedoso deportado para Nínive, fica cego por excrementos de andorinha nos olhos. O seu filho Tobias viaja com o Arcanjo Rafael (disfarçado de Azarias) para recuperar dinheiro em Média. Tobias casa com Sara, liberta do demónio Asmodeu que matou 7 maridos anteriores. Rafael revela a sua identidade e ensina como curar a cegueira de Tobit com o fel de um peixe.",
+      "personagens": ["Tobit","Tobias","Sara","Rafael/Azarias","Asmodeu (demónio)","Ana (mãe de Tobias)","Raquel","Raguel","Gabael"],
+      "temas": ["fidelidade religiosa na diáspora","matrimônio sagrado","cura divina","anjos intercessores","orações dos justos"],
+      "versiculos_chave": [
+        {"ref":"Tobias 3:17","texto":"Rafael foi enviado para curar os dois: Tobit, para remover as manchas brancas dos seus olhos, e Sara, filha de Raguel, para dá-la como esposa a Tobias, filho de Tobit, e para ligar Asmodeu, o espírito maligno."},
+        {"ref":"Tobias 12:15","texto":"Eu sou Rafael, um dos sete anjos que estão sempre presentes e entram à presença da glória do Senhor."},
+        {"ref":"Tobias 4:15","texto":"Não faças a ninguém o que não queres que te façam — versão proto-áurea da Regra de Ouro."},
+        {"ref":"Tobias 8:5-7","texto":"Tu fizeste Adão e deste-lhe Eva, sua esposa, como ajuda e apoio. Deles descende a raça dos homens. Tu disseste: Não é bom que o homem esteja só; façamos para ele uma auxiliar semelhante a ele."}
+      ]
+    },
+    {
+      "id": "judite",
+      "nome": "Livro de Judite",
+      "periodo": "Séc. II a.C.",
+      "lingua": "Hebraico (original perdido) / Grego",
+      "canonico_para": ["Católicos","Ortodoxos"],
+      "categorias": ["deuterocanónico","guerra","heroína","fé","libertação"],
+      "resumo": "Holofernes, general de Nabucodonosor, sitia a cidade de Betúlia. Judite, viúva bela e piedosa, decide agir. Infiltra-se no acampamento assírio, seduz Holofernes com sua beleza e sabedoria, e quando ele adormece embriagado, corta-lhe a cabeça e regresa à cidade. O exército assírio foge em pânico.",
+      "personagens": ["Judite","Holofernes","Ozias (chefe de Betúlia)","Aquior (aliado convertido)","Bagoas (eunuco de Holofernes)","Nabucodonosor (mencionado)"],
+      "temas": ["fidelidade a Deus","heroísmo feminino","libertação divina","jejum e oração","Deus usa os fracos para confundir os fortes"],
+      "versiculos_chave": [
+        {"ref":"Judite 8:11","texto":"Quem sois vós que tentastes a Deus hoje e vos colocastes acima de Deus entre os filhos dos homens?"},
+        {"ref":"Judite 9:11","texto":"O teu poder não está no número nem a tua força nos homens poderosos; mas és o Deus dos humildes, o auxílio dos pequenos, o defensor dos fracos, o protetor dos desamparados, o salvador dos desesperados."},
+        {"ref":"Judite 13:18","texto":"Bendita és tu, ó filha, pelo Deus Altíssimo, acima de todas as mulheres da terra; e bendito seja o Senhor Deus."}
+      ]
+    },
+    {
+      "id": "sabedoria",
+      "nome": "Livro da Sabedoria (Sabedoria de Salomão)",
+      "periodo": "Séc. I a.C.",
+      "lingua": "Grego (Alexandria)",
+      "canonico_para": ["Católicos","Ortodoxos"],
+      "categorias": ["deuterocanónico","sapiencial","imortalidade","criação","idolatria"],
+      "resumo": "Escrito em Alexandria para judeus helenizados tentados pelo paganismo. Desenvolve a teologia da imortalidade da alma, da Sabedoria como atributo divino personificado, e uma crítica sofisticada à idolatria.",
+      "personagens": ["Salomão (voz literária)","A Sabedoria (personificada como mulher)"],
+      "temas": ["imortalidade da alma","Sabedoria divina personificada","destino dos justos e ímpios","criação ex nihilo","crítica à idolatria"],
+      "versiculos_chave": [
+        {"ref":"Sabedoria 1:13","texto":"Deus não fez a morte, nem se compraz com a perda dos viventes."},
+        {"ref":"Sabedoria 2:23-24","texto":"Porque Deus criou o homem para a incorruptibilidade e o fez imagem da sua própria eternidade. Por inveja do diabo, porém, a morte entrou no mundo."},
+        {"ref":"Sabedoria 3:1","texto":"As almas dos justos estão nas mãos de Deus, e nenhum tormento as tocará."},
+        {"ref":"Sabedoria 7:26","texto":"A Sabedoria é um reflexo da luz eterna, um espelho sem mancha da actividade de Deus, uma imagem da sua bondade."},
+        {"ref":"Sabedoria 11:24","texto":"Amas a todos os seres e não aborreces nada do que fizeste, pois se odiasses alguma coisa, não a terias criado."}
+      ]
+    },
+    {
+      "id": "siracida",
+      "nome": "Eclesiástico / Sirácida (Ben Sirá)",
+      "periodo": "~180 a.C.",
+      "lingua": "Hebraico (original) / Grego (tradução do neto)",
+      "canonico_para": ["Católicos","Ortodoxos"],
+      "categorias": ["deuterocanónico","sapiencial","ética","família","medicina","criação"],
+      "resumo": "Maior livro sapiencial da Bíblia. Jesus ben Sirá, escriba e mestre de Jerusalém, compilou a sabedoria prática da tradição judaica: conselhos sobre família, amizade, riqueza, medicina, oração, criação, e o elogio dos antepassados heróicos.",
+      "personagens": ["Jesus ben Sirá (autor)","Seu neto (tradutor)","Elogio dos Pais: Enoque, Noé, Abraão, Isaac, Jacó, Moisés, Aarão, Finéias, Josué, David, Salomão, Elias, Isaías"],
+      "versiculos_chave": [
+        {"ref":"Sirácida 1:1","texto":"Toda a sabedoria provém do Senhor e permanece com Ele para sempre."},
+        {"ref":"Sirácida 3:2-3","texto":"O Senhor glorificou o pai nos filhos e confirmou o direito da mãe sobre os filhos. Quem honra o pai expía os pecados."},
+        {"ref":"Sirácida 24:1-2","texto":"A Sabedoria faz o seu próprio elogio e glorifica-se no meio do seu povo."},
+        {"ref":"Sirácida 38:1","texto":"Honra o médico com a honra que lhe é devida, em consideração da necessidade que dele tens, pois o Senhor também o criou."},
+        {"ref":"Sirácida 44:1","texto":"Louvemos agora os homens ilustres, os nossos pais em suas gerações."}
+      ]
+    },
+    {
+      "id": "macabeus1",
+      "nome": "Primeiro Livro dos Macabeus",
+      "periodo": "Séc. I a.C. (sobre eventos de 175-134 a.C.)",
+      "lingua": "Hebraico (original perdido) / Grego",
+      "canonico_para": ["Católicos","Ortodoxos"],
+      "categorias": ["deuterocanónico","história","revolta","Hanukkah","mártires"],
+      "resumo": "História da revolta dos Macabeus contra Antíoco IV Epifânio (selêucida), que proibiu o Judaísmo e profanou o Templo com o 'horror abominável' (Zeus no altar). Matatiás e seus 5 filhos (Judas 'Macabeu', Simão, João, Eleazar, Jonatã) lideram a guerrilha. Judas vence, purifica o Templo — origem de Hanukkah (Festa das Luzes). Escrito com tom épico-bíblico.",
+      "personagens": ["Antíoco IV Epifânio","Matatiás","Judas Macabeu","Simão Macabeu","Jonatã","Eleazar","João"],
+      "versiculos_chave": [
+        {"ref":"1 Macabeus 1:54","texto":"No dia quinze do mês de Quisleu do ano cento e quarenta e cinco, o rei Antíoco erigiu o horror abominável sobre o altar dos holocaustos."},
+        {"ref":"1 Macabeus 2:50","texto":"Mostrai zelo pela lei e dai a vossa vida pelo pacto dos nossos pais."},
+        {"ref":"1 Macabeus 4:59","texto":"Judas, seus irmãos e toda a assembleia de Israel decidiram que os dias da dedicação do altar seriam celebrados com alegria e com júbilo de ano em ano, durante oito dias."}
+      ]
+    },
+    {
+      "id": "baruc",
+      "nome": "Livro de Baruc",
+      "periodo": "Séc. II a.C.",
+      "lingua": "Hebraico/Aramaico (original) / Grego",
+      "canonico_para": ["Católicos","Ortodoxos"],
+      "categorias": ["deuterocanónico","exílio","sabedoria","penitência","carta de jeremias"],
+      "resumo": "Atribuído a Baruc, secretário de Jeremias, escrito durante o exílio na Babilónia. Contém: confissão dos pecados de Israel, elogio da Sabedoria identificada com a Torah, consolação de Jerusalém, e a 'Carta de Jeremias' (capítulo 6) — sátira demolidora da idolatria.",
+      "personagens": ["Baruc (secretário de Jeremias)","Jeconias (rei exilado)","Jeremias (referenciado)"],
+      "versiculos_chave": [
+        {"ref":"Baruc 3:9","texto":"Ouve, Israel, os mandamentos da vida; presta ouvidos para aprender prudência."},
+        {"ref":"Baruc 3:38","texto":"Depois disso, apareceu ele sobre a terra e conviveu com os homens — referência messiânica interpretada como presságio da Encarnação."},
+        {"ref":"Baruc 4:2","texto":"Volta-te para o esplendor e dirige-te para a luz que ilumina a tua face, ó Israel."}
+      ]
+    },
+    {
+      "id": "pastor_hermas",
+      "nome": "O Pastor de Hermas",
+      "periodo": "Séc. II d.C.",
+      "lingua": "Grego",
+      "canonico": false,
+      "categorias": ["apocalipse cristão","penitência","visões","anjos","Igreja primitiva"],
+      "resumo": "Quase canónico nos primeiros séculos — incluído no Codex Sinaiticus. Hermas, liberto em Roma, recebe visões de uma mulher idosa (a Igreja), e depois de um anjo vestido de pastor (o Anjo do Arrependimento). Estrutura: 5 Visões, 12 Mandamentos, 10 Parábolas. Tema central: é possível um segundo arrependimento após o baptismo — resposta à questão dos lapsi (cristãos que apostataem sob perseguição).",
+      "personagens": ["Hermas","A Igreja (mulher idosa que rejuvenesce)","O Pastor (Anjo do Arrependimento)","O Anjo de Deus (o mais poderoso, identificado com o Filho de Deus)"],
+      "versiculos_chave": [
+        {"ref":"Pastor 2:4","texto":"O Anjo do Arrependimento disse: Aqueles que se arrependeram de coração de todos os seus pecados — Deus perdoa todos os pecados anteriores, se não voltarem a pecar."},
+        {"ref":"Pastor Mand.1","texto":"Primeiro de tudo, crê que Deus é um, que criou todas as coisas e as organizou, e que fez todas as coisas existirem a partir do nada."},
+        {"ref":"Pastor Sim.9:12","texto":"O nome do Filho de Deus é grande e ilimitado, e sustenta o mundo inteiro."}
+      ]
+    },
+    {
+      "id": "apocalipse_pedro",
+      "nome": "Apocalipse de Pedro",
+      "periodo": "Séc. II d.C.",
+      "lingua": "Grego (original) / Etíope",
+      "canonico": false,
+      "categorias": ["apocalipse cristão","inferno","paraíso","juízo","escatologia"],
+      "resumo": "O primeiro texto cristão a descrever em detalhe as penas do Inferno e as glórias do Paraíso — influência directa na Divina Comédia de Dante. Jesus revela a Pedro o destino das almas: os condenados sofrem tormentos específicos proporcionais aos seus pecados; os justos habitam em campos luminosos com flores e perfumes.",
+      "descricao_paraiso": "Campo luminoso cheio de flores e árvores perfumadas. Os bem-aventurados vestem roupas de luz, têm cabelos brancos como neve, pele luminosa como o sol.",
+      "descricao_inferno": "Lugar de chamas e trevas. Punições específicas: blasfemos pendurados pela língua, fornicadores por outras partes do corpo, assassinos afogados em sangue, idólatras perseguidos por demónios.",
+      "personagens": ["Jesus","Pedro","Os Doze","Almas dos Justos","Almas dos Condenados","Anjos executores"],
+      "versiculos_chave": [
+        {"ref":"Apoc. Pedro 1","texto":"E o Senhor disse-nos: Ide ao monte e esperai; e enquanto orávamos, vieram dois homens que não podíamos olhar, pois a sua face brilhava como o sol e as suas vestes como o arco-íris."},
+        {"ref":"Apoc. Pedro 14","texto":"E o Senhor mostrou-me um grande campo e um jardim aberto, cheio de árvores em flor e de toda espécie de frutos, repleto de perfume e de uma fragrância que nos encheu de alegria."}
+      ]
+    },
+    {
+      "id": "evangelho_tome",
+      "nome": "Evangelho de Tomé (Gnóstico)",
+      "periodo": "Séc. II d.C. (baseado em tradições do séc. I)",
+      "lingua": "Grego / Copta (Nag Hammadi, 1945)",
+      "canonico": false,
+      "categorias": ["gnóstico","ditos de jesus","nag hammadi","logia","sabedoria"],
+      "resumo": "Colecção de 114 ditos (logia) atribuídos a Jesus 'o Vivente', sem narrativa de acção. Descoberto em Nag Hammadi (Egipto) em 1945. Metade dos ditos têm paralelos nos Evangelhos canónicos; metade são únicos. Fortemente influenciado pelo pensamento gnóstico — a salvação vem do autoconhecimento (gnose), não da fé exterior.",
+      "frase_abertura": "Estes são os ditos ocultos que o Jesus Vivente disse e que Dídimo Judas Tomé escreveu.",
+      "personagens": ["Jesus","Tomé (Dídimo Judas)","Simão Pedro","Maria","Salomé","Mateus"],
+      "logia_notaveis": [
+        {"num":3,"texto":"O Reino está dentro de vós e fora de vós. Quando vos conhecerdes, sereis conhecidos."},
+        {"num":77,"texto":"Eu sou a Luz que está acima de todos. Eu sou o Todo. O Todo saiu de mim e o Todo chegou a mim. Parti um lenho, estou lá; levantai uma pedra e lá me encontrareis."},
+        {"num":108,"texto":"Quem beber da minha boca tornar-se-á como eu sou, e eu próprio me tornarei ele, e as coisas ocultas ser-lhe-ão reveladas."},
+        {"num":22,"texto":"Jesus disse: Quando fizerdes os dois um, e quando fizerdes o interior como o exterior, e o exterior como o interior, e o acima como o abaixo, então entrareis no Reino."}
+      ]
+    },
+    {
+      "id": "protoevangelho_tiago",
+      "nome": "Protoevangelho de Tiago",
+      "periodo": "Séc. II d.C.",
+      "lingua": "Grego",
+      "canonico": false,
+      "categorias": ["infância maria","virgindade maria","nascimento jesus","joaquim e ana","temple"],
+      "resumo": "A fonte principal sobre a infância de Maria não coberta pelos Evangelhos canónicos. Apresenta os pais de Maria (Joaquim e Ana), a sua apresentação no Templo aos 3 anos, o noivado com José (viúvo idoso), a Anunciação e o nascimento de Jesus numa gruta com parteira.",
+      "personagens": ["Maria","Joaquim (pai de Maria)","Ana (mãe de Maria)","José (viúvo idoso)","Isabel","Herodes","Salomé (parteira)","Gabriel"],
+      "contribuicoes_para_tradicao": [
+        "Nomes dos pais de Maria: Joaquim e Ana",
+        "Maria apresentada ao Templo aos 3 anos",
+        "José como viúvo idoso com filhos anteriores (explicação dos 'irmãos de Jesus')",
+        "Nascimento numa gruta (não estábulo)",
+        "Virgindade perpétua de Maria verificada pela parteira Salomé",
+        "Origem da doutrina da Imaculada Conceição de Maria"
+      ],
+      "versiculos_chave": [
+        {"ref":"PrEv Tiago 4:1","texto":"E Ana foi ao jardim e orou: Senhor Deus dos nossos pais, bendize-me e ouve a minha oração, como bendizeste o ventre de Sara e lhe deste o filho Isaac."},
+        {"ref":"PrEv Tiago 11:3","texto":"E o anjo do Senhor apareceu a ela dizendo: Não temas, Maria, pois encontraste graça diante do Senhor de todas as coisas."},
+        {"ref":"PrEv Tiago 19:2","texto":"E eu José olhei para o alto e vi o ar espantado, e olhei para a abóbada do céu, e vi-a parada, e os pássaros do céu imóveis no ar."}
+      ]
+    }
+  ]
+}

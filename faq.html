@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="theme-color" content="#c9a84c"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="canonical" href="https://luzdivina.top/faq.html"/>
+<title>FAQ — Luz Divina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+:root { --bg: #080d18; --card: #0f1b2d; --card2: #152238; --blue: #4f9cf9; --gold: #c9a84c; --text: #e2eaf8; --text2: #94a3b8; --border: rgba(79,156,249,0.12); }
+:root.light-mode{--bg:#f0f4f8;--bg2:#ffffff;--bg3:#e2e8f0;--card:#ffffff;--card2:#f8fafc;--text:#1a202c;--text2:#4a5568;--border:rgba(0,0,0,0.1);--border2:rgba(201,168,76,0.4);--glow-b:rgba(79,156,249,0.05);--glow-g:rgba(201,168,76,0.1)}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+body::before{content:'';position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.09) 0%,transparent 60%)}
+.container,.page-content{max-width:800px;margin:0 auto;padding:5rem 1.25rem 4rem}
+.sec-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:var(--blue);display:block;margin-bottom:.55rem}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,6vw,2.8rem);
+  font-weight:700;line-height:1.2;margin-bottom:1.5rem}
+h2{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:1.5rem;margin:2rem 0 .8rem}
+h3{color:var(--blue);font-size:1.1rem;margin:1.5rem 0 .5rem}
+p{color:var(--text2);font-size:.9rem;line-height:1.8;margin-bottom:1rem}
+ul,ol{color:var(--text2);font-size:.9rem;line-height:1.8;margin-bottom:1rem;padding-left:1.5rem}
+.card,.content-card,.faq-card{background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:1.8rem;margin-bottom:1.2rem}
+.card h2,.content-card h2,.faq-card h2{margin-top:0}
+.btn-back{background:var(--card);color:var(--text2);border:1px solid var(--border);
+  padding:.5rem 1rem;border-radius:10px;cursor:pointer;font-family:'Jost',sans-serif;
+  font-size:.8rem;font-weight:600;display:inline-flex;align-items:center;gap:.4rem;
+  margin-bottom:1.5rem;transition:all .2s;text-decoration:none}
+.btn-back:hover{border-color:var(--blue);color:var(--blue)}
+
+
+        /* CSS REUTILIZADO */
+        :root { --bg: #080d18; --card: #0f1b2d; --card2: #152238; --blue: #4f9cf9; --gold: #c9a84c; --text: #e2eaf8; --text2: #94a3b8; --border: rgba(79,156,249,0.12); }
+        body { font-family: 'Jost', sans-serif; background: var(--bg); color: var(--text); margin: 0; }
+        
+        
+        .nav-logo span { color: var(--blue); }
+        .container { padding: 2rem 1.25rem 4rem 1.25rem 50px; max-width: 750px; margin: 0 auto; }
+        .btn-back { display: flex; align-items: center; gap: 8px; color: var(--blue); font-weight: 600; font-size: 0.85rem; margin-bottom: 20px; text-transform: uppercase; text-decoration: none; }
+
+        /* FAQ ACCORDION */
+        details { background: var(--card); border: 1.5px solid var(--border); border-radius: 12px; margin-bottom: 1rem; overflow: hidden; transition: 0.3s; }
+        summary { padding: 1.2rem; cursor: pointer; font-weight: 600; color: var(--gold); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+        summary::after { content: '↓'; color: var(--blue); transition: 0.3s; }
+        details[open] { border-color: var(--gold); background: var(--card2); }
+        details[open] summary::after { transform: rotate(180deg); }
+        .faq-ans { padding: 0 1.2rem 1.2rem; color: var(--text2); font-size: 0.95rem; line-height: 1.6; }
+    
+
+/* ═══ LIGHT MODE ═══ */
+:root.light-mode{--bg:#f0f4f8;--bg2:#ffffff;--bg3:#e2e8f0;--card:#ffffff;--card2:#f8fafc;--text:#1a202c;--text2:#4a5568;--border:rgba(0,0,0,0.1);--border2:rgba(201,168,76,0.4);--glow-b:rgba(79,156,249,0.05);--glow-g:rgba(201,168,76,0.1)}
+:root.light-mode body::before{background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.06) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(167,139,250,.04) 0%,transparent 50%)}
+
+</style>
+<link rel="manifest" href="manifest.json"/>
+  <link rel="stylesheet" href="navbar.css"/>
+</head>
+<body>
+<!-- NAVBAR UNIVERSAL -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <span class="star">✦</span> Luz <span class="div">Divina</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="biblia.html">Bíblia</a></li>
+    <li><a href="ia-biblica.html">IA Bíblica</a></li>
+    <li><a href="oracoes.html">Orações</a></li>
+    <li><a href="devocionais.html">Devocionais</a></li>
+    <li><a href="loja.html">eBooks</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn" id="themeBtn" aria-label="Modo claro/escuro">☾</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</nav>
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <span class="m-section">Portal</span>
+  <a href="index.html"    onclick="closeMenu()">🏠 Início</a>
+  <a href="biblia.html"   onclick="closeMenu()">📖 Bíblia Sagrada</a>
+  <a href="ia-biblica.html" onclick="closeMenu()">🤖 IA Bíblica</a>
+  <span class="m-section">Espiritual</span>
+  <a href="oracoes.html"     onclick="closeMenu()">🙏 Orações</a>
+  <a href="devocionais.html" onclick="closeMenu()">🌅 Devocionais</a>
+  <span class="m-section">Conteúdo</span>
+  <a href="loja.html" onclick="closeMenu()">📚 Loja de eBooks</a>
+  <a href="blog.html" onclick="closeMenu()">✍️ Blog Espiritual</a>
+  <span class="m-section">Sobre</span>
+  <a href="sobre.html"      onclick="closeMenu()">💫 Sobre Nós</a>
+  <a href="contato.html"    onclick="closeMenu()">📬 Contacto</a>
+  <a href="privacidade.html" onclick="closeMenu()">🔒 Privacidade</a>
+</div>
+
+<main class="container">
+        <a href="index.html" class="btn-back">← Voltar</a>
+        <h1 style="font-family: 'Cormorant Garamond'; font-size: 2.5rem; text-align: center; margin-bottom: 2rem;">Perguntas <span>Frequentes</span></h1>
+
+        <details>
+            <summary>O que é a IA Espiritual?</summary>
+            <div class="faq-ans">É um assistente treinado em teologia e nas Sagradas Escrituras para fornecer orientação espiritual 24h por dia.</div>
+        </details>
+
+        <details>
+            <summary>A Bíblia no site é completa?</summary>
+            <div class="faq-ans">Sim, disponibilizamos a versão integral (Ave Maria) com todos os 73 livros e capítulos.</div>
+        </details>
+
+        <details>
+            <summary>Como posso apoiar o portal?</summary>
+            <div class="faq-ans">Você pode apoiar adquirindo nossos eBooks na seção de loja ou compartilhando nossas orações e devocionais.</div>
+        </details>
+    </main>
+
+
+<script>
+
+</script>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="theme-color" content="#c9a84c"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="canonical" href="https://luzdivina.top/contato.html"/>
+<title>Contato — Luz Divina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        /* CSS REUTILIZADO DO SEU PORTAL */
+        :root { --bg: #080d18; --card: #0f1b2d; --card2: #152238; --blue: #4f9cf9; --gold: #c9a84c; --text: #e2eaf8; --text2: #94a3b8; --border: rgba(79,156,249,0.12); }
+        body { font-family: 'Jost', sans-serif; background: var(--bg); color: var(--text); margin: 0; text-align: center; }
+        
+        
+        .container { padding: 5rem 1.25rem 4rem; max-width: 600px; margin: 0 auto; }
+        
+        .contact-card { background: var(--card); border: 1.5px solid var(--border); border-radius: 20px; padding: 2.5rem; margin-top: 2rem; }
+        h1 { font-family: 'Cormorant Garamond'; font-size: 2.8rem; margin-bottom: 1rem; }
+        
+        .contact-btn {
+            display: flex; align-items: center; justify-content: center; gap: 12px;
+            width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 12px;
+            font-weight: 600; text-decoration: none; transition: 0.3s;
+        }
+        .btn-whatsapp { background: #25d366; color: white; }
+        .btn-gmail { background: var(--card2); border: 1px solid var(--blue); color: var(--blue); }
+        .contact-btn:hover { transform: scale(1.02); filter: brightness(1.1); }
+    
+
+/* ═══ LIGHT MODE ═══ */
+:root.light-mode{--bg:#f0f4f8;--bg2:#ffffff;--bg3:#e2e8f0;--card:#ffffff;--card2:#f8fafc;--text:#1a202c;--text2:#4a5568;--border:rgba(0,0,0,0.1);--border2:rgba(201,168,76,0.4);--glow-b:rgba(79,156,249,0.05);--glow-g:rgba(201,168,76,0.1)}
+:root.light-mode body::before{background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.06) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(167,139,250,.04) 0%,transparent 50%)}
+
+
+body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.09) 0%,transparent 60%)}
+</style>
+<link rel="manifest" href="manifest.json"/>
+  <link rel="stylesheet" href="navbar.css"/>
+</head>
+<body>
+<!-- NAVBAR UNIVERSAL -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <span class="star">✦</span> Luz <span class="div">Divina</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="biblia.html">Bíblia</a></li>
+    <li><a href="ia-biblica.html">IA Bíblica</a></li>
+    <li><a href="oracoes.html">Orações</a></li>
+    <li><a href="devocionais.html">Devocionais</a></li>
+    <li><a href="loja.html">eBooks</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn" id="themeBtn" aria-label="Modo claro/escuro">☾</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</nav>
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <span class="m-section">Portal</span>
+  <a href="index.html"    onclick="closeMenu()">🏠 Início</a>
+  <a href="biblia.html"   onclick="closeMenu()">📖 Bíblia Sagrada</a>
+  <a href="ia-biblica.html" onclick="closeMenu()">🤖 IA Bíblica</a>
+  <span class="m-section">Espiritual</span>
+  <a href="oracoes.html"     onclick="closeMenu()">🙏 Orações</a>
+  <a href="devocionais.html" onclick="closeMenu()">🌅 Devocionais</a>
+  <span class="m-section">Conteúdo</span>
+  <a href="loja.html" onclick="closeMenu()">📚 Loja de eBooks</a>
+  <a href="blog.html" onclick="closeMenu()">✍️ Blog Espiritual</a>
+  <span class="m-section">Sobre</span>
+  <a href="sobre.html"      onclick="closeMenu()">💫 Sobre Nós</a>
+  <a href="contato.html"    onclick="closeMenu()">📬 Contacto</a>
+  <a href="privacidade.html" onclick="closeMenu()">🔒 Privacidade</a>
+</div>
+
+<main class="container">
+        <h1>Fale <span>Connosco</span></h1>
+        <p style="color:var(--text2)">Escolha um canal abaixo para enviar sua dúvida ou sugestão.</p>
+
+        <div class="contact-card">
+            <a href="https://wa.me/244941271414?text=Olá! Gostaria de obter mais informações sobre o portal Luz Divina." class="contact-btn btn-whatsapp" target="_blank">
+                📱 Chamar no WhatsApp
+            </a>
+
+            <a href="mailto:suportemcds-luzdivina@luzdivina.top?subject=Pedido de Informação - Luz Divina&body=Olá Equipa Luz Divina, gostaria de solicitar uma informação sobre..." class="contact-btn btn-gmail">
+                ✉️ Enviar um E-mail
+            </a>
+            
+            <p style="font-size: 0.8rem; color: var(--text2); margin-top: 1.5rem;">
+                Respondemos normalmente em até 24 horas.
+            </p>
+        </div>
+    </main>
+
+
+<script>
+
+</script>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

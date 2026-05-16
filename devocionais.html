@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="theme-color" content="#c9a84c"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="canonical" href="https://luzdivina.top/devocionais.html"/>
+<title>Devocionais — Luz Divina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+:root {
+            --bg: #080d18; --bg2: #0d1525; --card: #0f1b2d; --card2: #152238;
+            --blue: #4f9cf9; --gold: #c9a84c; --text: #e2eaf8; --text2: #94a3b8;
+            --border: rgba(79,156,249,0.12);
+        }
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+body::before{content:'';position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.09) 0%,transparent 60%),
+             radial-gradient(ellipse 60% 40% at 80% 80%,rgba(167,139,250,.06) 0%,transparent 50%)}
+
+/* CONTAINER */
+.container{max-width:800px;margin:0 auto;padding:5rem 1.25rem 4rem}
+
+/* TYPOGRAPHY */
+.sec-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:var(--blue);display:block;margin-bottom:.55rem}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,6vw,2.8rem);
+  font-weight:700;line-height:1.2;margin-bottom:1.2rem}
+
+/* BTN BACK */
+.btn-back{background:var(--card);color:var(--text2);border:1px solid var(--border);
+  padding:.5rem 1rem;border-radius:10px;cursor:pointer;font-family:'Jost',sans-serif;
+  font-size:.8rem;font-weight:600;display:none;align-items:center;gap:.4rem;
+  margin-bottom:1.5rem;transition:all .2s}
+.btn-back:hover{border-color:var(--blue);color:var(--blue)}
+
+/* FULL TEXT (orações/devocionais) */
+.full-text{color:var(--text2);font-size:.95rem;line-height:1.9;white-space:pre-line}
+
+/* SCROLL TOP */
+#scrollTop{position:fixed;bottom:1.2rem;right:1.2rem;z-index:500;width:40px;height:40px;
+  border-radius:50%;background:var(--blue2,#2563eb);color:#fff;border:none;font-size:1rem;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .3s,transform .2s;
+  box-shadow:0 4px 16px rgba(79,156,249,.35)}
+#scrollTop.vis{opacity:1;pointer-events:all}
+#scrollTop:hover{transform:scale(1.1)}
+
+/* GRID DEVOCIONAIS */
+.dev-grid{display:flex;flex-direction:column;gap:.75rem;margin-top:1.2rem}
+.dev-card{background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:1.3rem 1.4rem;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
+.dev-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--gold);border-radius:3px 0 0 3px;opacity:0;transition:opacity .2s}
+.dev-card:hover{border-color:var(--border2);transform:translateX(5px)}
+.dev-card:hover::before{opacity:1}
+.dev-card h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;
+  color:var(--text);margin-bottom:.4rem}
+.dev-card p{font-size:.82rem;color:var(--text2);line-height:1.6}
+
+/* DEVOCIONAL COMPLETO */
+.dev-full-content{}
+.quote-box{background:linear-gradient(135deg,var(--card),var(--card2));
+  border-left:3px solid var(--gold);border-radius:0 12px 12px 0;
+  padding:1.2rem 1.4rem;margin:1.5rem 0;font-style:italic;
+  color:var(--text2);font-size:.9rem;line-height:1.7}
+.highlight-text{color:var(--gold);font-weight:600}
+
+/* Página oculta */
+#read-page{display:none}
+
+</style>
+<link rel="manifest" href="manifest.json"/>
+  <link rel="stylesheet" href="navbar.css"/>
+</head>
+<body>
+<!-- NAVBAR UNIVERSAL -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <span class="star">✦</span> Luz <span class="div">Divina</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="biblia.html">Bíblia</a></li>
+    <li><a href="ia-biblica.html">IA Bíblica</a></li>
+    <li><a href="oracoes.html">Orações</a></li>
+    <li><a href="devocionais.html">Devocionais</a></li>
+    <li><a href="loja.html">eBooks</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn" id="themeBtn" aria-label="Modo claro/escuro">☾</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</nav>
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <span class="m-section">Portal</span>
+  <a href="index.html"    onclick="closeMenu()">🏠 Início</a>
+  <a href="biblia.html"   onclick="closeMenu()">📖 Bíblia Sagrada</a>
+  <a href="ia-biblica.html" onclick="closeMenu()">🤖 IA Bíblica</a>
+  <span class="m-section">Espiritual</span>
+  <a href="oracoes.html"     onclick="closeMenu()">🙏 Orações</a>
+  <a href="devocionais.html" onclick="closeMenu()">🌅 Devocionais</a>
+  <span class="m-section">Conteúdo</span>
+  <a href="loja.html" onclick="closeMenu()">📚 Loja de eBooks</a>
+  <a href="blog.html" onclick="closeMenu()">✍️ Blog Espiritual</a>
+  <span class="m-section">Sobre</span>
+  <a href="sobre.html"      onclick="closeMenu()">💫 Sobre Nós</a>
+  <a href="contato.html"    onclick="closeMenu()">📬 Contacto</a>
+  <a href="privacidade.html" onclick="closeMenu()">🔒 Privacidade</a>
+</div>
+
+<main class="container">
+        <button id="btn-back" class="btn-back" onclick="voltarParaLista()">← Voltar aos Devocionais</button>
+
+        <div id="list-page">
+            <span class="sec-eyebrow">Reflexão</span>
+            <h2 class="sec-title">Devocionais <span style="color:var(--gold)">Diários</span></h2>
+            <div id="dev-list" class="dev-grid"></div>
+        </div>
+
+        <div id="read-page">
+            <article class="dev-full-content" id="dev-content"></article>
+        </div>
+    </main>
+
+    <script>
+        let devocionais = [];
+
+        fetch('./devocionais.json')
+            .then(res => res.json())
+            .then(data => {
+                devocionais = data;
+                renderizarLista();
+            });
+
+        // Função para limpar e formatar o texto do JSON
+        function formatarTextoDevocional(texto, titulo) {
+            let t = texto;
+            
+            // 1. Remove o título repetido (ex: ## Título)
+            t = t.replace(new RegExp('## ' + titulo, 'gi'), '');
+
+            // 2. Transforma as citações (--- conteúdo ---) em caixas de destaque
+            // Busca o que está entre os separadores ---
+            t = t.replace(/---([\s\S]*?)---/g, '<div class="quote-box">$1</div>');
+
+            // 3. Transforma o negrito (**texto**) em span dourado
+            t = t.replace(/\*\*(.*?)\*\*/g, '<span class="highlight-text">$1</span>');
+
+            // 4. Remove qualquer ### de subtítulo que tenha sobrado e destaca
+            t = t.replace(/### (.*)/g, '<h3 style="color:var(--blue); font-size:1.4rem; margin-top:2rem;">$1</h3>');
+
+            return t.trim();
+        }
+
+        function renderizarLista() {
+            const listContainer = document.getElementById('dev-list');
+            listContainer.innerHTML = devocionais.map(dev => `
+                <div class="dev-card" onclick="abrirDevocional('${dev.slug}')">
+                    <h3>${dev.title}</h3>
+                    <p>${dev.excerpt}</p>
+                </div>
+            `).join('');
+        }
+
+        function abrirDevocional(slug) {
+            const dev = devocionais.find(d => d.slug === slug);
+            document.getElementById('list-page').style.display = 'none';
+            document.getElementById('btn-back').style.display = 'flex';
+            
+            const contentArea = document.getElementById('dev-content');
+            const textoLimpo = formatarTextoDevocional(dev.content, dev.title);
+
+            contentArea.innerHTML = `
+                <h1 class="sec-title" style="color:var(--gold); margin-bottom:10px;">${dev.title}</h1>
+                <div style="margin-bottom:30px;">
+                    ${dev.tags.map(tag => `<span style="color:var(--blue); font-size:0.7rem; font-weight:700; text-transform:uppercase; margin-right:15px;">#${tag}</span>`).join('')}
+                </div>
+                <div class="full-text">${textoLimpo}</div>
+            `;
+
+            document.getElementById('read-page').style.display = 'block';
+            window.scrollTo(0,0);
+        }
+
+        function voltarParaLista() {
+            document.getElementById('read-page').style.display = 'none';
+            document.getElementById('btn-back').style.display = 'none';
+            document.getElementById('list-page').style.display = 'block';
+            window.scrollTo(0,0);
+        }
+    </script>
+
+
+<script>
+
+</script>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

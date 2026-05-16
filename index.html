@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Luz Divina — Portal Espiritual Universal. Bíblia, orações, devocionais, IA Bíblica, ebooks espirituais e blog. Somos todos filhos da mesma Fonte Divina."/>
+<meta name="keywords" content="orações, bíblia, espiritual, devocionais, anjos, IA bíblica, ebooks espirituais, luz divina, portal espiritual"/>
+<meta name="author" content="Luz Divina"/>
+<meta property="og:title" content="Luz Divina — Portal Espiritual Universal"/>
+<meta property="og:description" content="Verdade, liberdade e união espiritual. Somos todos filhos da mesma Centelha Divina."/>
+<meta property="og:type" content="website"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://luzdivina.com/"/>
+<title>Luz Divina — Portal Espiritual Universal</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+/* ═══ VARIABLES & RESET ═══ */
+:root{--bg:#080d18;--bg2:#0d1525;--bg3:#111e33;--card:#0f1b2d;--card2:#152238;--blue:#4f9cf9;--blue2:#2563eb;--gold:#c9a84c;--gold2:#f0d27a;--gold3:#7a5c1e;--teal:#2dd4bf;--purple:#a78bfa;--red:#f87171;--green:#4ade80;--text:#e2eaf8;--text2:#94a3b8;--border:rgba(79,156,249,0.12);--border2:rgba(201,168,76,0.18);--glow-b:rgba(79,156,249,0.1);--glow-g:rgba(201,168,76,0.08);--radius:16px;}
+/* Suas cores atuais (Modo Escuro) */
+:root {
+  --bg:#080d18;
+  --bg2:#0d1525;
+  /* ... todas as suas variáveis que já estão lá ... */
+  --radius:16px;
+}
+
+/* ADICIONE ISTO LOGO ABAIXO: As cores do Modo Claro */
+:root.light-mode {
+  --bg: #f0f4f8;
+  --bg2: #ffffff;
+  --bg3: #e2e8f0;
+  --card: #ffffff;
+  --card2: #f8fafc;
+  --text: #1a202c;
+  --text2: #4a5568;
+  --border: rgba(0, 0, 0, 0.1);
+  --border2: rgba(201, 168, 76, 0.4);
+  --glow-b: rgba(79, 156, 249, 0.05);
+  --glow-g: rgba(201, 168, 76, 0.1);
+}
+:root.light-mode :root.light-mode :root.light-mode body::before{background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.06) 0%,transparent 60%)}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* COSMIC BG */
+body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(79,156,249,.09) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(167,139,250,.06) 0%,transparent 50%),radial-gradient(ellipse 50% 30% at 10% 50%,rgba(201,168,76,.05) 0%,transparent 50%)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 1.25rem 4rem;position:relative;overflow:hidden}
+.hero-glow-1{position:absolute;top:10%;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(ellipse,rgba(79,156,249,.1) 0%,transparent 65%);pointer-events:none;z-index:0}
+.hero-glow-2{position:absolute;bottom:20%;right:-10%;width:400px;height:400px;background:radial-gradient(ellipse,rgba(201,168,76,.07) 0%,transparent 60%);pointer-events:none;z-index:0}
+.hero-content{position:relative;z-index:1;max-width:680px}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(79,156,249,.08);border:1px solid rgba(79,156,249,.2);color:var(--blue);font-size:.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:.45rem 1.1rem;border-radius:999px;margin-bottom:2rem;animation:fadeUp .7s ease both}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.3rem,9vw,4.2rem);font-weight:700;line-height:1.1;margin-bottom:1.4rem;animation:fadeUp .8s ease both .1s}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero h1 .blue{color:var(--blue)}
+.hero-verse{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--text2);line-height:1.7;margin-bottom:.5rem;animation:fadeUp .9s ease both .2s}
+.hero-mission{font-size:.88rem;color:var(--text2);line-height:1.7;max-width:520px;margin:0 auto 2.5rem;animation:fadeUp 1s ease both .3s}
+.hero-btns{display:flex;flex-direction:column;gap:.8rem;width:100%;max-width:360px;margin:0 auto 3rem;animation:fadeUp 1s ease both .4s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.5rem;border-radius:12px;font-family:'Jost',sans-serif;font-size:.9rem;font-weight:600;cursor:pointer;border:none;transition:all .2s;letter-spacing:.3px}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(79,156,249,.3)}
+.btn-danger{background:transparent;color:var(--red);border:1.5px solid rgba(248,113,113,.3)}
+.btn-danger:hover{background:rgba(248,113,113,.07)}
+.btn-ghost{background:var(--card);color:var(--text);border:1.5px solid var(--border)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.hero-trust{animation:fadeUp 1s ease both .5s}
+.stars{font-size:1.2rem;margin-bottom:.4rem}
+.trust-text{font-size:.78rem;color:var(--text2)}
+.trust-text strong{color:var(--text)}
+
+/* FEATURES GRID */
+.features{padding:5rem 1.25rem}
+.sec-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:.55rem}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,5vw,2.6rem);font-weight:700;line-height:1.2;margin-bottom:.7rem}
+.sec-sub{color:var(--text2);font-size:.9rem;line-height:1.7;max-width:480px;margin-bottom:2.2rem}
+.txt-blue{color:var(--blue)}.txt-gold{color:var(--gold)}
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.feat-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.6rem;transition:all .25s;cursor:pointer;position:relative;overflow:hidden}
+.feat-card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 60%,rgba(79,156,249,.04));opacity:0;transition:opacity .25s}
+.feat-card:hover{border-color:var(--border2);transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.4)}
+.feat-card:hover::after{opacity:1}
+.feat-icon{font-size:2.2rem;margin-bottom:1rem}
+.feat-card h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
+.feat-card p{color:var(--text2);font-size:.83rem;line-height:1.6}
+.feat-link{display:inline-flex;align-items:center;gap:.3rem;margin-top:1rem;color:var(--blue);font-size:.78rem;font-weight:600}
+
+/* VERSE OF DAY */
+.vod-section{padding:3rem 1.25rem}
+.vod-box{background:linear-gradient(135deg,var(--card),var(--card2));border:1px solid var(--border2);border-radius:20px;padding:2.5rem 1.5rem;text-align:center;position:relative;overflow:hidden}
+.vod-box::before{content:'✦';position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-size:8rem;color:rgba(201,168,76,.04);line-height:1}
+.vod-label{font-size:.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:block}
+.vod-text{font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,3.5vw,1.5rem);font-style:italic;line-height:1.7;color:var(--text);margin-bottom:.8rem}
+.vod-ref{font-size:.78rem;font-weight:700;color:var(--gold);letter-spacing:1px}
+.vod-actions{margin-top:1.5rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+
+/* PRAYER QUICK */
+.prayer-quick{padding:4rem 1.25rem}
+.pq-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.pq-card{background:var(--card);border:1.5px solid var(--border);border-radius:14px;padding:1.2rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:.9rem}
+.pq-card:hover{border-color:rgba(79,156,249,.3);transform:translateY(-2px)}
+.pq-icon{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.pq-card h3{font-size:.88rem;font-weight:600;color:var(--text);margin-bottom:.15rem}
+.pq-card p{font-size:.73rem;color:var(--text2)}
+
+/* TESTIMONY */
+.testimony{padding:4rem 1.25rem;background:linear-gradient(180deg,transparent,rgba(79,156,249,.03),transparent)}
+.test-grid{display:flex;flex-direction:column;gap:1rem}
+.test-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.4rem}
+.test-stars{color:var(--gold);font-size:.85rem;margin-bottom:.6rem}
+.test-text{color:var(--text2);font-size:.84rem;line-height:1.7;font-style:italic;margin-bottom:.8rem}
+.test-author{font-size:.75rem;font-weight:600;color:var(--text)}
+.test-origin{font-size:.7rem;color:var(--text2)}
+
+/* MANIFESTO */
+.manifesto{padding:4rem 1.25rem}
+.manifesto-box{background:linear-gradient(135deg,rgba(79,156,249,.06),rgba(201,168,76,.04));border:1px solid var(--border2);border-radius:20px;padding:2.5rem 1.5rem;text-align:center}
+.manifesto-box h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,5vw,2.2rem);font-weight:700;color:var(--gold);margin-bottom:1.2rem;line-height:1.3}
+.manifesto-box p{color:var(--text2);font-size:.9rem;line-height:1.8;max-width:580px;margin:0 auto .9rem}
+.manifesto-box p strong{color:var(--text)}
+.manifesto-flame{font-size:3rem;margin-bottom:1rem}
+
+/* NEWSLETTER */
+.newsletter{padding:3rem 1.25rem}
+.nl-box{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:2rem 1.5rem;text-align:center}
+.nl-box h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--text);margin-bottom:.5rem}
+.nl-box p{color:var(--text2);font-size:.85rem;margin-bottom:1.5rem}
+.nl-form{display:flex;flex-direction:column;gap:.7rem;max-width:380px;margin:0 auto}
+.nl-input{padding:.85rem 1rem;background:var(--bg3);border:1.5px solid var(--border);border-radius:10px;color:var(--text);font-family:'Jost',sans-serif;font-size:.88rem;outline:none;transition:border-color .2s}
+.nl-input:focus{border-color:var(--blue)}
+.nl-input::placeholder{color:var(--text2)}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1.25rem 2rem;margin-top:2rem}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-bottom:2rem}
+.foot-logo{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;color:var(--gold);display:flex;align-items:center;gap:.4rem;margin-bottom:.6rem}
+.foot-logo .star{color:var(--blue);font-size:1.3rem}
+.foot-logo .div{color:var(--blue)}
+.foot-desc{color:var(--text2);font-size:.79rem;line-height:1.7;margin-bottom:.9rem}
+.foot-verse{padding:.7rem .9rem;border-left:2px solid var(--gold3);background:var(--glow-g);border-radius:0 8px 8px 0;font-style:italic;font-size:.75rem;color:var(--text2)}
+.foot-col h4{font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.foot-col a{display:block;color:var(--text2);font-size:.79rem;margin-bottom:.4rem;transition:color .2s}
+.foot-col a:hover{color:var(--text)}
+.foot-contact{display:flex;align-items:center;gap:.5rem;color:var(--text2);font-size:.79rem;margin-bottom:.35rem}
+.foot-bottom{border-top:1px solid var(--border);padding-top:1.3rem;text-align:center;color:var(--text2);font-size:.73rem;line-height:1.8}
+.foot-bottom-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:.5rem}
+.foot-bottom-links a{color:var(--text2);font-size:.73rem;transition:color .2s}
+.foot-bottom-links a:hover{color:var(--gold)}
+.foot-gold{color:var(--gold)}
+
+/* FLOATS */
+#scrollTop{position:fixed;bottom:1.2rem;right:1.2rem;z-index:500;width:40px;height:40px;border-radius:50%;background:var(--blue2);color:#fff;border:none;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s,transform .2s;box-shadow:0 4px 16px rgba(79,156,249,.35)}
+#scrollTop.vis{opacity:1;pointer-events:all}
+#scrollTop:hover{transform:scale(1.1)}
+#waFloat{position:fixed;bottom:1.2rem;left:1.2rem;z-index:500;width:48px;height:48px;border-radius:50%;background:#25d366;color:#fff;border:none;font-size:1.4rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);animation:pulse-g 2s infinite;text-decoration:none}
+@keyframes pulse-g{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4)}50%{box-shadow:0 0 0 10px rgba(37,211,102,0)}}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ═══ SPLASH SCREEN ═══ */
+#splash{position:fixed;inset:0;z-index:9999;background:#080d18;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4rem;transition:opacity .7s ease,visibility .7s ease}
+#splash.hide{opacity:0;visibility:hidden;pointer-events:none}
+.splash-img{width:96px;height:96px;border-radius:22px;object-fit:cover;animation:splashIn .6s ease both;box-shadow:0 0 40px rgba(79,156,249,.3)}
+.splash-name{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:#c9a84c;animation:splashIn .6s ease both .12s;opacity:0;letter-spacing:.5px}
+.splash-name span{color:#4f9cf9}
+.splash-tagline{color:#94a3b8;font-size:.78rem;letter-spacing:3px;text-transform:uppercase;animation:splashIn .6s ease both .24s;opacity:0}
+.splash-bar{width:120px;height:2px;background:rgba(201,168,76,.15);border-radius:2px;overflow:hidden;animation:splashIn .6s ease both .36s;opacity:0}
+.splash-fill{height:100%;background:linear-gradient(90deg,#4f9cf9,#c9a84c);border-radius:2px;animation:splashLoad 1.5s ease both .5s}
+@keyframes splashIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes splashLoad{from{width:0}to{width:100%}}
+</style>
+  <link rel="stylesheet" href="navbar.css"/>
+</head>
+<body>
+<!-- NAVBAR UNIVERSAL -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <span class="star">✦</span> Luz <span class="div">Divina</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="biblia.html">Bíblia</a></li>
+    <li><a href="ia-biblica.html">IA Bíblica</a></li>
+    <li><a href="oracoes.html">Orações</a></li>
+    <li><a href="devocionais.html">Devocionais</a></li>
+    <li><a href="loja.html">eBooks</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn" id="themeBtn" aria-label="Modo claro/escuro">☾</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</nav>
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <span class="m-section">Portal</span>
+  <a href="index.html"    onclick="closeMenu()">🏠 Início</a>
+  <a href="biblia.html"   onclick="closeMenu()">📖 Bíblia Sagrada</a>
+  <a href="ia-biblica.html" onclick="closeMenu()">🤖 IA Bíblica</a>
+  <span class="m-section">Espiritual</span>
+  <a href="oracoes.html"     onclick="closeMenu()">🙏 Orações</a>
+  <a href="devocionais.html" onclick="closeMenu()">🌅 Devocionais</a>
+  <span class="m-section">Conteúdo</span>
+  <a href="loja.html" onclick="closeMenu()">📚 Loja de eBooks</a>
+  <a href="blog.html" onclick="closeMenu()">✍️ Blog Espiritual</a>
+  <span class="m-section">Sobre</span>
+  <a href="sobre.html"      onclick="closeMenu()">💫 Sobre Nós</a>
+  <a href="contato.html"    onclick="closeMenu()">📬 Contacto</a>
+  <a href="privacidade.html" onclick="closeMenu()">🔒 Privacidade</a>
+</div>
+
+<!-- SPLASH SCREEN -->
+<div id="splash">
+  <img class="splash-img" src="public/icon-512.png" alt="Luz Divina"/>
+  <div class="splash-name">Luz <span>Divina</span></div>
+  <div class="splash-tagline">Portal Espiritual Universal</div>
+  <div class="splash-bar"><div class="splash-fill"></div></div>
+</div>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Portal Espiritual Universal</div>
+    <h1>Somos Todos Filhos da<br/><em>Mesma Luz</em> <span class="blue">Divina</span></h1>
+    <p class="hero-verse">"Porque em Ti está a fonte da vida; na Tua luz veremos a luz." — Salmos 36:9</p>
+    <p class="hero-mission">Um portal de verdade, liberdade e união espiritual. Sem restrição de tribos, religiões ou crenças. Aqui partilhamos a centelha divina que nos une a todos.</p>
+    <div class="hero-btns">
+      <a href="ia-biblica.html" class="btn btn-blue">💬 Receber Palavra de Deus Agora</a>
+      <a href="oracoes.html" class="btn btn-danger">♡ Preciso de uma Oração Urgente</a>
+      <a href="biblia.html" class="btn btn-ghost">📖 Abrir a Bíblia Sagrada</a>
+    </div>
+    <div class="hero-trust">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="trust-text"><strong>+12.000 almas tocadas</strong> · Comunidade ativa em 14 países</p>
+    </div>
+  </div>
+</section>
+
+<hr style="border:none;border-top:1px solid rgba(79,156,249,.1)"/>
+
+<!-- VERSÍCULO DO DIA -->
+<section class="vod-section reveal">
+  <div class="vod-box">
+    <span class="vod-label">✦ Palavra do Dia</span>
+    <p class="vod-text" id="vodText">"Tudo posso naquele que me fortalece."</p>
+    <p class="vod-ref" id="vodRef">Filipenses 4:13</p>
+    <div class="vod-actions">
+      <button class="btn btn-ghost" onclick="novoVersiculo()" style="padding:.6rem 1.2rem;font-size:.82rem;border-radius:10px;border:1px solid rgba(79,156,249,.25);background:transparent;color:var(--blue);cursor:pointer">🔄 Nova Palavra</button>
+    </div>
+  </div>
+</section>
+
+<!-- FUNCIONALIDADES -->
+<section class="features reveal">
+  <span class="sec-eyebrow">O que você encontra aqui</span>
+  <h2 class="sec-title">Tudo para a sua <span class="txt-gold">Vida Espiritual</span></h2>
+  <p class="sec-sub">Um portal completo com recursos para fortalecer sua fé, expandir seu conhecimento espiritual e conectar-se com o Divino.</p>
+  <div class="feat-grid">
+    <a href="biblia.html" class="feat-card" style="text-decoration:none">
+      <div class="feat-icon">📖</div>
+      <h3>Bíblia Sagrada</h3>
+      <p>Acesse a Palavra de Deus. Pesquise versículos, livros e capítulos na Bíblia completa.</p>
+      <span class="feat-link">Ler agora →</span>
+    </a>
+    <a href="ia-biblica.html" class="feat-card" style="text-decoration:none">
+      <div class="feat-icon">🤖</div>
+      <h3>IA Bíblica</h3>
+      <p>Pergunte sobre a Bíblia, teologia, espiritualidade. Nossa IA responde com sabedoria e amor.</p>
+      <span class="feat-link">Perguntar →</span>
+    </a>
+    <a href="oracoes.html" class="feat-card" style="text-decoration:none">
+      <div class="feat-icon">🙏</div>
+      <h3>Orações Poderosas</h3>
+      <p>Centenas de orações organizadas por categorias: anjos, cura, proteção, libertação e mais.</p>
+      <span class="feat-link">Orar agora →</span>
+    </a>
+    <a href="devocionais.html" class="feat-card" style="text-decoration:none">
+      <div class="feat-icon">🌅</div>
+      <h3>Devocionais Diários</h3>
+      <p>Reflexões espirituais impactantes para transformar e renovar sua vida a cada dia.</p>
+      <span class="feat-link">Ler devocional →</span>
+    </a>
+    <a href="loja.html" class="feat-card" style="text-decoration:none">
+      <div class="feat-icon">📚</div>
+      <h3>Loja de eBooks</h3>
+      <p>eBooks espirituais, de teologia, motivação e crescimento pessoal. Adquira pelo WhatsApp.</p>
+      <span class="feat-link">Ver loja →</span>
+    </a>
+    <a href="blog.html" class="feat-card" style="text-decoration:none">
+      <div class="feat-icon">✍️</div>
+      <h3>Blog Espiritual</h3>
+      <p>Artigos, reflexões e ensinamentos do universo espiritual sem restrições de crença.</p>
+      <span class="feat-link">Ler artigos →</span>
+    </a>
+  </div>
+</section>
+
+<hr style="border:none;border-top:1px solid rgba(79,156,249,.08)"/>
+
+<!-- ORAÇÕES RÁPIDAS -->
+<section class="prayer-quick reveal">
+  <span class="sec-eyebrow">Orar agora</span>
+  <h2 class="sec-title">Orações por <span class="txt-blue">Categoria</span></h2>
+  <p class="sec-sub">Encontre a oração certa para o momento certo da sua vida.</p>
+  <div class="pq-grid">
+    <a href="oracoes.html#anjos" class="pq-card" style="text-decoration:none">
+      <div class="pq-icon" style="background:rgba(79,156,249,.12)">✦</div>
+      <div><h3>Anjos</h3><p>Proteção angelical</p></div>
+    </a>
+    <a href="oracoes.html#arcanjos" class="pq-card" style="text-decoration:none">
+      <div class="pq-icon" style="background:rgba(201,168,76,.12)">🛡️</div>
+      <div><h3>Arcanjos</h3><p>Miguel, Gabriel, Rafael</p></div>
+    </a>
+    <a href="oracoes.html#cura" class="pq-card" style="text-decoration:none">
+      <div class="pq-icon" style="background:rgba(74,222,128,.12)">💚</div>
+      <div><h3>Cura</h3><p>Restauração e saúde</p></div>
+    </a>
+    <a href="oracoes.html#protecao" class="pq-card" style="text-decoration:none">
+      <div class="pq-icon" style="background:rgba(248,113,113,.12)">🔥</div>
+      <div><h3>Proteção</h3><p>Escudo divino</p></div>
+    </a>
+    <a href="oracoes.html#familia" class="pq-card" style="text-decoration:none">
+      <div class="pq-icon" style="background:rgba(167,139,250,.12)">🏡</div>
+      <div><h3>Família</h3><p>Bênção e união</p></div>
+    </a>
+    <a href="oracoes.html#libertacao" class="pq-card" style="text-decoration:none">
+      <div class="pq-icon" style="background:rgba(45,212,191,.12)">🕊️</div>
+      <div><h3>Libertação</h3><p>Liberdade espiritual</p></div>
+    </a>
+    <a href="oracoes.html#prosperidade" class="pq-card" style="text-decoration:none">
+      <div class="pq-icon" style="background:rgba(201,168,76,.12)">💰</div>
+      <div><h3>Prosperidade</h3><p>Provisão divina</p></div>
+    </a>
+    <a href="oracoes.html" class="pq-card" style="text-decoration:none">
+      <div class="pq-icon" style="background:rgba(79,156,249,.12)">✨</div>
+      <div><h3>Ver Todas</h3><p>+50 categorias</p></div>
+    </a>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto reveal">
+  <div class="manifesto-box">
+    <div class="manifesto-flame">🔥</div>
+    <h2>Somos Todos da Mesma Centelha Divina</h2>
+    <p>Acreditamos que <strong>todos os seres humanos são filhos do mesmo Pai Celestial Supremo</strong>. A nossa missão é partilhar o conhecimento do universo espiritual sem barreiras de tribo, religião ou crença.</p>
+    <p>Aqui encontrará <strong>verdade, liberdade espiritual e união</strong> — porque a centelha que habita em você é a mesma que habita em mim. Somos feitos da mesma Fonte Universal.</p>
+    <p style="margin-top:.5rem"><em style="color:var(--gold)">"O Espírito sopra onde quer, e ouves a sua voz, mas não sabes donde vem, nem para onde vai." — João 3:8</em></p>
+  </div>
+</section>
+
+<!-- TESTEMUNHOS -->
+<section class="testimony reveal">
+  <span class="sec-eyebrow">Vidas Transformadas</span>
+  <h2 class="sec-title">O que Dizem <span class="txt-gold">os Nossos Irmãos</span></h2>
+  <div class="test-grid">
+    <div class="test-card">
+      <div class="test-stars">⭐⭐⭐⭐⭐</div>
+      <p class="test-text">"As orações dos anjos mudaram completamente a minha vida. Sinto uma paz que nunca tinha sentido antes. Este portal é verdadeiramente um presente de Deus."</p>
+      <p class="test-author">Maria S.</p>
+      <p class="test-origin">Portugal</p>
+    </div>
+    <div class="test-card">
+      <div class="test-stars">⭐⭐⭐⭐⭐</div>
+      <p class="test-text">"A IA Bíblica respondeu dúvidas que eu tinha há anos. É incrível ter acesso a tanto conhecimento espiritual num só lugar, de forma gratuita."</p>
+      <p class="test-author">João M.</p>
+      <p class="test-origin">Brasil</p>
+    </div>
+    <div class="test-card">
+      <div class="test-stars">⭐⭐⭐⭐⭐</div>
+      <p class="test-text">"Os devocionais diários transformaram as minhas manhãs. Cada reflexão parece feita especialmente para mim. Obrigada Luz Divina!"</p>
+      <p class="test-author">Ana R.</p>
+      <p class="test-origin">Angola</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter reveal">
+  <div class="nl-box">
+    <h3>✦ Receba a Palavra do Dia</h3>
+    <p>Inscreva-se e receba devocionais, orações e reflexões espirituais diretamente no seu email.</p>
+    <div class="nl-form">
+      <input class="nl-input" type="text" placeholder="O seu nome"/>
+      <input class="nl-input" type="email" placeholder="O seu email"/>
+      <button class="btn btn-gold" onclick="subscrever()" style="border-radius:10px">✦ Quero Receber a Palavra</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-logo"><span class="star">✦</span>Luz <span class="div">Divina</span></div>
+      <p class="foot-desc">Portal Espiritual Universal. Verdade, liberdade e união espiritual para todos os filhos da mesma Centelha Divina.</p>
+      <div class="foot-verse">"Porque em Ti está a fonte da vida; na Tua luz veremos a luz." — Salmos 36:9</div>
+    </div>
+    <div>
+      <div class="foot-col" style="margin-bottom:1.2rem">
+        <h4>Navegação</h4>
+        <a href="index.html">Início</a>
+        <a href="biblia.html">Bíblia</a>
+        <a href="ia-biblica.html">IA Bíblica</a>
+        <a href="oracoes.html">Orações</a>
+        <a href="devocionais.html">Devocionais</a>
+        <a href="loja.html">eBooks</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="foot-col">
+        <h4>Institucional</h4>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="contato.html">Contacto</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+        <a href="faq.html">FAQ</a>
+        <a href="aviso.html">Aviso Legal</a>
+      </div>
+    </div>
+  </div>
+  <div style="margin-bottom:1.5rem">
+    <div class="foot-col">
+      <h4>Fale Connosco</h4>
+      <div class="foot-contact">✉️ suportemcds-luzdivina@luzdivina.top</div>
+      <a href="https://wa.me/941271414" target="_blank" style="display:flex;align-items:center;gap:.5rem;color:#25d366;font-size:.79rem;text-decoration:none">💬 WhatsApp: +941 271 414</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="foot-bottom-links">
+      <a href="privacidade.html">Privacidade</a>
+      <a href="termos.html">Termos</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="disclaimer.html">Aviso Legal</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <p>© 2026 <span class="foot-gold">Luz Divina</span> — Todos os direitos reservados. Feito com ❤️ e Fé.</p>
+  </div>
+</footer>
+
+<!-- FLOATS -->
+<a id="waFloat" href="https://wa.me/941271414?text=Olá!%20Vim%20pelo%20portal%20Luz%20Divina%20e%20gostaria%20de%20mais%20informações." target="_blank" title="WhatsApp">💬</a>
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+
+<script>
+// SPLASH SCREEN
+(function(){
+  var splash = document.getElementById('splash');
+  var shown = sessionStorage.getItem('splashDone');
+  if(shown){splash.style.display='none';return;}
+  setTimeout(function(){
+    splash.classList.add('hide');
+    setTimeout(function(){splash.style.display='none';},650);
+    sessionStorage.setItem('splashDone','1');
+  }, 1800);
+})();
+
+// REVEAL on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold: 0.1});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// SCROLL TOP
+window.addEventListener('scroll', () => {
+  document.getElementById('scrollTop').classList.toggle('vis', window.scrollY > 400);
+});
+
+// VERSÍCULO DO DIA
+const versiculos = [
+  {texto:'"Porque Deus não nos deu espírito de covardia, mas de poder, de amor e de moderação."', ref:'2 Timóteo 1:7'},
+  {texto:'"Tudo posso naquele que me fortalece."', ref:'Filipenses 4:13'},
+  {texto:'"O Senhor é o meu pastor e nada me faltará."', ref:'Salmos 23:1'},
+  {texto:'"Confia no Senhor de todo o teu coração e não te apoies no teu próprio entendimento."', ref:'Provérbios 3:5'},
+  {texto:'"Porque Eu sei os planos que tenho para você, planos de prosperidade e não de calamidade."', ref:'Jeremias 29:11'},
+  {texto:'"Buscai primeiro o Reino de Deus e a sua justiça, e todas as outras coisas vos serão acrescentadas."', ref:'Mateus 6:33'},
+  {texto:'"Sê forte e corajoso. Não temas, nem te espantes, porque o Senhor teu Deus é contigo por onde quer que andares."', ref:'Josué 1:9'},
+  {texto:'"O amor é paciente, é bondoso; o amor não é invejoso; o amor não trata com altivez, não se porta com indecência."', ref:'1 Coríntios 13:4'},
+  {texto:'"Na tua presença há plenitude de alegria; na tua destra há delícias perpetuamente."', ref:'Salmos 16:11'},
+  {texto:'"Lançando sobre ele toda a vossa ansiedade, porque ele tem cuidado de vós."', ref:'1 Pedro 5:7'},
+];
+
+let vodIndex = Math.floor(Math.random() * versiculos.length);
+document.getElementById('vodText').textContent = versiculos[vodIndex].texto;
+document.getElementById('vodRef').textContent = versiculos[vodIndex].ref;
+
+function novoVersiculo() {
+  vodIndex = (vodIndex + 1) % versiculos.length;
+  document.getElementById('vodText').textContent = versiculos[vodIndex].texto;
+  document.getElementById('vodRef').textContent = versiculos[vodIndex].ref;
+}
+
+function subscrever(){
+  alert('✦ Obrigado! Em breve receberá a Palavra do Dia no seu email. Que Deus abençoe a sua jornada!');
+}
+</script>
+  <script src="navbar.js"></script>
+</body>
+</html>

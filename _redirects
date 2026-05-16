@@ -1,0 +1,45 @@
+# ═══════════════════════════════════════════════════════════════
+#  _redirects — Luz Divina Portal
+#  Cloudflare Pages — URLs limpas + redirects SEO
+# ═══════════════════════════════════════════════════════════════
+
+# ── 1. Redireciona www → sem www (301 permanente) ──────────────
+https://www.luzdivina.top/* https://luzdivina.top/:splat 301
+
+# ── 2. URLs limpas — remove o .html ────────────────────────────
+#    Qualquer /pagina.html → /pagina  (301 para o Google indexar correcto)
+/index.html          /                    301
+/biblia.html         /biblia              301
+/ia-biblica.html     /ia-biblica          301
+/oracoes.html        /oracoes             301
+/devocionais.html    /devocionais         301
+/loja.html           /loja                301
+/blog.html           /blog                301
+/sobre.html          /sobre               301
+/contato.html        /contato             301
+/faq.html            /faq                 301
+/privacidade.html    /privacidade         301
+/termos.html         /termos              301
+/cookies.html        /cookies             301
+/aviso.html          /aviso               301
+/disclaimer.html     /disclaimer          301
+
+# ── 3. Rotas limpas → ficheiros HTML reais (200, não redirect) ─
+#    O Cloudflare Pages serve /biblia como se fosse biblia.html
+/biblia              /biblia.html         200
+/ia-biblica          /ia-biblica.html     200
+/oracoes             /oracoes.html        200
+/devocionais         /devocionais.html    200
+/loja                /loja.html           200
+/blog                /blog.html           200
+/sobre               /sobre.html          200
+/contato             /contato.html        200
+/faq                 /faq.html            200
+/privacidade         /privacidade.html    200
+/termos              /termos.html         200
+/cookies             /cookies.html        200
+/aviso               /aviso.html          200
+/disclaimer          /disclaimer.html     200
+
+# ── 4. Página 404 personalizada ────────────────────────────────
+/*                   /404.html            404

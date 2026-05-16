@@ -1,0 +1,198 @@
+/* ═══════════════════════════════════════════════════════════════
+   NAVBAR UNIVERSAL — Luz Divina Portal
+   Partilhado por todas as páginas. Não editar inline nas páginas.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── VARIÁVEIS BASE (aplicadas se a página não as tiver) ── */
+:root {
+  --bg:     #080d18;
+  --bg2:    #0d1525;
+  --bg3:    #111e33;
+  --card:   #0f1b2d;
+  --card2:  #152238;
+  --blue:   #4f9cf9;
+  --blue2:  #2563eb;
+  --gold:   #c9a84c;
+  --gold2:  #f0d27a;
+  --gold3:  #7a5c1e;
+  --teal:   #2dd4bf;
+  --purple: #a78bfa;
+  --red:    #f87171;
+  --green:  #4ade80;
+  --text:   #e2eaf8;
+  --text2:  #94a3b8;
+  --border:  rgba(79,156,249,0.12);
+  --border2: rgba(201,168,76,0.18);
+  --glow-b:  rgba(79,156,249,0.1);
+  --glow-g:  rgba(201,168,76,0.08);
+  --radius: 16px;
+}
+
+/* ── MODO CLARO ── */
+:root.light-mode {
+  --bg:     #f0f4f8;
+  --bg2:    #ffffff;
+  --bg3:    #e2e8f0;
+  --card:   #ffffff;
+  --card2:  #f8fafc;
+  --text:   #1a202c;
+  --text2:  #4a5568;
+  --border:  rgba(0,0,0,0.10);
+  --border2: rgba(201,168,76,0.40);
+  --glow-b:  rgba(79,156,249,0.05);
+  --glow-g:  rgba(201,168,76,0.10);
+}
+:root.light-mode #navbar      { background: rgba(240,244,248,.96); }
+:root.light-mode .mobile-nav  { background: rgba(240,244,248,.99); }
+
+/* ── NAVBAR ── */
+#navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  height: 64px;
+  background: rgba(8,13,24,.93);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+
+/* Logo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: .5px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo .star { color: var(--blue); font-size: 1.4rem; }
+.nav-logo .div  { color: var(--blue); }
+
+/* Links desktop */
+.nav-links {
+  display: flex;
+  gap: .1rem;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex: 1;
+  padding: 0 .5rem;
+}
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a {
+  color: var(--text2);
+  font-size: .76rem;
+  font-weight: 500;
+  padding: .38rem .5rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: color .2s, background .2s;
+  letter-spacing: .3px;
+  text-decoration: none;
+}
+.nav-links a:hover  { color: var(--gold); background: var(--glow-g); }
+.nav-links a.active { color: var(--gold); }
+
+/* Acções (botões lado direito) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  flex-shrink: 0;
+}
+.nav-btn {
+  background: none;
+  border: none;
+  color: var(--text2);
+  font-size: .95rem;
+  cursor: pointer;
+  padding: .32rem .4rem;
+  border-radius: 8px;
+  transition: color .2s;
+  line-height: 1;
+}
+.nav-btn:hover { color: var(--gold); }
+
+.menu-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text2);
+  padding: .32rem .62rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: border-color .2s, color .2s;
+  line-height: 1;
+}
+.menu-toggle:hover { border-color: var(--blue); color: var(--blue); }
+
+/* ── MENU MOBILE (overlay fixo) ── */
+.mobile-nav {
+  position: fixed;
+  top: 64px;
+  left: 0; right: 0;
+  background: rgba(8,13,24,.98);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  z-index: 999;
+  padding: 1rem 1.25rem 1.5rem;
+  display: none;
+  flex-direction: column;
+  gap: .25rem;
+  border-bottom: 1px solid var(--border);
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  /* Garante que NÃO empurra o conteúdo da página */
+  pointer-events: none;
+}
+.mobile-nav.open {
+  display: flex;
+  pointer-events: all;
+}
+
+.mobile-nav a {
+  color: var(--text2);
+  font-size: .9rem;
+  font-weight: 500;
+  padding: .72rem 1rem;
+  border-radius: 10px;
+  transition: color .2s, background .2s;
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  text-decoration: none;
+}
+.mobile-nav a:hover { color: var(--text); background: var(--card); }
+
+.m-section {
+  font-size: .65rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: .4rem 1rem .1rem;
+  margin-top: .3rem;
+  pointer-events: none;
+}
+
+/* Overlay de fundo ao abrir o menu mobile */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 998;
+  background: rgba(0,0,0,.4);
+}
+.nav-overlay.open { display: block; }
+
+/* ── Padding de topo para o conteúdo não ficar sob a navbar ── */
+/* padding-top gerido por cada página no seu container */

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /public/
+
+Disallow: /public/*.json
+
+Sitemap: https://luzdivina.top/sitemap.xml
+
+Host: https://luzdivina.top
