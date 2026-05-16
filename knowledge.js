@@ -1267,4 +1267,34 @@ sedrach_apocrifo: {
   verses:['Sedrach 1:2','Sedrach 8:1','Sedrach 12:6','Sedrach 14:1','Sedrach 16:3']
 },
 };
+// Mapeamento simples para ajudar a IA a entender abreviações
+const mapaLivros = {
+    "gênesis": "gn", "genesis": "gn", "gn": "gn",
+    "êxodo": "ex", "exodo": "ex", "ex": "ex",
+    "joão": "jo", "joao": "jo", "jo": "jo",
+    "salmos": "ps", "salmo": "ps", "sl": "ps"
+    // Você pode adicionar todos os outros aqui depois
+};
+
+async function processarPerguntaIA(pergunta) {
+    // Expressão regular para encontrar Livro e Capítulo (ex: João 3 ou Jo 3)
+    const regex = /([a-zA-Záàâãéèêíïóôõöúçñ]+)\s*(\d+)/i;
+    const match = pergunta.match(regex);
+
+    if (match) {
+        let livroDigitado = match[1].toLowerCase();
+        let capitulo = match[2];
+        let sigla = mapaLivros[livroDigitado] || livroDigitado;
+
+        console.log(`Buscando: ${sigla} capítulo ${capitulo}...`);
+        
+        // Aqui chamamos a função que busca na API
+        const textoBiblico = await lerBiblia(sigla, capitulo);
+        
+        return textoBiblico;
+    }
+    
+    return null; // Caso não seja uma citação bíblica
+}
+
 /* ═══ FIM DO KNOWLEDGE.JS ═══ */
