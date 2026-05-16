@@ -1,0 +1,436 @@
+  "meta": {
+    "versao": "2.0",
+    "total": 35,
+    "descricao": "Fichas completas de personagens bíblicos com referências directas da Bíblia"
+  },
+  "personagens": [
+    {
+      "id": "jesus",
+      "nome": "Jesus Cristo",
+      "tags": ["jesus","cristo","filho de deus","messias","salvador","jesus de nazaré","o ungido","cordeiro de deus"],
+      "categoria": "NT",
+      "livros_principais": ["Mateus","Marcos","Lucas","João"],
+      "descricao": "Jesus Cristo é o centro do Novo Testamento e da fé cristã — o Filho de Deus encarnado, nascido em Belém da Judeia, criado em Nazaré, baptizado no Jordão por João Baptista. O seu ministério público durou aproximadamente 3 anos: chamou 12 apóstolos, realizou milagres (curas, ressurreições, domínio sobre a natureza), ensinou o Sermão da Montanha e instituiu a Eucaristia na Última Ceia. Foi crucificado em Jerusalém, ressuscitou ao terceiro dia — aparecendo a mais de 500 pessoas — e ascendeu ao Céu 40 dias depois. Nasceu em Belém, fugiu para o Egipto na infância para escapar a Herodes, viveu em Nazaré até aos 30 anos.",
+      "linha_do_tempo": [
+        "Nascimento em Belém — fuga para o Egipto",
+        "Regresso a Nazaré — infância e adolescência",
+        "Baptismo no Jordão por João Baptista",
+        "40 dias no deserto — tentações",
+        "Ministério na Galileia — milagres e ensinos",
+        "Transfiguração no Monte Tabor",
+        "Ressurreição de Lázaro em Betânia",
+        "Entrada triunfal em Jerusalém",
+        "Última Ceia — instituição da Eucaristia",
+        "Prisão, julgamento e crucificação",
+        "Ressurreição ao terceiro dia",
+        "Ascensão 40 dias depois"
+      ],
+      "versiculos_chave": [
+        {"ref": "João 1:14", "texto": "E o Verbo se fez carne e habitou entre nós."},
+        {"ref": "João 3:16", "texto": "Porque Deus amou o mundo de tal maneira que deu o Seu Filho Unigênito."},
+        {"ref": "João 11:35", "texto": "Jesus pôs-se a chorar."},
+        {"ref": "João 14:6", "texto": "Eu sou o Caminho, a Verdade e a Vida."},
+        {"ref": "Mateus 28:6", "texto": "Não está aqui, pois ressuscitou, como tinha dito."}
+      ]
+    },
+    {
+      "id": "maria",
+      "nome": "Maria — Mãe de Jesus",
+      "tags": ["maria","virgem maria","nossa senhora","mae de jesus","theotokos","magnificat","anunciação"],
+      "categoria": "NT",
+      "livros_principais": ["Lucas","João","Mateus"],
+      "descricao": "Maria de Nazaré foi escolhida por Deus para ser mãe de Jesus. O anjo Gabriel anunciou-lhe o nascimento sobrenatural — concebeu pelo Espírito Santo. A sua resposta foi modelo de fé: 'Faça-se em mim segundo a tua palavra.' Esteve presente desde o nascimento até à Crucificação onde permaneceu ao pé da Cruz quando a maioria dos apóstolos fugiu. O seu hino, o Magnificat (Lucas 1:46-55), é um dos mais belos cânticos bíblicos. Tradição identifica os seus pais como Joaquim e Ana (Protoevangelho de Tiago).",
+      "versiculos_chave": [
+        {"ref": "Lucas 1:28", "texto": "Salve, cheia de graça! O Senhor está contigo."},
+        {"ref": "Lucas 1:38", "texto": "Eis a serva do Senhor; faça-se em mim segundo a tua palavra."},
+        {"ref": "Lucas 1:46-47", "texto": "A minha alma engrandece ao Senhor, e o meu espírito se alegra em Deus, meu Salvador."},
+        {"ref": "João 19:26", "texto": "Mulher, eis aí o teu filho."}
+      ]
+    },
+    {
+      "id": "moises",
+      "nome": "Moisés",
+      "tags": ["moisés","moises","libertador","legislador","sara ardente","sarça","dez mandamentos","exodo","torah","monte sinai","tábuas da lei"],
+      "categoria": "AT",
+      "livros_principais": ["Êxodo","Levítico","Números","Deuteronómio"],
+      "descricao": "Moisés é o maior profeta do Antigo Testamento — libertador de Israel da escravidão no Egipto, legislador da Torah e intermediário da Aliança no Sinai. Nasceu numa época em que o Faraó mandava matar os bebés hebreus; foi salvo no Nilo num cesto de junco e criado como príncipe egípcio. Após matar um capataz, fugiu para Madiã. Deus falou-lhe na sarça ardente e enviou-o de volta ao Egipto com poderes para realizar as 10 Pragas. Após o Êxodo, conduziu Israel por 40 anos no deserto. Recebeu as Tábuas da Lei no Monte Sinai. Morreu sem entrar na Terra Prometida, vendo-a apenas do Monte Nebo.",
+      "versiculos_chave": [
+        {"ref": "Êxodo 3:14", "texto": "Eu sou o que sou. Dirás aos filhos de Israel: Eu Sou me enviou a vós."},
+        {"ref": "Êxodo 20:2", "texto": "Eu sou o Senhor teu Deus, que te tirei da terra do Egito."},
+        {"ref": "Deuteronómio 34:10", "texto": "Nunca mais se levantou em Israel profeta algum como Moisés, que o Senhor conheceu face a face."}
+      ]
+    },
+    {
+      "id": "abraao",
+      "nome": "Abraão — Pai da Fé",
+      "tags": ["abraão","abraao","abrão","pai da fé","pai das nações","ur","aliança","sara","isaque","ismael","monte moriá"],
+      "categoria": "AT",
+      "livros_principais": ["Génesis"],
+      "descricao": "Abraão (originalmente Abrão de Ur dos Caldeus) é o patriarca fundador das três religiões abraâmicas. Deus chamou-o com 75 anos para deixar a sua terra e ir para Canaã prometendo uma grande nação. A sua esposa Sara era estéril; Deus prometeu um filho que nasceu milagrosamente quando ela tinha 90 anos — Isaque. O teste supremo foi o sacrifício de Isaque no Monte Moriá: no último instante Deus providenciou um carneiro. Nas escrituras é chamado 'amigo de Deus' e 'pai de todos os que crêem por fé'.",
+      "versiculos_chave": [
+        {"ref": "Génesis 12:1", "texto": "Sai da tua terra e da casa do teu pai para a terra que te mostrarei."},
+        {"ref": "Génesis 15:6", "texto": "E Abrão creu no Senhor, e isso lhe foi imputado como justiça."},
+        {"ref": "Génesis 22:12", "texto": "Agora conheço que temes a Deus, pois não me negaste o teu filho."}
+      ]
+    },
+    {
+      "id": "davi",
+      "nome": "Rei David",
+      "tags": ["davi","david","rei david","rei de israel","golias","salmos","ungido","betlém","betsabeia","urias","arca da aliança"],
+      "categoria": "AT",
+      "livros_principais": ["1 Samuel","2 Samuel","Salmos"],
+      "descricao": "David é o maior rei de Israel — pastor, poeta, guerreiro e profeta. Filho caçula de Jessé de Belém, foi escolhido pelo profeta Samuel ainda adolescente. Celebrizou-se ao derrotar o gigante Golias com uma funda e uma pedra. Tornou-se rei de toda Israel, conquistou Jerusalém e trouxe a Arca da Aliança. O seu maior pecado foi o adultério com Betsabeia e a morte indirecta do marido Urias — o Salmo 51 é o seu canto de arrependimento profundo. 73 Salmos são atribuídos a ele. Ancestral directo de Jesus Cristo.",
+      "versiculos_chave": [
+        {"ref": "1 Samuel 16:7", "texto": "O homem olha as aparências, mas o Senhor olha o coração."},
+        {"ref": "1 Samuel 17:45", "texto": "Venho a ti em nome do Senhor dos Exércitos, o Deus dos exércitos de Israel."},
+        {"ref": "Salmos 51:10", "texto": "Cria em mim um coração puro, ó Deus, e renova um espírito recto dentro de mim."}
+      ]
+    },
+    {
+      "id": "salomao",
+      "nome": "Rei Salomão",
+      "tags": ["salomão","salomao","templo","sabedoria","provérbios","eclesiastes","cântico","1000 mulheres","rainha de sabá","templo de salomão"],
+      "categoria": "AT",
+      "livros_principais": ["1 Reis","Provérbios","Eclesiastes","Cântico dos Cânticos"],
+      "descricao": "Salomão, filho de David e Betsabeia, foi o terceiro e mais glorioso rei de Israel. Quando Deus lhe perguntou o que desejava, pediu sabedoria — Deus concedeu sabedoria, riqueza e honra sem paralelo. Construiu o grandioso Templo de Jerusalém. Escreveu Provérbios, Eclesiastes e o Cântico dos Cânticos. A Rainha de Sabá veio de longe para testar a sua sabedoria. A sua queda foi permitir que as 700 esposas e 300 concubinas estrangeiras o levassem à idolatria. O reino dividiu-se após a sua morte.",
+      "versiculos_chave": [
+        {"ref": "1 Reis 3:9", "texto": "Dá ao teu servo um coração com entendimento para julgar o teu povo."},
+        {"ref": "Provérbios 1:7", "texto": "O temor do Senhor é o princípio da sabedoria."},
+        {"ref": "Eclesiastes 1:2", "texto": "Vaidade das vaidades! Tudo é vaidade."}
+      ]
+    },
+    {
+      "id": "joao_batista",
+      "nome": "João Baptista — O Precursor",
+      "tags": ["joão batista","joao batista","precursor","voz que clama","baptismo","decapitado","salomé","herodes","elias","jordão"],
+      "categoria": "NT",
+      "livros_principais": ["Lucas","Mateus","Marcos","João"],
+      "descricao": "João Baptista é o último profeta do AT e o precursor directo de Jesus. Nasceu de pais idosos e estéreis — Zacarias e Isabel (prima de Maria) — de forma milagrosa. Cresceu no deserto, vestindo pelos de camelo e comendo gafanhotos e mel silvestre. Pregou no Jordão chamando ao arrependimento e baptizou Jesus. Jesus disse: 'Entre os nascidos de mulher não surgiu ninguém maior do que João Baptista.' Foi preso por Herodes Antipas por denunciar o seu casamento ilegal com Herodíades e decapitado a pedido de Salomé.",
+      "versiculos_chave": [
+        {"ref": "Lucas 1:15", "texto": "Ele será grande diante do Senhor; não beberá vinho nem bebida fermentada."},
+        {"ref": "João 1:29", "texto": "Eis o Cordeiro de Deus, que tira o pecado do mundo."},
+        {"ref": "Mateus 11:11", "texto": "Entre os nascidos de mulher não surgiu alguém maior do que João Baptista."}
+      ]
+    },
+    {
+      "id": "pedro",
+      "nome": "Simão Pedro — A Rocha",
+      "tags": ["pedro","simão pedro","apóstolo pedro","rocha","chaves do reino","pescador","negou jesus","pentecostes","roma","papa"],
+      "categoria": "NT",
+      "livros_principais": ["Mateus","João","Atos","1 Pedro","2 Pedro"],
+      "descricao": "Simão Pedro, pescador da Galileia, foi o primeiro apóstolo chamado por Jesus que lhe deu o nome Pedro ('Rocha'). Foi porta-voz dos Doze, testemunhou a Transfiguração, andou sobre as águas e negou Jesus três vezes na noite da prisão. Após a Ressurreição, Jesus restaurou-o com três perguntas de amor. Liderou a Igreja primitiva, pregou no Pentecostes convertendo 3.000 pessoas. Foi crucificado de cabeça para baixo em Roma — considerado o primeiro papa da Igreja Católica.",
+      "versiculos_chave": [
+        {"ref": "Mateus 16:16", "texto": "Tu és o Cristo, o Filho do Deus vivo."},
+        {"ref": "Mateus 16:18", "texto": "Tu és Pedro, e sobre esta pedra edificarei a minha Igreja."},
+        {"ref": "João 21:17", "texto": "Senhor, tu sabes tudo; tu sabes que te amo."}
+      ]
+    },
+    {
+      "id": "paulo",
+      "nome": "Paulo de Tarso — Apóstolo das Nações",
+      "tags": ["paulo","são paulo","saulo","saulo de tarso","apóstolo das nações","fariseu","damasco","conversão","cartas","epístolas"],
+      "categoria": "NT",
+      "livros_principais": ["Atos","Romanos","1 Coríntios","Gálatas","Efésios","Filipenses"],
+      "descricao": "Paulo de Tarso é o maior evangelizador da história cristã — autor de 13 cartas do NT e responsável pela difusão do Evangelho pelo mundo mediterrânico. Nasceu em Tarso da Cilícia, cidadão romano, fariseu rigoroso e perseguidor activo dos cristãos. A sua conversão deu-se no caminho de Damasco: uma luz cegante e a voz de Jesus. Realizou 3 grandes viagens missionárias pela Ásia Menor, Grécia e Roma. Escreveu da prisão as cartas aos Filipenses, Efésios, Colossenses e Filémon. Martirizado em Roma c. 67 d.C.",
+      "versiculos_chave": [
+        {"ref": "Atos 9:4", "texto": "Saulo, Saulo, por que me persegues?"},
+        {"ref": "Filipenses 4:13", "texto": "Tudo posso naquele que me fortalece."},
+        {"ref": "Gálatas 2:20", "texto": "Já não sou eu que vivo, mas Cristo vive em mim."},
+        {"ref": "1 Coríntios 13:13", "texto": "Agora permanecem a fé, a esperança e o amor; mas o maior destes é o amor."}
+      ]
+    },
+    {
+      "id": "jose_patriarca",
+      "nome": "José — Filho de Jacó",
+      "tags": ["josé","jose","filho de jacó","túnica","sonhos","egipto","escravidão","putifar","faraó","grão","fome","sete vacas"],
+      "categoria": "AT",
+      "livros_principais": ["Génesis"],
+      "descricao": "José, décimo primeiro filho de Jacó e filho amado de Raquel, é a história de rejeição e providência divina por excelência. Os irmãos invejavam-no pela túnica de muitas cores e pelos sonhos proféticos — venderam-no como escravo por 20 moedas de prata. No Egipto, serviu Putifar com fidelidade; acusado falsamente pela sua mulher, foi preso. Na prisão interpretou sonhos; depois os do Faraó (7 vacas gordas e 7 magras = 7 anos de abundância e 7 de fome). Tornou-se segundo do Egipto e salvou toda a região. Revelou-se aos irmãos com perdão: 'Não fostes vós que me enviastes para cá, mas Deus.'",
+      "versiculos_chave": [
+        {"ref": "Génesis 37:28", "texto": "Retiraram José da cova e venderam-no por vinte moedas de prata."},
+        {"ref": "Génesis 45:8", "texto": "Não fostes vós que me enviastes para cá, mas Deus."},
+        {"ref": "Génesis 50:20", "texto": "Vós intentastes o mal contra mim, mas Deus o tornou em bem."}
+      ]
+    },
+    {
+      "id": "noe",
+      "nome": "Noé — O Construtor da Arca",
+      "tags": ["noé","noe","arca","dilúvio","arco-iris","aliança com noé","justo","sem","cam","jafé","animais"],
+      "categoria": "AT",
+      "livros_principais": ["Génesis"],
+      "descricao": "Noé é descrito como 'homem justo e íntegro entre os seus contemporâneos' num tempo de corrupção total. Deus revelou-lhe o plano do dilúvio e ordenou construir a arca — 300 côvados de comprimento, 50 de largura, 30 de altura — para salvar a família e um par de cada animal. Depois do dilúvio, Deus estabeleceu a Aliança com o sinal do arco-íris: nunca mais destruiria a terra com água. É considerado um segundo pai da humanidade. O Livro dos Jubileus apócrifo expande significativamente a sua história.",
+      "versiculos_chave": [
+        {"ref": "Génesis 6:9", "texto": "Noé era homem justo e íntegro entre os seus contemporâneos."},
+        {"ref": "Génesis 9:13", "texto": "Ponho o meu arco nas nuvens e servirá de sinal de aliança entre mim e a terra."},
+        {"ref": "Hebreus 11:7", "texto": "Pela fé, Noé, divinamente avisado das coisas não vistas, preparou a arca."}
+      ]
+    },
+    {
+      "id": "elias",
+      "nome": "Elias — O Profeta do Fogo",
+      "tags": ["elias","profeta do fogo","monte carmelo","jezabel","baal","carro de fogo","arrebatamento","eliseu","horeb","voz mansa"],
+      "categoria": "AT",
+      "livros_principais": ["1 Reis","2 Reis"],
+      "descricao": "Elias é o profeta mais dramático do AT — figura de fogo, milagres e confronto com o mal. No Monte Carmelo, desafiou sozinho 450 profetas de Baal numa prova de fogo — YHWH respondeu com fogo celestial. Perseguido por Jezabel, foi ao deserto e quase desistiu de viver; um anjo alimentou-o. No Monte Horeb, Deus revelou-se na 'voz mansa e delicada' — não no vento, terramoto ou fogo. Foi arrebatado ao céu num carro de fogo sem morrer — um dos dois personagens bíblicos que não morreram (o outro é Enoque).",
+      "versiculos_chave": [
+        {"ref": "1 Reis 18:38", "texto": "Caiu o fogo do Senhor e consumiu o holocausto."},
+        {"ref": "1 Reis 19:12", "texto": "Depois do fogo, uma voz mansa e delicada."},
+        {"ref": "2 Reis 2:11", "texto": "Elias subiu ao céu num redemoinho num carro de fogo."}
+      ]
+    },
+    {
+      "id": "daniel",
+      "nome": "Daniel — O Profeta dos Sonhos",
+      "tags": ["daniel","leões","forno ardente","nabucodonosor","babilónia","visões","cova dos leões","shadrach","mesach","abednego","escrita na parede"],
+      "categoria": "AT",
+      "livros_principais": ["Daniel"],
+      "descricao": "Daniel foi deportado para a Babilónia na juventude com Hananias, Misael e Azarias. Recusou os alimentos do rei mantendo a pureza ritual. Deus concedeu-lhe sabedoria e capacidade de interpretar sonhos e visões. Interpretou o sonho de Nabucodonosor e a escrita na parede ('MENÉ, TEQUEL, PARSIM'). Foi lançado na cova dos leões por recusar adorar o rei Dario — os leões não lhe tocaram. Os seus companheiros foram lançados no forno ardente e saíram ilesos com uma quarta figura 'semelhante ao Filho de Deus'.",
+      "versiculos_chave": [
+        {"ref": "Daniel 3:25", "texto": "A aparência do quarto é semelhante à de um filho dos deuses."},
+        {"ref": "Daniel 6:22", "texto": "O meu Deus enviou o seu anjo e fechou a boca dos leões."},
+        {"ref": "Daniel 7:13", "texto": "Vi nas visões nocturnas um como filho de homem que vinha com as nuvens do céu."}
+      ]
+    },
+    {
+      "id": "ester",
+      "nome": "Rainha Ester — A Heroína Persa",
+      "tags": ["ester","rainha ester","mardoqueu","hamã","persépolis","purim","assuerus","livramento","para este momento chegaste ao reino"],
+      "categoria": "AT",
+      "livros_principais": ["Ester"],
+      "descricao": "Ester é uma jovem judia órfã criada pelo primo Mardoqueu no exílio persa. Tornada rainha do rei Assuerus graças à sua beleza, manteve em segredo a sua identidade judaica. Quando Hamã conspirou para exterminar todos os judeus, Mardoqueu apelou a Ester: 'Quem sabe se não foi para este momento que chegaste ao reino?' Arriscando a própria vida ao aproximar-se do rei sem convite, intercedeu pelo seu povo. Hamã foi enforcado na própria forca que preparou para Mardoqueu. A festa de Purim celebra este livramento.",
+      "versiculos_chave": [
+        {"ref": "Ester 4:14", "texto": "Quem sabe se não foi para um momento como este que chegaste ao reino?"},
+        {"ref": "Ester 4:16", "texto": "Vai, reúne todos os judeus e jejuai por mim. Se eu perecer, que pereça."}
+      ]
+    },
+    {
+      "id": "rute",
+      "nome": "Rute — A Leal Moabita",
+      "tags": ["rute","ruth","moabita","noomi","boaz","lealdade","onde tu morreres morrerei","antepassada de david","espingar"],
+      "categoria": "AT",
+      "livros_principais": ["Rute"],
+      "descricao": "Rute é uma mulher moabita que escolheu o povo e o Deus de Israel após ficar viúva. Quando a sogra Noomi quis regressar a Belém, Rute recusou abandoná-la com um dos textos mais belos de lealdade: 'Onde tu morreres, morrerei eu.' Em Belém foi espingar os campos de Boaz, que a protegeu e acabou por casar com ela como 'resgatador'. O seu filho Obede foi pai de Jessé, pai de David — Rute tornou-se ancestral directa de Jesus Cristo.",
+      "versiculos_chave": [
+        {"ref": "Rute 1:16", "texto": "Onde tu fores, irei eu; o teu povo é o meu povo, o teu Deus é o meu Deus."},
+        {"ref": "Rute 2:12", "texto": "O Senhor recompense o teu procedimento, da parte do Senhor Deus de Israel."}
+      ]
+    },
+    {
+      "id": "neemias",
+      "nome": "Neemias — O Reconstrutor",
+      "tags": ["neemias","muros de jerusalém","copeiro do rei","reconstrução","52 dias","sambalate","esdras","reformador","exílio persia"],
+      "categoria": "AT",
+      "livros_principais": ["Neemias"],
+      "descricao": "Neemias era copeiro do rei Artaxerxes da Pérsia — cargo de altíssima confiança. Ao receber notícias das ruínas de Jerusalém, chorou e jejuou por dias. Pediu licença ao rei para reconstruir os muros. Organizado e determinado, distribuiu tarefas e enfrentou a oposição de Sambalate com uma mão na obra e outra na espada. Os muros foram reconstruídos em apenas 52 dias — considerado milagroso pelos inimigos. Em colaboração com Esdras, reformou a vida religiosa de Israel.",
+      "versiculos_chave": [
+        {"ref": "Neemias 1:4", "texto": "Quando ouvi estas palavras, sentei-me e chorei, e por vários dias me andei lamentando."},
+        {"ref": "Neemias 4:17", "texto": "Com uma mão trabalhavam na obra, e com a outra seguravam a espada."},
+        {"ref": "Neemias 6:15", "texto": "O muro foi acabado em cinquenta e dois dias."}
+      ]
+    },
+    {
+      "id": "josue",
+      "nome": "Josué — O Conquistador",
+      "tags": ["josué","josue","jericó","conquista","terra prometida","canaan","successor de moisés","jordão","paredes de jericó","sê forte e corajoso"],
+      "categoria": "AT",
+      "livros_principais": ["Josué"],
+      "descricao": "Josué foi o successor de Moisés e conduziu Israel na conquista da Terra Prometida. Como espião enviado a Canaã, foi um dos dois que deram relatório positivo. Após a morte de Moisés, Deus falou-lhe: 'Sê forte e corajoso.' Atravessou o Jordão com a Arca cujas águas pararam milagrosamente. Conquistou Jericó com 7 voltas e o soar de trombetas — as muralhas desmoronaram. A sua última declaração pública resume a sua vida: 'Quanto a mim e à minha casa, serviremos o Senhor.'",
+      "versiculos_chave": [
+        {"ref": "Josué 1:9", "texto": "Sê forte e corajoso! O Senhor teu Deus é contigo por onde quer que andares."},
+        {"ref": "Josué 6:20", "texto": "O povo gritou; tocaram as trombetas; o muro caiu."},
+        {"ref": "Josué 24:15", "texto": "Quanto a mim e à minha casa, serviremos ao Senhor."}
+      ]
+    },
+    {
+      "id": "sansao",
+      "nome": "Sansão — O Nazireu Forte",
+      "tags": ["sansão","sansao","dalila","nazireu","força","filisteus","cabelos","cegueira","gazá","templo de dagom","leão"],
+      "categoria": "AT",
+      "livros_principais": ["Juízes"],
+      "descricao": "Sansão foi o mais famoso Juiz de Israel — nazireu de nascença dotado de força sobrenatural enquanto guardasse o voto de não cortar o cabelo. Combateu os Filisteus mas a sua fraqueza foi as mulheres. Dalila, contratada pelos Filisteus, descobriu o segredo da sua força. Adormecido, foi tosquiado e entregue — os Filisteus furaram-lhe os olhos e escravizaram-no. No templo de Dagom, com o cabelo recrescido, derrubou as colunas e matou mais Filisteus na sua morte do que em toda a vida.",
+      "versiculos_chave": [
+        {"ref": "Juízes 16:17", "texto": "Nunca passou navalha sobre a minha cabeça, porque sou nazireu de Deus."},
+        {"ref": "Juízes 16:28", "texto": "Lembra-te de mim, e fortalece-me só esta vez, ó Deus."},
+        {"ref": "Juízes 16:30", "texto": "Morra eu com os filisteus!"}
+      ]
+    },
+    {
+      "id": "samuel",
+      "nome": "Samuel — O Profeta e Juiz",
+      "tags": ["samuel","profeta samuel","ana","silo","voz no templo","fala senhor","ungiu saul","ungiu davi","juiz","obediência melhor que sacrifício"],
+      "categoria": "AT",
+      "livros_principais": ["1 Samuel","2 Samuel"],
+      "descricao": "Samuel foi o último Juiz de Israel e o primeiro dos grandes profetas após Moisés. Nasceu como resposta à oração da mãe Ana, estéril. Consagrado ao Senhor desde o nascimento e entregue ao sacerdote Eli no Templo de Silo, ainda criança ouviu Deus chamá-lo três vezes à noite. Ungiu Saul como primeiro rei e depois David em segredo. A frase 'A obediência é melhor que o sacrifício' é sua. Mesmo após a morte foi evocado pela médiun de Endor a pedido de Saul desesperado.",
+      "versiculos_chave": [
+        {"ref": "1 Samuel 3:10", "texto": "Fala, Senhor, porque o teu servo ouve."},
+        {"ref": "1 Samuel 15:22", "texto": "A obediência é melhor que o sacrifício."},
+        {"ref": "1 Samuel 16:13", "texto": "Samuel ungiu David no meio dos seus irmãos."}
+      ]
+    },
+    {
+      "id": "isaias",
+      "nome": "Isaías — O Evangelista do AT",
+      "tags": ["isaías","isaias","servo sofredor","immanuel","virgem conceberá","príncipe da paz","serafins","visão do trono","evangelista","traspassado"],
+      "categoria": "AT",
+      "livros_principais": ["Isaías"],
+      "descricao": "Isaías, profeta do século VIII a.C., é o mais citado no NT — chamado de 'Evangelista do AT' pelas suas profecias messiânicas: 'Uma virgem conceberá e dará à luz um filho chamado Emanuel.' O capítulo 53, o 'Servo Sofredor', descreve com precisão a paixão de Cristo séculos antes: 'Ele foi traspassado pelas nossas transgressões.' A visão inaugural do trono de Deus com os serafins cantando 'Santo, Santo, Santo' define a santidade divina. Segundo a tradição, foi martirizado a serrar ao meio sob Manassés.",
+      "versiculos_chave": [
+        {"ref": "Isaías 6:3", "texto": "Santo, Santo, Santo é o Senhor dos Exércitos; toda a terra está cheia da sua glória."},
+        {"ref": "Isaías 7:14", "texto": "A jovem está grávida e dará à luz um filho, a quem chamará Emanuel."},
+        {"ref": "Isaías 53:5", "texto": "Ele foi traspassado pelas nossas transgressões e moído pelas nossas iniquidades."},
+        {"ref": "Isaías 40:31", "texto": "Os que esperam no Senhor subirão com asas como águias."}
+      ]
+    },
+    {
+      "id": "jeremias",
+      "nome": "Jeremias — O Profeta Lacrimoso",
+      "tags": ["jeremias","profeta chorão","lamentações","nova aliança","babilónia","baruc","destruição do templo","known before birth"],
+      "categoria": "AT",
+      "livros_principais": ["Jeremias","Lamentações"],
+      "descricao": "Jeremias, chamado 'profeta chorão', ministrou 40 anos (627–587 a.C.) — desde o rei Josias até à destruição de Jerusalém pela Babilónia. Chamado desde o ventre da mãe, resistiu à missão alegando ser jovem. Viveu para ver a destruição do Templo e o exílio. Profetizou a Nova Aliança: 'Porei a minha lei no seu coração.' Lamentações é a sua obra de luto pela destruição de Jerusalém — contém uma das afirmações mais belas sobre a misericórdia divina.",
+      "versiculos_chave": [
+        {"ref": "Jeremias 1:5", "texto": "Antes que te formasse no ventre, eu te conheci; antes que saísses da madre, eu te consagrei."},
+        {"ref": "Jeremias 29:11", "texto": "Porque eu sei os planos que tenho para vós: planos de bem e não de mal."},
+        {"ref": "Lamentações 3:22", "texto": "As misericórdias do Senhor não têm fim; as suas compaixões não se esgotam."}
+      ]
+    },
+    {
+      "id": "maria_madalena",
+      "nome": "Maria Madalena — Apóstola dos Apóstolos",
+      "tags": ["maria madalena","magdalena","sete demónios","primeira testemunha ressurreição","apóstola dos apóstolos","raboni","jardim do sepulcro"],
+      "categoria": "NT",
+      "livros_principais": ["Lucas","João","Mateus","Marcos"],
+      "descricao": "Maria Madalena é uma das figuras mais fascinantes do NT. Jesus expulsou dela sete demónios — tornou-se uma das suas seguidoras mais dedicadas. Estava presente na Crucificação quando a maioria dos apóstolos fugiu. Foi a primeira pessoa a ver o Ressuscitado — o encontro no jardim em João 20: 'Maria!' / 'Raboni!' Por esta razão é chamada 'Apóstola dos Apóstolos' — foi enviada a anunciar a Ressurreição aos Doze antes de todos.",
+      "versiculos_chave": [
+        {"ref": "Lucas 8:2", "texto": "Maria chamada Madalena, da qual saíram sete demónios."},
+        {"ref": "João 20:16", "texto": "Jesus disse-lhe: Maria! Ela disse-lhe: Raboni! (que quer dizer Mestre)."},
+        {"ref": "João 20:18", "texto": "Maria Madalena foi e anunciou aos discípulos que tinha visto o Senhor."}
+      ]
+    },
+    {
+      "id": "judas",
+      "nome": "Judas Iscariotes — O Traidor",
+      "tags": ["judas","judas iscariotes","trinta moedas","beijo traidor","traição","getsêmani","tesoureiro","satanás entrou nele"],
+      "categoria": "NT",
+      "livros_principais": ["Mateus","Lucas","João"],
+      "descricao": "Judas Iscariotes foi um dos Doze e o único não galileu. Era o tesoureiro do grupo. Após a unção de Jesus por Maria de Betânia, foi ter com os sumos sacerdotes e combinou entregar Jesus por 30 moedas de prata — preço de um escravo. Na Última Ceia, João narra que 'Satanás entrou nele' após receber o bocado de pão. No Getsêmani identificou Jesus com um beijo. Arrependido, devolveu as moedas gritando 'Pequei, traindo sangue inocente', e foi enforcar-se.",
+      "versiculos_chave": [
+        {"ref": "Mateus 26:15", "texto": "Quanto me dareis, e eu vo-lo entregarei? Pesaram-lhe trinta moedas de prata."},
+        {"ref": "Lucas 22:48", "texto": "Judas, entregas o Filho do Homem com um beijo?"},
+        {"ref": "Mateus 27:4", "texto": "Pequei, traindo sangue inocente."}
+      ]
+    },
+    {
+      "id": "lazaro",
+      "nome": "Lázaro de Betânia",
+      "tags": ["lázaro","lazaro","ressurreição de lázaro","betânia","marta","jesus chorou","quatro dias","amigo de jesus","vem para fora"],
+      "categoria": "NT",
+      "livros_principais": ["João"],
+      "descricao": "Lázaro era irmão de Marta e Maria de Betânia e amigo íntimo de Jesus. Quando morreu, Jesus demorou dois dias propositadamente. Ao chegar, Lázaro estava sepultado há quatro dias. Ao ver Maria e os judeus a chorar, Jesus ficou profundamente comovido e João 11:35 regista o versículo mais curto: 'Jesus pôs-se a chorar.' Mandou abrir o sepulcro e gritou 'Lázaro, vem para fora!' — e ele saiu ainda nas faixas mortuárias. Este milagre precipitou directamente a conspiração para matar Jesus.",
+      "versiculos_chave": [
+        {"ref": "João 11:35", "texto": "Jesus pôs-se a chorar."},
+        {"ref": "João 11:43", "texto": "Clamou em alta voz: Lázaro, vem para fora!"},
+        {"ref": "João 11:25", "texto": "Eu sou a ressurreição e a vida; quem crê em mim, ainda que esteja morto, viverá."}
+      ]
+    },
+    {
+      "id": "adao_eva",
+      "nome": "Adão e Eva — Os Primeiros Humanos",
+      "tags": ["adão","adao","eva","jardim do éden","éden","pecado original","fruto proibido","serpente","queda","criação do homem","proto-evangelho"],
+      "categoria": "AT",
+      "livros_principais": ["Génesis"],
+      "descricao": "Adão foi criado do pó da terra por Deus que soprou nele o fôlego de vida. Eva foi formada da costela de Adão. Viviam em harmonia com Deus no Éden até a tentação da serpente que questionou a palavra de Deus: 'Sereis como Deus, conhecendo o bem e o mal.' Eva comeu e deu a Adão. Consequências: vergonha, medo, trabalho penoso, dor no parto, morte e expulsão do Éden. Em Génesis 3:15 está o Proto-Evangelho: a semente da mulher esmagaria a cabeça da serpente — cumprido em Cristo.",
+      "versiculos_chave": [
+        {"ref": "Génesis 2:7", "texto": "Formou o Senhor Deus o homem do pó da terra, e soprou-lhe nas narinas o fôlego da vida."},
+        {"ref": "Génesis 3:15", "texto": "Porei inimizade entre ti e a mulher, e entre a tua descendência e a dela."},
+        {"ref": "1 Coríntios 15:22", "texto": "Assim como todos morrem em Adão, assim também todos serão vivificados em Cristo."}
+      ]
+    },
+    {
+      "id": "ezequiel",
+      "nome": "Ezequiel — O Profeta das Visões",
+      "tags": ["ezequiel","querubins","babilónia","vale dos ossos secos","visão da roda","ezequiel 37","rio da vida","templo futuro","ossos reviver"],
+      "categoria": "AT",
+      "livros_principais": ["Ezequiel"],
+      "descricao": "Ezequiel era sacerdote deportado para a Babilónia (597 a.C.). As suas visões são as mais extraordinárias da Bíblia — a visão inaugural dos Querubins e rodas de fogo (Ezequiel 1) é de simbolismo cósmico sem paralelo. A visão do Vale dos Ossos Secos (cap. 37) — 'Poderão esses ossos reviver?' — é a mais poderosa metáfora de ressurreição das escrituras. Anunciou a destruição e depois a restauração de Israel, culminando na visão do Templo Futuro e do Rio da Vida.",
+      "versiculos_chave": [
+        {"ref": "Ezequiel 37:3", "texto": "Filho do homem, poderão esses ossos reviver?"},
+        {"ref": "Ezequiel 37:14", "texto": "Porei o meu Espírito em vós, e vivereis."},
+        {"ref": "Ezequiel 36:26", "texto": "Dar-vos-ei um coração novo e porei um espírito novo dentro de vós."}
+      ]
+    },
+    {
+      "id": "debora",
+      "nome": "Débora — A Juíza Profetisa",
+      "tags": ["débora","debora","juíza","profetisa","barak","sísara","jael","mulher líder","palmeira","canção de débora"],
+      "categoria": "AT",
+      "livros_principais": ["Juízes"],
+      "descricao": "Débora foi a única mulher Juíza de Israel — profetisa, líder militar e poetisa. Julgava sob uma palmeira na montanha de Efraim. Quando Sísara oprimia Israel, convocou Baraque para a batalha e profetizou: 'A honra não te caberá a ti — o Senhor entregará Sísara nas mãos de uma mulher.' A batalha foi vencida; Sísara fugiu e foi morto por Jael com uma estaca de tenda. A Canção de Débora (Juízes 5) é um dos poemas mais antigos da Bíblia.",
+      "versiculos_chave": [
+        {"ref": "Juízes 4:4", "texto": "Débora, profetisa, mulher de Lapidote, julgava naquele tempo a Israel."},
+        {"ref": "Juízes 5:7", "texto": "Até que eu, Débora, me levantei, me levantei como mãe em Israel."}
+      ]
+    },
+    {
+      "id": "jaco",
+      "nome": "Jacó — Israel, o Lutador",
+      "tags": ["jacó","jacob","israel","luta com o anjo","esaú","lia","raquel","12 tribos","peniel","betel","escada dos anjos","lábano"],
+      "categoria": "AT",
+      "livros_principais": ["Génesis"],
+      "descricao": "Jacó, filho de Isaac, nasceu a segurar o calcanhar do gémeo Esaú. Com ajuda da mãe, enganou o pai Isaac e obteve a bênção do primogênito. Fugiu para Harã onde serviu o tio Labão 20 anos, casou com Lia e Raquel e teve 12 filhos — os patriarcas das 12 tribos. Sonhou com a escada para o céu com anjos subindo e descendo. A sua transformação deu-se ao lutar com um ser divino em Peniel até ao amanhecer. Deus mudou o seu nome de Jacó para Israel — 'o que luta com Deus'.",
+      "versiculos_chave": [
+        {"ref": "Génesis 28:12", "texto": "Sonhou uma escada que estava posta na terra cujo cimo tocava nos céus; anjos de Deus subiam e desciam por ela."},
+        {"ref": "Génesis 32:28", "texto": "Não te chamarás mais Jacó, mas Israel; porque lutaste com Deus e com os homens e prevaleceste."}
+      ]
+    },
+    {
+      "id": "tomas",
+      "nome": "Tomé — O Incrédulo que Creu",
+      "tags": ["tomé","tomas","dídimo","incrédulo","dedo na ferida","senhor meu e deus meu","ressurreição","india","não acreditarei"],
+      "categoria": "NT",
+      "livros_principais": ["João"],
+      "descricao": "Tomé (Dídimo = gémeo) é famoso pela sua dúvida sobre a Ressurreição: 'Se eu não vir as marcas dos cravos, não acreditarei.' Oito dias depois, Jesus apareceu e convidou-o a tocar as Suas feridas. A resposta de Tomé é a confissão mais alta dos Evangelhos: 'Senhor meu e Deus meu!' Jesus respondeu: 'Bem-aventurados os que não viram e creram.' Segundo a tradição, evangelizou a Índia e foi martirizado com uma lança em Mylapore.",
+      "versiculos_chave": [
+        {"ref": "João 20:25", "texto": "Se eu não vir nas suas mãos o sinal dos cravos, não acreditarei."},
+        {"ref": "João 20:28", "texto": "Tomé respondeu: Senhor meu e Deus meu!"},
+        {"ref": "João 20:29", "texto": "Bem-aventurados os que não viram e creram."}
+      ]
+    },
+    {
+      "id": "joao_apostolo",
+      "nome": "João — O Apóstolo Amado",
+      "tags": ["joão apóstolo","discípulo amado","boanerges","filho do trovão","apocalipse","patmos","efeso","amor","filho de zebedeu"],
+      "categoria": "NT",
+      "livros_principais": ["João","1 João","Apocalipse"],
+      "descricao": "João, filho de Zebedeu, foi o 'discípulo amado' — o mais jovem dos Doze e o único que permaneceu ao pé da Cruz. Jesus confiou-lhe a Sua mãe Maria. Testemunhou a Transfiguração e esteve no Getsêmani. Escreveu o quarto Evangelho (o mais teológico), três cartas e o Apocalipse. O Apocalipse foi escrito durante o exílio na ilha de Patmos. Foi o único apóstolo que não morreu mártir. A sua mensagem central: Deus é amor.",
+      "versiculos_chave": [
+        {"ref": "1 João 4:8", "texto": "Quem não ama não conhece a Deus, porque Deus é amor."},
+        {"ref": "Apocalipse 1:9", "texto": "Eu João, vosso irmão, estava na ilha chamada Patmos."}
+      ]
+    },
+    {
+      "id": "ana_profetisa",
+      "nome": "Ana — A Mãe que Orou",
+      "tags": ["ana","mãe de samuel","estéril","oração fervorosa","silo","penina","voto","hannah","consagrou filho a deus"],
+      "categoria": "AT",
+      "livros_principais": ["1 Samuel"],
+      "descricao": "Ana, esposa de Elcana, era estéril e sofria a crueldade de Penina que tinha filhos. No templo de Silo, orou com tal intensidade — lágrimas e lábios a mover-se sem som — que o sacerdote Eli a achou bêbada. Fez voto: se Deus lhe desse um filho, consagraria ao Senhor. Nasceu Samuel. Fiel ao voto, entregou Samuel a Eli assim que o desmamou. O seu hino de gratidão (1 Samuel 2) é o modelo directo do Magnificat de Maria.",
+      "versiculos_chave": [
+        {"ref": "1 Samuel 1:11", "texto": "Senhor dos Exércitos! Se benignamente olhares para a tua serva e te lembrares de mim."},
+        {"ref": "1 Samuel 2:1", "texto": "O meu coração se alegra no Senhor; a minha força é exaltada no Senhor."}
+      ]
+    },
+    {
+      "id": "natan",
+      "nome": "Natan — O Profeta Corajoso",
+      "tags": ["natan","profeta natan","parábola da ovelha","confrontou david","betsabeia","salomão","coragem profética"],
+      "categoria": "AT",
+      "livros_principais": ["2 Samuel","1 Reis"],
+      "descricao": "Natan foi o profeta da corte do rei David — conselheiro e voz de Deus ao monarca. Quando David cometeu adultério com Betsabeia e mandou matar Urias, Natan confrontou-o com a parábola do homem rico que roubou a única ovelha do pobre. David indignou-se e Natan apontou: 'Tu és esse homem.' David arrependeu-se profundamente — o Salmo 51 nasceu desse momento. Natan também profetizou a aliança davídica eterna e deu ao filho de David e Betsabeia o nome amado Jedidias (Salomão).",
+      "versiculos_chave": [
+        {"ref": "2 Samuel 12:7", "texto": "Então Natan disse a David: Tu és esse homem."},
+        {"ref": "2 Samuel 7:16", "texto": "Tua casa e teu reino serão estabelecidos para sempre."}
+      ]
+    }
+  ]
+
