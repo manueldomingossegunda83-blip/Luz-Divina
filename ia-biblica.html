@@ -4,263 +4,310 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <meta name="theme-color" content="#c9a84c"/>
-  <meta name="description" content="IA Bíblica Luz Divina — Cérebro Teológico PHD. Angelologia, exegese, rituais, orações e conhecimento bíblico completo. Motor offline."/>
+  <meta name="description" content="IA Bíblica Luz Divina — Agente Teológico PHD. Angelologia, Rituais de Salomão, exegese, orações. Motor dual-API com aprendizado."/>
   <link rel="canonical" href="https://luzdivina.top/ia-biblica"/>
-  <title>IA Luz Divina — Cérebro Teológico PHD</title>
+  <title>IA Luz Divina — Guardião dos Segredos Universais</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="manifest" href="manifest.json"/>
   <link rel="stylesheet" href="navbar.css"/>
   <style>
-    :root{
-      --bg:#080d18;--bg2:#0d1525;--bg3:#111e33;
-      --card:#0f1b2d;--card2:#152238;--card3:#1a2d4a;
-      --blue:#4f9cf9;--blue2:#2563eb;--blue3:#1d4ed8;
-      --gold:#c9a84c;--gold2:#f0d27a;--gold3:#7a5c1e;
-      --teal:#2dd4bf;--purple:#a78bfa;
-      --red:#f87171;--green:#4ade80;
-      --text:#e2eaf8;--text2:#94a3b8;--text3:#64748b;
-      --border:rgba(79,156,249,0.13);--border2:rgba(201,168,76,0.22);
-      --glow-b:rgba(79,156,249,0.08);--glow-g:rgba(201,168,76,0.07);
-      --r:16px;
+    /* ── VARIÁVEIS ── */
+    :root {
+      --bg:#080d18; --bg2:#0d1525; --bg3:#111e33;
+      --card:#0f1b2d; --card2:#152238; --card3:#1a2d4a;
+      --blue:#4f9cf9; --blue2:#2563eb; --blue3:#1d4ed8;
+      --gold:#c9a84c; --gold2:#f0d27a; --gold3:#7a5c1e;
+      --teal:#2dd4bf; --purple:#a78bfa;
+      --red:#f87171; --green:#4ade80;
+      --text:#e2eaf8; --text2:#94a3b8; --text3:#64748b;
+      --border:rgba(79,156,249,.13); --border2:rgba(201,168,76,.22);
+      --glow-b:rgba(79,156,249,.08); --glow-g:rgba(201,168,76,.07);
     }
-    :root.light-mode{
-      --bg:#f0f4f8;--bg2:#ffffff;--bg3:#e8edf4;
-      --card:#ffffff;--card2:#f4f7fc;--card3:#edf1f8;
-      --text:#1a202c;--text2:#4a5568;--text3:#718096;
-      --border:rgba(0,0,0,0.09);--border2:rgba(201,168,76,0.35);
-      --glow-b:rgba(79,156,249,0.04);--glow-g:rgba(201,168,76,0.08);
+    :root.light-mode {
+      --bg:#f0f4f8; --bg2:#fff; --bg3:#e8edf4;
+      --card:#fff; --card2:#f4f7fc; --card3:#edf1f8;
+      --text:#1a202c; --text2:#4a5568; --text3:#718096;
+      --border:rgba(0,0,0,.09); --border2:rgba(201,168,76,.35);
+      --glow-b:rgba(79,156,249,.04); --glow-g:rgba(201,168,76,.08);
     }
-    :root.light-mode #chat-window{background:#fff}
-    :root.light-mode .input-bar{background:var(--bg2);border-color:var(--border)}
-    :root.light-mode #txtInput{background:var(--bg3);color:var(--text)}
-    :root.light-mode .msg-bot{background:var(--card2);border-color:var(--border)}
-    :root.light-mode .pill{background:var(--bg3);color:var(--text2)}
 
-    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:'Jost',sans-serif;background:var(--bg);color:var(--text);
-      padding-top:64px;height:100dvh;display:flex;flex-direction:column;overflow:hidden;
+    /* ── RESET ── */
+    *,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+
+    body {
+      font-family:'Jost',sans-serif;
+      background:var(--bg); color:var(--text);
+      padding-top:64px; height:100dvh;
+      display:flex; flex-direction:column; overflow:hidden;
     }
-    body::before{
-      content:'';position:fixed;inset:0;z-index:-1;
+    body::before {
+      content:''; position:fixed; inset:0; z-index:-1;
       background:
-        radial-gradient(ellipse 70% 50% at 30% 10%,rgba(79,156,249,.07) 0%,transparent 55%),
-        radial-gradient(ellipse 50% 40% at 80% 80%,rgba(167,139,250,.05) 0%,transparent 50%);
+        radial-gradient(ellipse 70% 50% at 30% 10%, rgba(79,156,249,.07) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(167,139,250,.05) 0%, transparent 50%);
     }
-    .ia-wrap{
-      flex:1;display:flex;flex-direction:column;
-      max-width:880px;margin:0 auto;width:100%;
-      padding:.5rem 1rem .4rem;min-height:0;
+
+    /* ── LAYOUT ── */
+    .ia-wrap {
+      flex:1; display:flex; flex-direction:column;
+      max-width:880px; margin:0 auto; width:100%;
+      padding:.5rem 1rem .4rem; min-height:0;
     }
-    .top-bar{
-      display:flex;align-items:center;justify-content:space-between;
-      background:var(--card);border:1px solid var(--border);
-      border-radius:14px;padding:.5rem .9rem;
-      margin-bottom:.5rem;gap:.6rem;flex-shrink:0;
+
+    /* ── TOP BAR ── */
+    .top-bar {
+      display:flex; align-items:center; justify-content:space-between;
+      background:var(--card); border:1px solid var(--border);
+      border-radius:14px; padding:.5rem .9rem;
+      margin-bottom:.5rem; gap:.6rem; flex-shrink:0;
     }
-    .ia-id{display:flex;align-items:center;gap:.65rem}
-    .ia-orb{
-      width:38px;height:38px;border-radius:11px;flex-shrink:0;
+    .ia-id   { display:flex; align-items:center; gap:.65rem; }
+    .ia-orb  {
+      width:38px; height:38px; border-radius:11px; flex-shrink:0;
       background:linear-gradient(135deg,var(--blue2),var(--purple));
-      display:flex;align-items:center;justify-content:center;
-      font-size:1.1rem;box-shadow:0 0 14px rgba(79,156,249,.3);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.1rem; box-shadow:0 0 14px rgba(79,156,249,.3);
     }
-    .ia-name{font-size:.86rem;font-weight:700;letter-spacing:.3px}
-    .ia-sub{font-size:.65rem;color:var(--green);display:flex;align-items:center;gap:.3rem;margin-top:1px}
-    .ia-sub::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--green);animation:blink 2s infinite}
-    @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-    .top-actions{display:flex;align-items:center;gap:.4rem}
-    .tb-btn{
-      background:none;border:1px solid var(--border);color:var(--text2);
-      padding:.3rem .65rem;border-radius:8px;font-size:.72rem;font-weight:600;
-      cursor:pointer;transition:all .2s;
+    .ia-name { font-size:.86rem; font-weight:700; letter-spacing:.3px; }
+    .ia-sub  {
+      font-size:.65rem; color:var(--green);
+      display:flex; align-items:center; gap:.3rem; margin-top:1px;
     }
-    .tb-btn:hover{border-color:var(--blue);color:var(--blue)}
-    .mode-tag{
-      font-size:.58rem;font-weight:700;padding:.18rem .5rem;border-radius:6px;
-      letter-spacing:.5px;text-transform:uppercase;
-      background:rgba(74,222,128,.1);color:var(--green);border:1px solid rgba(74,222,128,.2);
+    .ia-sub::before {
+      content:''; width:5px; height:5px; border-radius:50%;
+      background:var(--green); animation:blink 2s infinite;
     }
-    #chat-window{
-      flex:1;background:var(--card);border:1px solid var(--border);
-      border-radius:18px;display:flex;flex-direction:column;overflow:hidden;min-height:0;
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+    .phd-badge {
+      font-size:.56rem; font-weight:700; letter-spacing:1px;
+      color:var(--purple); background:rgba(167,139,250,.1);
+      border:1px solid rgba(167,139,250,.25);
+      padding:.1rem .5rem; border-radius:6px; text-transform:uppercase;
+      margin-left:.4rem;
     }
-    #msgs{
-      flex:1;padding:1.1rem .9rem;overflow-y:auto;
-      display:flex;flex-direction:column;gap:.85rem;min-height:0;
-      scrollbar-width:thin;scrollbar-color:var(--border) transparent;
+    .top-actions { display:flex; align-items:center; gap:.4rem; }
+    .tb-btn {
+      background:none; border:1px solid var(--border); color:var(--text2);
+      padding:.3rem .65rem; border-radius:8px;
+      font-size:.72rem; font-weight:600; cursor:pointer; transition:all .2s;
     }
-    #msgs::-webkit-scrollbar{width:3px}
-    #msgs::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
-    .msg{max-width:90%;animation:pop .22s cubic-bezier(.34,1.56,.64,1) both;line-height:1.65;font-size:.91rem}
-    @keyframes pop{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
-    .msg-user{
+    .tb-btn:hover { border-color:var(--blue); color:var(--blue); }
+    .mode-tag {
+      font-size:.58rem; font-weight:700; padding:.18rem .5rem;
+      border-radius:6px; letter-spacing:.5px; text-transform:uppercase;
+      background:rgba(74,222,128,.1); color:var(--green);
+      border:1px solid rgba(74,222,128,.2);
+    }
+
+    /* ── CHAT WINDOW ── */
+    #chat-window {
+      flex:1; background:var(--card); border:1px solid var(--border);
+      border-radius:18px; display:flex; flex-direction:column;
+      overflow:hidden; min-height:0;
+    }
+    #msgs {
+      flex:1; padding:1.1rem .9rem; overflow-y:auto;
+      display:flex; flex-direction:column; gap:.85rem; min-height:0;
+      scrollbar-width:thin; scrollbar-color:var(--border) transparent;
+    }
+    #msgs::-webkit-scrollbar       { width:3px; }
+    #msgs::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+
+    /* ── MENSAGENS ── */
+    .msg {
+      max-width:90%;
+      animation:pop .22s cubic-bezier(.34,1.56,.64,1) both;
+      line-height:1.65; font-size:.91rem;
+    }
+    @keyframes pop { from{opacity:0;transform:translateY(10px) scale(.97)} to{opacity:1;transform:none} }
+
+    .msg-user {
       align-self:flex-end;
       background:linear-gradient(135deg,var(--blue3),var(--blue2));
-      color:#fff;border-radius:14px 14px 3px 14px;padding:.75rem 1rem;
+      color:#fff; border-radius:14px 14px 3px 14px; padding:.75rem 1rem;
     }
-    .msg-user .mu-label{
-      font-size:.58rem;font-weight:700;letter-spacing:1.5px;
-      text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:.3rem;
+    .mu-label {
+      font-size:.58rem; font-weight:700; letter-spacing:1.5px;
+      text-transform:uppercase; color:rgba(255,255,255,.55); margin-bottom:.3rem;
     }
-    .msg-bot{
-      align-self:flex-start;background:var(--card2);border:1px solid var(--border);
-      border-radius:14px 14px 14px 3px;padding:.85rem 1rem;max-width:95%;
+
+    .msg-bot {
+      align-self:flex-start; background:var(--card2);
+      border:1px solid var(--border);
+      border-radius:14px 14px 14px 3px; padding:.85rem 1rem; max-width:95%;
     }
-    .bot-label{
-      font-size:.58rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-      color:var(--gold);margin-bottom:.4rem;display:flex;align-items:center;gap:.35rem;
+    .bot-label {
+      font-size:.58rem; font-weight:700; letter-spacing:2px;
+      text-transform:uppercase; color:var(--gold);
+      margin-bottom:.4rem; display:flex; align-items:center; gap:.35rem;
     }
-    .bot-label .intent-tag{
-      background:var(--glow-b);border:1px solid var(--border);color:var(--blue);
-      padding:.08rem .4rem;border-radius:5px;font-size:.55rem;letter-spacing:.5px;text-transform:uppercase;
+    .source-tag {
+      font-size:.52rem; padding:.06rem .4rem; border-radius:5px;
+      letter-spacing:.3px; text-transform:uppercase;
     }
-    .bot-body{color:var(--text);font-size:.9rem;line-height:1.8}
-    .bot-body p{margin-bottom:.7rem}
-    .bot-body p:last-child{margin-bottom:0}
-    .bot-body strong{color:var(--gold2);font-weight:600}
-    .bot-body em{color:var(--text2)}
-    .bot-body h3{
-      font-family:'Cormorant Garamond',serif;color:var(--gold);
-      font-size:1.25rem;margin:1rem 0 .4rem;font-weight:700;border-bottom:1px solid var(--border2);padding-bottom:.25rem;
+    .source-local  { background:rgba(74,222,128,.1);  color:var(--green);  border:1px solid rgba(74,222,128,.25); }
+    .source-cache  { background:rgba(79,156,249,.1);  color:var(--blue);   border:1px solid rgba(79,156,249,.25); }
+    .source-claude { background:rgba(167,139,250,.1); color:var(--purple); border:1px solid rgba(167,139,250,.25); }
+    .source-gemini { background:rgba(201,168,76,.1);  color:var(--gold);   border:1px solid rgba(201,168,76,.25); }
+
+    .bot-body { color:var(--text); font-size:.9rem; line-height:1.8; }
+    .bot-body p             { margin-bottom:.7rem; }
+    .bot-body p:last-child  { margin-bottom:0; }
+    .bot-body strong        { color:var(--gold2); font-weight:600; }
+    .bot-body em            { color:var(--text2); }
+    .bot-body h3 {
+      font-family:'Cormorant Garamond',serif; color:var(--gold);
+      font-size:1.25rem; margin:1rem 0 .4rem; font-weight:700;
+      border-bottom:1px solid var(--border2); padding-bottom:.25rem;
     }
-    .bot-body h4{
-      font-family:'Cormorant Garamond',serif;color:var(--gold);
-      font-size:1.08rem;margin:.75rem 0 .3rem;font-weight:700;
+    .bot-body h4 {
+      font-family:'Cormorant Garamond',serif; color:var(--gold);
+      font-size:1.05rem; margin:.7rem 0 .3rem; font-weight:700;
     }
-    .bot-body ul{padding-left:1.2rem;margin:.35rem 0}
-    .bot-body ul li{color:var(--text2);font-size:.86rem;margin-bottom:.3rem;line-height:1.6}
-    .bot-body ul li strong{color:var(--text)}
-    .bot-body hr{border:none;border-top:1px solid var(--border);margin:.7rem 0}
-    .compat{display:flex;align-items:center;gap:.5rem;margin:.4rem 0 .55rem}
-    .compat-label{font-size:.63rem;color:var(--text3);white-space:nowrap}
-    .compat-track{flex:1;height:3px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden}
-    .compat-fill{
-      height:100%;border-radius:3px;
-      background:linear-gradient(90deg,var(--blue),var(--gold));
-      transition:width 1.2s cubic-bezier(.4,0,.2,1);
+    .bot-body ul  { padding-left:1.2rem; margin:.35rem 0; }
+    .bot-body li  { color:var(--text2); font-size:.86rem; margin-bottom:.3rem; line-height:1.6; }
+    .bot-body li strong { color:var(--text); }
+    .bot-body hr  { border:none; border-top:1px solid var(--border); margin:.6rem 0; }
+
+    /* ── BARRA DE RELEVÂNCIA ── */
+    .compat { display:flex; align-items:center; gap:.5rem; margin:.4rem 0 .55rem; }
+    .compat-label { font-size:.63rem; color:var(--text3); white-space:nowrap; }
+    .compat-track { flex:1; height:3px; background:rgba(255,255,255,.08); border-radius:3px; overflow:hidden; }
+    .compat-fill  { height:100%; border-radius:3px; background:linear-gradient(90deg,var(--blue),var(--gold)); transition:width 1.2s cubic-bezier(.4,0,.2,1); }
+    .compat-pct   { font-size:.72rem; font-weight:700; color:var(--gold); min-width:2.5rem; text-align:right; }
+
+    /* ── VERSO BÍBLICO ── */
+    .ver-box {
+      background:var(--glow-g); border:1px solid var(--border2);
+      border-left:3px solid var(--gold); border-radius:0 10px 10px 0;
+      padding:.75rem 1rem; margin:.6rem 0;
     }
-    .compat-pct{font-size:.72rem;font-weight:700;color:var(--gold);min-width:2.5rem;text-align:right}
-    .ver-box{
-      background:var(--glow-g);border:1px solid var(--border2);
-      border-left:3px solid var(--gold);border-radius:0 10px 10px 0;
-      padding:.75rem 1rem;margin:.6rem 0 .35rem;
+    .ver-text { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-style:italic; color:var(--text); line-height:1.65; }
+    .ver-ref  { font-size:.7rem; font-weight:700; color:var(--gold); margin-top:.35rem; letter-spacing:.8px; font-style:normal; }
+
+    /* ── CAIXA DE RITUAL ── */
+    .ritual-box {
+      background:linear-gradient(135deg,rgba(167,139,250,.06),rgba(201,168,76,.04));
+      border:1px solid rgba(167,139,250,.25); border-radius:14px;
+      padding:1rem 1.2rem; margin:.6rem 0;
     }
-    .ver-text{
-      font-family:'Cormorant Garamond',serif;font-size:1.08rem;
-      font-style:italic;color:var(--text);line-height:1.65;
+    .ritual-title {
+      font-size:.62rem; font-weight:700; letter-spacing:2px;
+      color:var(--purple); text-transform:uppercase;
+      margin-bottom:.6rem; display:flex; align-items:center; gap:.35rem;
     }
-    .ver-ref{font-size:.7rem;font-weight:700;color:var(--gold);margin-top:.35rem;letter-spacing:.8px;font-family:'Jost',sans-serif;font-style:normal}
-    .ritual-box{
-      background:linear-gradient(135deg,rgba(167,139,250,.05),rgba(201,168,76,.04));
-      border:1px solid rgba(167,139,250,.25);border-radius:14px;
-      padding:1rem 1.2rem;margin:.6rem 0;
+
+    /* ── CAIXA DE ORAÇÃO ── */
+    .prayer-box {
+      background:rgba(79,156,249,.04); border:1px solid rgba(79,156,249,.15);
+      border-radius:12px; padding:.9rem 1.1rem; margin:.6rem 0;
+      font-family:'Cormorant Garamond',serif; font-size:1.02rem;
+      font-style:italic; color:var(--text); line-height:1.85;
     }
-    .ritual-title{
-      font-size:.62rem;font-weight:700;letter-spacing:2px;color:var(--purple);
-      text-transform:uppercase;margin-bottom:.6rem;display:flex;align-items:center;gap:.35rem;
+    .prayer-title {
+      font-family:'Jost',sans-serif; font-style:normal; font-size:.62rem;
+      font-weight:700; letter-spacing:2px; color:var(--blue);
+      margin-bottom:.5rem; text-transform:uppercase;
     }
-    .ritual-body{
-      font-family:'Cormorant Garamond',serif;font-size:1rem;
-      font-style:italic;color:var(--text);line-height:1.85;
+
+    /* ── PERSONAGEM ── */
+    .person-box {
+      background:linear-gradient(135deg,rgba(79,156,249,.05),rgba(201,168,76,.03));
+      border:1px solid var(--border2); border-top:3px solid var(--gold);
+      border-radius:0 0 14px 14px; padding:1rem 1.1rem; margin:.6rem 0;
     }
-    .ritual-step{
-      display:flex;gap:.6rem;margin:.45rem 0;align-items:flex-start;
-      font-family:'Jost',sans-serif;font-size:.83rem;color:var(--text2);font-style:normal;
+    .person-name {
+      font-family:'Cormorant Garamond',serif; font-size:1.15rem;
+      font-weight:700; color:var(--gold); margin-bottom:.5rem;
+      display:flex; align-items:center; gap:.5rem;
     }
-    .ritual-step-num{
-      background:var(--purple);color:#fff;border-radius:50%;
-      width:20px;height:20px;display:flex;align-items:center;justify-content:center;
-      font-size:.65rem;font-weight:700;flex-shrink:0;margin-top:1px;
+    .ptag { font-size:.6rem; font-weight:700; padding:.1rem .45rem; border-radius:5px; letter-spacing:.5px; text-transform:uppercase; }
+    .ptag-at { background:rgba(74,222,128,.1); color:var(--green); border:1px solid rgba(74,222,128,.2); }
+    .ptag-nt { background:rgba(79,156,249,.1); color:var(--blue);  border:1px solid rgba(79,156,249,.2); }
+
+    /* ── PILLS ── */
+    .pill-row { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.65rem; }
+    .pill {
+      background:var(--glow-b); border:1px solid var(--border); color:var(--blue);
+      padding:.28rem .65rem; border-radius:999px; font-size:.7rem; font-weight:600;
+      cursor:pointer; text-decoration:none; transition:all .2s;
+      display:inline-flex; align-items:center; gap:.3rem;
     }
-    .prayer-box{
-      background:rgba(79,156,249,.04);border:1px solid rgba(79,156,249,.15);
-      border-radius:12px;padding:.9rem 1.1rem;margin:.6rem 0;
-      font-family:'Cormorant Garamond',serif;font-size:1.05rem;
-      font-style:italic;color:var(--text);line-height:1.85;
+    .pill:hover { background:rgba(79,156,249,.15); border-color:var(--blue); }
+
+    /* ── TYPING ── */
+    .typing {
+      align-self:flex-start; display:none; align-items:center; gap:.5rem;
+      padding:.65rem .9rem; background:var(--card2); border:1px solid var(--border);
+      border-radius:14px 14px 14px 3px; animation:pop .2s ease;
     }
-    .prayer-box .p-title{
-      font-family:'Jost',sans-serif;font-style:normal;font-size:.62rem;
-      font-weight:700;letter-spacing:2px;color:var(--blue);margin-bottom:.5rem;text-transform:uppercase;
+    .typing.on { display:flex; }
+    .dots { display:flex; gap:4px; }
+    .dot  { width:6px; height:6px; border-radius:50%; background:var(--gold); opacity:.4; animation:bounce 1.3s infinite; }
+    .dot:nth-child(2) { animation-delay:.18s; }
+    .dot:nth-child(3) { animation-delay:.36s; }
+    @keyframes bounce { 0%,80%,100%{transform:translateY(0);opacity:.4} 40%{transform:translateY(-5px);opacity:1} }
+    .typing-txt { font-size:.72rem; color:var(--text2); font-style:italic; }
+
+    /* ── BARRA DE INPUT ── */
+    .input-bar {
+      background:var(--bg2); border-top:1px solid var(--border);
+      padding:.65rem .75rem; display:flex; gap:.5rem;
+      align-items:flex-end; flex-shrink:0;
     }
-    .phd-badge{
-      display:inline-flex;align-items:center;gap:.3rem;font-size:.58rem;font-weight:700;
-      letter-spacing:1px;color:var(--purple);background:rgba(167,139,250,.1);
-      border:1px solid rgba(167,139,250,.25);padding:.1rem .5rem;border-radius:6px;
-      text-transform:uppercase;margin-left:.4rem;
+    #txtInput {
+      flex:1; background:var(--bg3); border:1px solid var(--border);
+      border-radius:13px; padding:.72rem 1rem; color:var(--text);
+      font-size:.92rem; font-family:'Jost',sans-serif;
+      outline:none; resize:none; min-height:44px; max-height:120px;
+      transition:border-color .2s; line-height:1.5; overflow-y:auto;
     }
-    .related{margin:.5rem 0 .3rem}
-    .related-title{font-size:.65rem;color:var(--text3);font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-bottom:.35rem}
-    .rel-item{
-      font-size:.8rem;color:var(--text2);padding:.3rem .5rem .3rem .7rem;
-      border-left:2px solid var(--border2);margin-bottom:.2rem;line-height:1.55;
+    #txtInput:focus       { border-color:var(--blue); }
+    #txtInput:disabled    { opacity:.5; cursor:not-allowed; }
+    #txtInput::placeholder { color:var(--text3); }
+    .btn-send {
+      background:var(--gold); color:#0f1b2d; border:none;
+      padding:.72rem 1.1rem; border-radius:13px; font-weight:700;
+      cursor:pointer; font-family:'Jost',sans-serif; font-size:.82rem;
+      letter-spacing:.3px; transition:all .2s;
+      display:flex; align-items:center; gap:.35rem;
+      flex-shrink:0; height:44px;
     }
-    .rel-ref{color:var(--gold);font-weight:600;font-size:.72rem;margin-left:.3rem}
-    .sug-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.65rem}
-    .pill{
-      background:var(--glow-b);border:1px solid var(--border);color:var(--blue);
-      padding:.28rem .65rem;border-radius:999px;font-size:.7rem;font-weight:600;
-      cursor:pointer;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:.3rem;
+    .btn-send:hover:not(:disabled) { filter:brightness(1.1); transform:translateY(-1px); }
+    .btn-send:disabled { opacity:.5; cursor:not-allowed; transform:none; }
+
+    /* ── ECRÃ VAZIO ── */
+    .empty {
+      flex:1; display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      text-align:center; padding:1.5rem; gap:.9rem;
     }
-    .pill:hover{background:rgba(79,156,249,.15);border-color:var(--blue)}
-    .typing{
-      align-self:flex-start;display:none;align-items:center;gap:.5rem;
-      padding:.65rem .9rem;background:var(--card2);border:1px solid var(--border);
-      border-radius:14px 14px 14px 3px;animation:pop .2s ease;
+    .empty-star  { font-size:2.6rem; animation:glow 3s infinite; }
+    @keyframes glow { 0%,100%{filter:drop-shadow(0 0 5px rgba(201,168,76,.3))} 50%{filter:drop-shadow(0 0 14px rgba(201,168,76,.75))} }
+    .empty-title { font-family:'Cormorant Garamond',serif; font-size:1.6rem; color:var(--gold); font-weight:700; }
+    .empty-desc  { font-size:.82rem; color:var(--text2); max-width:300px; line-height:1.6; }
+    .quick-grid  { display:grid; grid-template-columns:1fr 1fr; gap:.45rem; width:100%; max-width:420px; margin-top:.4rem; }
+    .qbtn {
+      background:var(--card2); border:1px solid var(--border); color:var(--text2);
+      padding:.55rem .75rem; border-radius:11px; font-size:.76rem; font-weight:500;
+      cursor:pointer; transition:all .2s; text-align:left;
+      display:flex; align-items:center; gap:.4rem; line-height:1.3;
     }
-    .typing.on{display:flex}
-    .dots{display:flex;gap:4px}
-    .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);opacity:.4;animation:bounce 1.3s infinite}
-    .dot:nth-child(2){animation-delay:.18s}
-    .dot:nth-child(3){animation-delay:.36s}
-    @keyframes bounce{0%,80%,100%{transform:translateY(0);opacity:.4}40%{transform:translateY(-5px);opacity:1}}
-    .typing-txt{font-size:.72rem;color:var(--text2);font-style:italic}
-    .input-bar{
-      background:var(--bg2);border-top:1px solid var(--border);
-      padding:.65rem .75rem;display:flex;gap:.5rem;align-items:flex-end;flex-shrink:0;
-    }
-    #txtInput{
-      flex:1;background:var(--bg3);border:1px solid var(--border);border-radius:13px;
-      padding:.72rem 1rem;color:var(--text);font-size:.92rem;font-family:'Jost',sans-serif;
-      outline:none;resize:none;min-height:44px;max-height:120px;
-      transition:border-color .2s;line-height:1.5;overflow-y:auto;
-    }
-    #txtInput:focus{border-color:var(--blue)}
-    #txtInput:disabled{opacity:.5;cursor:not-allowed}
-    #txtInput::placeholder{color:var(--text3)}
-    .btn-send{
-      background:var(--gold);color:#0f1b2d;border:none;padding:.72rem 1.1rem;
-      border-radius:13px;font-weight:700;cursor:pointer;font-family:'Jost',sans-serif;
-      font-size:.82rem;letter-spacing:.3px;transition:all .2s;
-      display:flex;align-items:center;gap:.35rem;flex-shrink:0;height:44px;
-    }
-    .btn-send:hover:not(:disabled){filter:brightness(1.1);transform:translateY(-1px)}
-    .btn-send:disabled{opacity:.5;cursor:not-allowed;transform:none}
-    .empty{
-      flex:1;display:flex;flex-direction:column;align-items:center;
-      justify-content:center;text-align:center;padding:1.5rem;gap:.9rem;
-    }
-    .empty-star{font-size:2.4rem;animation:glow 3s infinite}
-    @keyframes glow{
-      0%,100%{filter:drop-shadow(0 0 4px rgba(201,168,76,.3))}
-      50%{filter:drop-shadow(0 0 12px rgba(201,168,76,.7))}
-    }
-    .empty-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--gold);font-weight:700}
-    .empty-desc{font-size:.82rem;color:var(--text2);max-width:300px;line-height:1.6}
-    .quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:.45rem;width:100%;max-width:420px;margin-top:.4rem}
-    .qbtn{
-      background:var(--card2);border:1px solid var(--border);color:var(--text2);
-      padding:.55rem .75rem;border-radius:11px;font-size:.76rem;font-weight:500;
-      cursor:pointer;transition:all .2s;text-align:left;display:flex;align-items:center;gap:.4rem;line-height:1.3;
-    }
-    .qbtn:hover{border-color:var(--gold);color:var(--gold);background:var(--glow-g)}
-    .qbtn .qi{font-size:1rem;flex-shrink:0}
+    .qbtn:hover { border-color:var(--gold); color:var(--gold); background:var(--glow-g); }
+    .qbtn .qi   { font-size:1rem; flex-shrink:0; }
+
+    /* ── MODO CLARO ── */
+    :root.light-mode #chat-window  { background:#fff; }
+    :root.light-mode .input-bar    { background:var(--bg2); }
+    :root.light-mode #txtInput     { background:var(--bg3); color:var(--text); }
+    :root.light-mode .msg-bot      { background:var(--card2); }
   </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- NAVBAR UNIVERSAL -->
 <nav id="navbar">
   <a class="nav-logo" href="index.html"><span class="star">✦</span> Luz <span class="div">Divina</span></a>
   <ul class="nav-links">
@@ -295,13 +342,16 @@
   <a href="privacidade.html" onclick="closeMenu()">🔒 Privacidade</a>
 </div>
 
+<!-- MAIN -->
 <div class="ia-wrap">
+
+  <!-- TOP BAR -->
   <div class="top-bar">
     <div class="ia-id">
       <div class="ia-orb">✦</div>
       <div>
         <div class="ia-name">IA Luz Divina <span class="phd-badge">PHD</span></div>
-        <div class="ia-sub" id="iaStatus">A inicializar cérebro teológico…</div>
+        <div class="ia-sub" id="iaStatus">A inicializar…</div>
       </div>
     </div>
     <div class="top-actions">
@@ -310,846 +360,80 @@
     </div>
   </div>
 
+  <!-- JANELA DE CHAT -->
   <div id="chat-window">
     <div id="msgs">
       <div class="empty" id="emptyState">
         <div class="empty-star">✦</div>
-        <div class="empty-title">Cérebro Teológico PHD</div>
-        <div class="empty-desc">Ontologia · Exegese · Angelologia · Rituais · Orações. Pergunte qualquer coisa de fé.</div>
+        <div class="empty-title">Guardião dos Segredos</div>
+        <div class="empty-desc">Angelologia · Rituais de Salomão · Exegese · Orações · Apócrifos. Faz a tua pergunta.</div>
         <div class="quick-grid">
           <button class="qbtn" onclick="q('Quem é Deus segundo a Bíblia?')"><span class="qi">✝️</span>Quem é Deus?</button>
-          <button class="qbtn" onclick="q('Explica o capítulo 1 de João')"><span class="qi">📖</span>Exegese João 1</button>
-          <button class="qbtn" onclick="q('Quero um ritual de proteção com os arcanjos')"><span class="qi">🛡️</span>Ritual de Proteção</button>
-          <button class="qbtn" onclick="q('Qual a hierarquia completa dos anjos?')"><span class="qi">👼</span>Hierarquia Angelical</button>
-          <button class="qbtn" onclick="q('O que são os Nephilim?')"><span class="qi">⚔️</span>Os Nephilim</button>
+          <button class="qbtn" onclick="q('Ritual de proteção de Salomão')"><span class="qi">⚔️</span>Ritual Salomão</button>
+          <button class="qbtn" onclick="q('Hierarquia completa dos anjos')"><span class="qi">👼</span>Hierarquia Angelical</button>
+          <button class="qbtn" onclick="q('Explica o Salmo 91')"><span class="qi">📖</span>Salmo 91</button>
+          <button class="qbtn" onclick="q('O que são as Chaves de Salomão?')"><span class="qi">🔑</span>Chaves de Salomão</button>
           <button class="qbtn" onclick="q('Fala sobre o Livro de Enoque')"><span class="qi">📜</span>Livro de Enoque</button>
-          <button class="qbtn" onclick="q('Cria uma oração de cura profunda')"><span class="qi">💙</span>Oração de Cura</button>
-          <button class="qbtn" onclick="q('Quem é o Apocalipse de Sedrach?')"><span class="qi">🌟</span>Apocalipse Sedrach</button>
+          <button class="qbtn" onclick="q('Quero uma oração de proteção poderosa')"><span class="qi">🛡️</span>Oração de Protecção</button>
+          <button class="qbtn" onclick="q('Onde está escrito que Jesus chorou?')"><span class="qi">💙</span>Jesus chorou</button>
         </div>
       </div>
     </div>
+
+    <!-- TYPING -->
     <div class="typing" id="typing">
       <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
-      <span class="typing-txt" id="typingTxt">Consultando as escrituras…</span>
+      <span class="typing-txt" id="typingTxt">Consultando os registos eternos…</span>
     </div>
+
+    <!-- INPUT -->
     <div class="input-bar">
-      <textarea id="txtInput" placeholder="Pergunta bíblica, exegese, ritual, oração ou angelologia…" rows="1"></textarea>
+      <textarea id="txtInput" placeholder="Pergunta bíblica, ritual, anjos, oração…" rows="1"></textarea>
       <button class="btn-send" id="btnSend" onclick="enviar()">✦ ENVIAR</button>
     </div>
   </div>
 </div>
 
+<!-- DEPENDÊNCIAS -->
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+<script src="knowledge.js"></script>
+<script src="ia-biblica.js"></script>
 
 <script>
+/* ══════════════════════════════════════════════════════
+   INTERFACE — Liga o ia-biblica.js ao HTML
+   Toda a lógica de resposta vive em ia-biblica.js.
+   Este bloco trata apenas de renderização e UX.
+══════════════════════════════════════════════════════ */
 'use strict';
-/* ═══════════════════════════════════════════════════════════════════════
-   IA BÍBLICA LUZ DIVINA — CÉREBRO TEOLÓGICO PHD
-   Arquitectura modular com 5 camadas:
-   1. Classificador de Domínio (ONTOLOGIA / EXEGESE / RITUALÍSTICA / APOIO / CHAT)
-   2. Motor de Busca Semântica (Fuse.js sobre Bíblia + knowledge.js + JSON externos)
-   3. PHD Fallback — Mentor Espiritual que nunca diz "não sei"
-   4. Motor de Rituais e Orações Composto
-   5. Renderizador Formatado (h3/h4/bullet/verso/ritual/oração)
-   ═══════════════════════════════════════════════════════════════════════ */
 
-// ══════════════════════════════════════════════════════
-//  ESTADO GLOBAL
-// ══════════════════════════════════════════════════════
-const DB = {
-  vers: [],          // todos os versículos da Bíblia
-  oracoes: [],       // orações do JSON
-  devocionais: [],   // devocionais
-  apocrif: null,     // apocrif.json
-  sedrach: null,     // sedrach.json
-  personagens: [],   // data/personagens.json
-  biblioteca: {},    // biblioteca/*.json (modular)
-  extraBooks: [],    // livros JSON futuros
-};
+/* ── Estado da UI ─────────────────────────────────── */
+let busy       = false;
+let turnCount  = 0;
+let fuseVers   = null;
+let global_fuseKnow = null;  // exposto para o knowledge.js rebuildar
+let DB         = { vers:[], oracoes:[], devocionais:[], personagens:[], biblioteca:{} };
+let conv       = JSON.parse(localStorage.getItem('ld_conv_phd') || '[]');
 
-// Instâncias Fuse
-let fuseVers = null;
-let fuseOrac  = null;
-let fuseKnow  = null;
-
-let busy = false;
-let conv = JSON.parse(localStorage.getItem('ld_phd_v1') || '[]');
-let turnCount = 0;
-let awaitFollowUp = null; // para perguntas de seguimento
-
-// ══════════════════════════════════════════════════════
-//  PERSONALIDADE PHD — SISTEMA INTERNO
-// ══════════════════════════════════════════════════════
-const PHD_PERSONA = {
-  role: 'PHD em Teologia, Angelologia e Ritualística',
-  voice: 'sábio, amigável e acolhedor',
-  rule: 'Explica mistérios naturais e subnaturais com profundidade e termina sempre com esperança.',
-  fallback_intro: [
-    'Como mentor espiritual, posso partilhar o que a tradição teológica nos ensina sobre isso.',
-    'As escrituras e a tradição sagrada iluminam esta questão de forma fascinante.',
-    'Deixa-me guiar-te pelo que o conhecimento teológico nos revela sobre este tema.',
-    'Este é um mistério profundo. Deixa que o iluminemos juntos pela sabedoria das escrituras.',
-  ],
-  hope_endings: [
-    '\n\n*Que esta sabedoria ilumine o teu caminho. A Luz Divina está sempre contigo. ✦*',
-    '\n\n*Que estas palavras sejam como sementes de paz no teu coração. 🕊️*',
-    '\n\n*O conhecimento espiritual é um dom — que ele floresça na tua vida. 🌟*',
-    '\n\n*Caminha com confiança. O Criador conhece o teu nome. ✦*',
-  ],
-};
-
-// ══════════════════════════════════════════════════════
-//  DOMÍNIOS — CLASSIFICAÇÃO DE INTENÇÃO PHD
-//  Ordem importa: do mais específico para o mais geral
-// ══════════════════════════════════════════════════════
-const DOMAINS = [
-  // ── REFERÊNCIA DIRECTA (João 11:35, Génesis 1:1…)
-  {
-    id: 'REF',
-    label: 'Versículo',
-    hint: 'A localizar nas escrituras…',
-    patterns: [
-      /\b([1-3]?\s*[a-záéíóúâêôãõçü]+)\s+(\d+)\s*[:.]\s*(\d+)\b/i,
-    ],
-  },
-  // ── EXEGESE — explicação de livros, capítulos, versículos
-  {
-    id: 'EXEGESE',
-    label: 'Exegese Bíblica',
-    hint: 'A interpretar as escrituras…',
-    patterns: [
-      /explica[r]?\s+(o\s+)?(cap[íi]tulo|livro|vers[íi]culo|passagem|livro de|epistola)/i,
-      /explica[r]?\s+[a-záéíóúâêôãõçü]+\s+\d/i,
-      /interpreta[r]?\s+(o\s+)?(livro|cap[íi]tulo|vers[íi]culo|passagem)/i,
-      /o que (quer dizer|significa|diz)\s+[a-záéíóúâêôãõçü]+\s+\d/i,
-      /o que (quer dizer|significa)\s+(este|esse|aquele)\s+(vers[íi]culo|trecho|texto)/i,
-      /contexto (de|do|da)\s+/i,
-      /fala[r]?\s+(sobre|do|da)\s+(livro|cap[íi]tulo|epistola|profecia)\s+/i,
-      /história\s+(do|de|da)\s+livro\s+/i,
-      /resumo\s+(do|de|da)\s+(livro|carta|epistola|apocalipse)\s+/i,
-      /quem\s+escreveu\s+(o\s+livro|a\s+carta|o\s+salmo|o\s+evangelho)/i,
-    ],
-  },
-  // ── ONTOLOGIA — natureza de Deus, anjos, alma, existência
-  {
-    id: 'ONTOLOGIA',
-    label: 'Ontologia',
-    hint: 'A consultar o conhecimento teológico…',
-    patterns: [
-      /quem\s+(é|foi|era|são)\s+(deus|jesus|cristo|o espírito|maria|os anjos|um anjo|serafins|querubins|arcanjo|satanás|o diabo|os demo)/i,
-      /o que\s+(é|são|foi|foram|significa[m]?)\s+(deus|jesus|a trindade|o espírito santo|os anjos|anjo|serafim|querubim|arcanjo|alma|nephilim|vigilantes|satanás|demônio)/i,
-      /natureza\s+(de|do)\s+(deus|cristo|jesus|anjos|alma)/i,
-      /existe[m]?\s+(deus|anjos|demônios|vida após|o diabo)/i,
-      /o\s+que\s+(é|são)\s+(a\s+trindade|angelologia|apócrifo|deuterocanônico|a\s+graça|o\s+pecado\s+original|a\s+ressurreição|o\s+purgatório|o\s+paraíso|o\s+inferno)/i,
-      /hierarquia\s+(dos\s+)?anjos/i,
-      /ordens\s+angélicas/i,
-      /tipos\s+(de\s+)?anjos/i,
-      /(miguel|gabriel|rafael|uriel)\s+(arcanjo|quem|o que)/i,
-      /quantos\s+(anjos|arcanjos|livros|tipos)/i,
-      /em\s+quantas\s+partes/i,
-      /como\s+(é|era|eram|foi)\s+(criado|formado|organizado|dividida?)\s+(a\s+bíblia|o\s+cânon|os\s+anjos|os\s+céus)/i,
-      /quando\s+(foi|surgiu|nasceu|criou)\s+(a\s+bíblia|a\s+igreja|jesus|deus)/i,
-      /diferença\s+(entre|de)\s+(anjo|arcanjo|serafim|querubim|at\s+e\s+nt|antigo\s+e\s+novo)/i,
-    ],
-  },
-  // ── RITUALÍSTICA — orações, rituais, defesa espiritual
-  {
-    id: 'RITUALISTICA',
-    label: 'Ritualística',
-    hint: 'A compor o ritual sagrado…',
-    patterns: [
-      /ritual\s+(de|para|contra|sagrado|de\s+proteção|de\s+cura|de\s+limpeza)/i,
-      /quero\s+(um\s+)?(ritual|oração|prece|consagração)/i,
-      /faz[e]?\s+(um\s+)?(ritual|oração|prece)/i,
-      /cria[r]?\s+(um\s+)?(ritual|oração|prece|liturgia)/i,
-      /como\s+(invocar|evocar|chamar|consagrar|afastar|expulsar|limpar|benzer|ungir)/i,
-      /invocar\s+(os\s+)?anjos/i,
-      /oração\s+(de\s+)?(proteção|cura|libertação|força|paz|gratidão|prosperidade|consagração|urgente|poderosa)/i,
-      /preciso\s+(de\s+)?(uma\s+)?(oração|ritual|prece|proteção)/i,
-      /ore\s+por\s+mim/i,
-      /bênção\s+(da|para\s+a)\s+casa/i,
-      /afastar\s+(o\s+)?(mal|negativo|demônio|espírito)/i,
-      /limpeza\s+espiritual/i,
-      /quebrar\s+maldição/i,
-      /armadura\s+(de\s+)?deus/i,
-    ],
-  },
-  // ── APOIO EMOCIONAL
-  {
-    id: 'APOIO',
-    label: 'Apoio Espiritual',
-    hint: 'A encontrar palavras de conforto…',
-    patterns: [
-      /estou\s+(muito\s+)?(triste|sozinho|sozinha|perdido|perdida|sofrendo|com\s+medo|ansioso|ansiosa|desesperado|deprimido)/i,
-      /me\s+sinto\s+(só|perdido|abandonado|sem\s+esperança)/i,
-      /não\s+consigo\s+(mais|dormir|trabalhar|seguir|suportar)/i,
-      /estou\s+passando\s+por\s+(momentos?\s+difíceis|uma\s+crise|dor|sofrimento)/i,
-      /preciso\s+de\s+(ajuda|força|conforto|consolo|esperança)/i,
-      /minha\s+(família|relacionamento|vida)\s+está\s+(destruída|acabada|em\s+crise)/i,
-    ],
-  },
-  // ── CONVERSA / SAUDAÇÃO
-  {
-    id: 'CHAT',
-    label: 'Conversa',
-    hint: 'A preparar uma resposta…',
-    patterns: [
-      /^(olá|oi|bom\s+dia|boa\s+tarde|boa\s+noite)[!?.]*$/i,
-      /^(tudo\s+bem|como\s+estás|como\s+está)[?!.]*$/i,
-      /^(obrigad[oa]|perfeito|entendi|muito\s+bem|incrível)[!.]*$/i,
-      /^(quem\s+és\s+tu|quem\s+é\s+você|o\s+que\s+podes\s+fazer)[?!.]*$/i,
-    ],
-  },
-];
-
-function classifyDomain(txt) {
-  const t = txt.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  // Check REF first (regex match for chapter:verse)
-  const refM = txt.match(/\b([1-3]?\s*[a-záéíóúâêôãõçü]{2,})\s+(\d+)\s*[:.]\s*(\d+)\b/i);
-  if (refM) return { id: 'REF', label: 'Versículo', hint: 'A localizar nas escrituras…', ref: { livro: refM[1].trim(), cap: parseInt(refM[2]), ver: parseInt(refM[3]) } };
-
-  for (const d of DOMAINS.slice(1)) { // skip REF (already checked)
-    for (const p of d.patterns) {
-      if (p.test(t)) return d;
-    }
-  }
-  // Smart fallback: question mark or long = probably asking something
-  if (txt.includes('?') || txt.length > 25) return DOMAINS[2]; // ONTOLOGIA
-  return DOMAINS[5]; // CHAT
-}
-
-// ══════════════════════════════════════════════════════
-//  ANÁLISE EMOCIONAL
-// ══════════════════════════════════════════════════════
-const EMOTIONS = {
-  dor:       { w:['dor','sofrimento','sofro','sofrer','ferida','machucado','lágrimas','tristeza','triste','deprimido','depressão'], ack:'Sinto o peso do que estás a viver. Não estás só nisto. 💙 ' },
-  medo:      { w:['medo','ansiedade','ansioso','ansiosa','angústia','angustiado','pavor','pânico','preocupado'], ack:'Entendo essa ansiedade. Respira fundo — a paz de Deus é maior que qualquer tempestade. ✨ ' },
-  solidao:   { w:['sozinho','sozinha','solidão','abandonado','abandonada','esquecido'], ack:'O Criador diz: "Não te deixarei nem abandonarei." Nunca estás verdadeiramente só. 🤍 ' },
-  gratidao:  { w:['grato','grata','gratidão','agradecer','abençoado','abençoada'], ack:'Que coração bonito! A gratidão abre as portas do céu. 🌟 ' },
-  fraqueza:  { w:['fraco','fraca','sem força','cansado','cansada','esgotado','desistir','não aguento'], ack:'Quando somos fracos, é quando a força divina se manifesta. Segura firme. 💪 ' },
-};
-
-function detectEmotion(txt) {
-  const t = txt.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  for (const [, v] of Object.entries(EMOTIONS)) {
-    if (v.w.map(w => w.normalize('NFD').replace(/[\u0300-\u036f]/g, '')).some(w => t.includes(w))) return v;
-  }
-  return null;
-}
-
-// ══════════════════════════════════════════════════════
-//  BUSCA SEMÂNTICA — CAMADA 1: FUSE SOBRE BÍBLIA
-// ══════════════════════════════════════════════════════
-function searchVerses(q, max = 4) {
-  if (!fuseVers || !q) return [];
-  return fuseVers.search(q, { limit: max }).map(r => ({
-    ...r.item,
-    compat: Math.round((1 - r.score) * 100),
-  }));
-}
-
-// ══════════════════════════════════════════════════════
-//  BUSCA SEMÂNTICA — CAMADA 2: KNOWLEDGE.JS + APÓCRIFOS
-// ══════════════════════════════════════════════════════
-function searchKnowledge(txt) {
-  // Fuse semântico
-  if (fuseKnow) {
-    const r = fuseKnow.search(txt, { limit: 1 });
-    if (r.length && r[0].score < 0.42) {
-      const id = r[0].item.id;
-      const entry = window.DIVINE_KNOWLEDGE?.[id];
-      if (entry) return { ...entry, _compat: Math.round((1 - r[0].score) * 100) };
-    }
-  }
-  // Literal tag fallback
-  const t = txt.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  const src = window.DIVINE_KNOWLEDGE || {};
-  let best = null, bestScore = 0;
-  for (const [, k] of Object.entries(src)) {
-    if (!k.tags) continue;
-    let s = 0;
-    for (const tag of k.tags) {
-      const tn = tag.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      if (t.includes(tn)) s += tn.length;
-    }
-    if (s > bestScore) { bestScore = s; best = k; }
-  }
-
-  // Busca em todos os livros JSON modulares (apocrif + extras)
-  const allBooks = [
-    ...(DB.apocrif?.livros || []),
-    ...DB.extraBooks,
-  ];
-  for (const livro of allBooks) {
-    let s = 0;
-    for (const cat of (livro.categorias || [])) {
-      const cn = cat.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      if (t.includes(cn)) s += cn.length;
-    }
-    const nn = (livro.nome || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    if (nn && t.includes(nn)) s += nn.length * 2;
-    // Also check short words of name
-    nn.split(' ').forEach(p => { if (p.length > 3 && t.includes(p)) s += p.length; });
-    if (s > bestScore) {
-      bestScore = s;
-      best = {
-        title: livro.nome,
-        tags: livro.categorias || [],
-        text: buildApocrifText(livro),
-        verses: (livro.versiculos_chave || []).map(v => v.ref).slice(0, 3),
-        _apocrif: true,
-        _compat: Math.min(95, s * 3),
-      };
-    }
-  }
-  return bestScore > 3 ? best : null;
-}
-
-function buildApocrifText(livro) {
-  let txt = livro.resumo || '';
-  if (livro.personagens?.length) txt += `\n\n**Personagens principais:** ${livro.personagens.join(', ')}.`;
-  if (livro.temas?.length) txt += `\n\n**Temas centrais:** ${livro.temas.join(', ')}.`;
-  if (livro.contribuicoes_para_tradicao?.length) {
-    txt += '\n\n**Contribuições para a Tradição:**';
-    livro.contribuicoes_para_tradicao.forEach(c => { txt += `\n• ${c}`; });
-  }
-  if (livro.versiculos_chave?.length) {
-    txt += '\n\n**Passagens notáveis:**';
-    livro.versiculos_chave.slice(0, 3).forEach(v => { txt += `\n\n*"${v.texto}"* — **${v.ref}**`; });
-  }
-  return txt;
-}
-
-
-// ══════════════════════════════════════════════════════
-//  BUSCA DE PERSONAGEM BÍBLICO
-// ══════════════════════════════════════════════════════
-function searchPersonagem(txt) {
-  if (!DB.personagens.length) return null;
-  const t = txt.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-  // Score: name match > tag match
-  let best = null, bestScore = 0;
-  for (const p of DB.personagens) {
-    let score = 0;
-    const nm = p.nome.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-    // Direct name match is highest priority
-    if (t.includes(nm)) score += nm.length * 4;
-    // Short name parts
-    nm.split(/[\s—]+/).forEach(part => {
-      if (part.length > 3 && t.includes(part.normalize('NFD').replace(/[\u0300-\u036f]/g,'')))
-        score += part.length * 2;
-    });
-    // Tags
-    for (const tag of (p.tags||[])) {
-      const tn = tag.normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-      if (t.includes(tn)) score += tn.length;
-    }
-    if (score > bestScore) { bestScore = score; best = p; }
-  }
-  // Also check biblioteca for deeper content
-  if (bestScore < 6) {
-    for (const [,livro] of Object.entries(DB.biblioteca)) {
-      if (!livro.personagens) continue;
-      for (const p of livro.personagens) {
-        const nm = (p.nome||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-        if (t.includes(nm) && nm.length > 3) {
-          return { _biblio_person: true, nome: p.nome, descricao: p.papel||p.descricao||'', fonte: livro.titulo };
-        }
-      }
-    }
-  }
-  return bestScore > 5 ? best : null;
-}
-
-// ── RENDER PERSONAGEM BOX ──
-function renderPersonagemBox(p) {
-  if (p._biblio_person) {
-    return `<div class="person-box">
-      <div class="person-name">📜 ${p.nome} <span class="person-tag at">Apócrifo</span></div>
-      <div class="person-desc">${p.descricao}</div>
-      <div class="person-books" style="margin-top:.5rem"><strong>Fonte:</strong> ${p.fonte}</div>
-    </div>`;
-  }
-  const tag = p.categoria === 'NT'
-    ? '<span class="person-tag nt">Novo Testamento</span>'
-    : '<span class="person-tag at">Antigo Testamento</span>';
-  const livros = p.livros_principais?.length
-    ? `<div class="person-books"><strong>Livros principais:</strong> ${p.livros_principais.join(', ')}</div>` : '';
-  const timeline = p.linha_do_tempo?.length
-    ? `<div style="margin-top:.7rem"><div class="related-title">Linha do Tempo</div><ul style="padding-left:1.1rem;margin:.3rem 0">${p.linha_do_tempo.map(l=>`<li style="font-size:.8rem;color:var(--text2);margin-bottom:.2rem">${l}</li>`).join('')}</ul></div>` : '';
-  return `<div class="person-box">
-    <div class="person-name">📜 ${p.nome} ${tag}</div>
-    <div class="person-desc">${p.descricao||''}</div>
-    ${livros}${timeline}
-  </div>`;
-}
-
-// ══════════════════════════════════════════════════════
-//  BUSCA DE VERSÍCULO POR REFERÊNCIA DIRECTA
-// ══════════════════════════════════════════════════════
-function findVerseByRef(livroQ, cap, ver) {
-  if (!DB.vers.length) return null;
-  const lq = livroQ.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/^(sao|i{1,3}|[1-3])\s*/, '');
-  return DB.vers.find(v => {
-    const vl = v.livro.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/^(sao|i{1,3}|[1-3])\s*/, '');
-    return (vl.includes(lq) || lq.includes(vl)) && v.capitulo === cap && v.versiculo === ver;
-  }) || null;
-}
-
-// ══════════════════════════════════════════════════════
-//  BUSCA EM ORAÇÕES JSON
-// ══════════════════════════════════════════════════════
-function searchPrayer(q) {
-  if (!fuseOrac) return null;
-  const r = fuseOrac.search(q, { limit: 1 });
-  return r.length ? r[0].item : null;
-}
-
-// ══════════════════════════════════════════════════════
-//  MOTOR DE RITUAIS COMPOSTO (Ponto 3 do brief)
-//  Combina Angelologia + Salmos + elementos do portal
-// ══════════════════════════════════════════════════════
-const RITUAL_TEMPLATES = {
-  protecao: {
-    titulo: 'Ritual de Protecção Sagrada com os Arcanjos',
-    icone: '🛡️',
-    abertura: 'Este ritual combina a invocação dos Arcanjos guardiões com os Salmos de protecção da tradição judaico-cristã.',
-    steps: [
-      { num: 1, texto: 'Acende uma vela branca ou dourada. Respira fundo três vezes, centrando o teu espírito.' },
-      { num: 2, texto: 'Volta-te para o Este e diz em voz alta: *"São Miguel, Príncipe dos Exércitos Celestiais, cobre-me com o teu escudo de luz."*' },
-      { num: 3, texto: 'Volta-te para o Norte e diz: *"São Rafael, Médico Celeste, cura toda ferida visível e invisível no meu ser."*' },
-      { num: 4, texto: 'Volta-te para o Oeste e diz: *"São Gabriel, Mensageiro do Altíssimo, traz a paz de Deus ao meu coração."*' },
-      { num: 5, texto: 'Volta-te para o Sul e diz: *"Uriel, Luz de Deus, ilumina as trevas ao meu redor."*' },
-      { num: 6, texto: 'Ergue as mãos e proclama: *"Em nome de Jesus Cristo, declaro que sou coberto pelo Seu sangue. Nenhuma arma forjada contra mim prosperará."* (Isaías 54:17)' },
-      { num: 7, texto: 'Recita o Salmo 91 completo em voz alta — o "Escudo do Guerreiro Espiritual".' },
-      { num: 8, texto: 'Fecha com o Pai-Nosso e um momento de silêncio de gratidão.' },
-    ],
-    versiculo: { texto: 'O anjo do Senhor acampa em redor dos que O temem, e os livra.', ref: 'Salmos 34:7' },
-    nota: 'Este ritual pode ser feito diariamente ao amanhecer. A sua eficácia cresce com a regularidade e a fé sincera.',
-  },
-  cura: {
-    titulo: 'Ritual de Cura — Invocação de Rafael',
-    icone: '💚',
-    abertura: 'Rafael significa "Deus cura". Em Tobias, ele curou a cegueira com o fel do peixe e libertou Sara de Asmodeu. Este ritual invoca a sua presença curadora.',
-    steps: [
-      { num: 1, texto: 'Coloca a mão direita sobre a área que precisa de cura. Se for cura emocional, coloca sobre o coração.' },
-      { num: 2, texto: 'Diz: *"São Rafael Arcanjo, mensageiro da cura divina, por intercessão do Senhor Deus, toca este lugar com a Tua mão celestial."*' },
-      { num: 3, texto: 'Visualiza uma luz esmeralda (a cor de Rafael) irradiando do teu coração para a área afectada.' },
-      { num: 4, texto: 'Proclama: *"Pela ferida de Jesus fomos sarados."* (Isaías 53:5) — Repete 3 vezes.' },
-      { num: 5, texto: 'Permanece em silêncio por 5 minutos, receptivo à presença divina.' },
-      { num: 6, texto: 'Encerra com: *"Graças, Pai, porque a cura está em curso. A obra é Tua. Amém."*' },
-    ],
-    versiculo: { texto: 'Pela Sua ferida fomos sarados.', ref: 'Isaías 53:5' },
-    nota: 'Rafael também acompanha nas viagens físicas e espirituais — invoca-o em momentos de travessia e transformação.',
-  },
-  limpeza: {
-    titulo: 'Ritual de Limpeza e Consagração de Espaço',
-    icone: '✨',
-    abertura: 'Baseado na tradição bíblica da aspersão com hissopo (Salmos 51:7) e da bênção dos umbrais no Êxodo, este ritual purifica um espaço de energias negativas.',
-    steps: [
-      { num: 1, texto: 'Prepara água com sal — o sal é símbolo de purificação desde o AT (2 Reis 2:20-22).' },
-      { num: 2, texto: 'Percorre cada divisão no sentido horário com o incenso aceso (mirra ou olíbano — os perfumes do Templo).' },
-      { num: 3, texto: 'Em cada canto, asperge a água com sal e declara: *"Este lugar é consagrado ao Senhor. Toda força contrária sai agora, em nome de Jesus."*' },
-      { num: 4, texto: 'Unje as ombreiras das portas com azeite bento traçando uma cruz, dizendo: *"O sangue do Cordeiro cobre esta entrada."*' },
-      { num: 5, texto: 'Recita em voz alta: *"Que Cristo entre por esta porta e habite nesta casa para sempre. Amém."*' },
-      { num: 6, texto: 'Termina com o Salmo 91 e um momento de silêncio e gratidão.' },
-    ],
-    versiculo: { texto: 'Purifica-me com hissopo e serei limpo; lava-me e serei mais branco do que a neve.', ref: 'Salmos 51:7' },
-    nota: 'Repete mensalmente ou sempre que sentires um peso espiritual no ambiente.',
-  },
-  gratidao: {
-    titulo: 'Ritual de Gratidão e Abertura de Bênçãos',
-    icone: '🌟',
-    abertura: 'A gratidão é a porta que abre os tesouros celestiais. "Entrai pelas Suas portas com acção de graças." (Salmos 100:4)',
-    steps: [
-      { num: 1, texto: 'Ao amanhecer, antes de sair da cama, lista mentalmente 5 coisas pelo que és grato neste dia.' },
-      { num: 2, texto: 'Diz em voz alta: *"Senhor, graças por mais um dia. Graças pela vida, pela saúde, pelo amor. Graças pela Tua presença constante."*' },
-      { num: 3, texto: 'Lê um Salmo de louvor — Salmo 100, 103 ou 150.' },
-      { num: 4, texto: 'Escreve numa folha uma bênção que esperas receber — escrevê-la é um acto de fé concreta.' },
-      { num: 5, texto: 'Encerra: *"O que vier hoje é bom, porque Tu o permites. Amém."*' },
-    ],
-    versiculo: { texto: 'A minha alma engrandece ao Senhor, e o meu espírito se alegra em Deus, meu Salvador.', ref: 'Lucas 1:46-47' },
-    nota: 'Pratica durante 21 dias consecutivos — o tempo neurológico de formação de um hábito.',
-  },
-  quebramaldicao: {
-    titulo: 'Ritual de Quebra de Maldição e Libertação',
-    icone: '⚔️',
-    abertura: 'Com base em Isaías 54:17 e na autoridade delegada por Cristo em Marcos 16:17, este ritual declara libertação de toda obra das trevas.',
-    steps: [
-      { num: 1, texto: 'Posiciona-te de pé, com os pés firmemente no chão — símbolo de autoridade.' },
-      { num: 2, texto: 'Declara: *"Em nome de Jesus Cristo, Filho do Deus Vivo, quebro toda maldição, toda palavra negativa, todo feitiço ou inveja lançados sobre mim ou sobre os meus."*' },
-      { num: 3, texto: 'Continua: *"O sangue de Jesus Cristo apaga todo contrato ou acordo com as trevas, consciente ou inconsciente."*' },
-      { num: 4, texto: 'Invoca: *"São Miguel Arcanjo, lança fora todo espírito que não seja de Deus."*' },
-      { num: 5, texto: 'Proclama Isaías 54:17: *"Nenhuma arma forjada contra mim prosperará, e toda língua que se levantar em juízo contra mim, eu a condenarei."*' },
-      { num: 6, texto: 'Encerra com o Pai-Nosso e uma declaração de identidade: *"Sou filho/filha de Deus. Sou livre. Sou amado/amada. Amém."*' },
-    ],
-    versiculo: { texto: 'Nenhuma arma forjada contra ti prosperará.', ref: 'Isaías 54:17' },
-    nota: 'Para situações persistentes, combina este ritual com 3 dias de jejum e oração intensa.',
-  },
-};
-
-function selectRitualTemplate(txt) {
-  const t = txt.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  if (/(protecao|protec|miguel|protejer|escudo|defesa)/.test(t)) return 'protecao';
-  if (/(cura|curai|doenca|saude|sarar|enfermidade|rafael)/.test(t)) return 'cura';
-  if (/(limpeza|limpar|purificar|consagrar|casa|espaco|lugar)/.test(t)) return 'limpeza';
-  if (/(gratidao|grato|louvor|bencao|abertura)/.test(t)) return 'gratidao';
-  if (/(maldica|feitico|quebrando|liberta|amarras|presos)/.test(t)) return 'quebramaldicao';
-  return 'protecao'; // default
-}
-
-// ══════════════════════════════════════════════════════
-//  MOTOR DE ORAÇÕES PERSONALIZADAS
-// ══════════════════════════════════════════════════════
-const PRAYER_TEMPLATES = {
-  default: (ctx) => `Pai Celestial,\n\nVenho diante de Ti com o coração aberto${ctx ? ', ' + ctx : ''}. Que a Tua luz guie os meus passos, que a Tua paz governe o meu coração e que o Teu amor seja a força que me sustenta.\n\n*"Porque Eu sei os planos que tenho para você, planos de prosperidade e não de calamidade."* (Jeremias 29:11)\n\nEm nome de Jesus, Amém.`,
-  protecao: (ctx) => `Senhor Todo-Poderoso,\n\n*"Habita no esconderijo do Altíssimo, à sombra do Onipotente descansa."* (Salmos 91:1)\n\nEste é o meu lugar — sob as Tuas asas. Cobre-me com o Teu escudo, afasta toda força contrária${ctx ? ' — especialmente ' + ctx : ''}. Que os Teus anjos acampem ao redor de mim e dos que amo.\n\n*"Nenhuma arma forjada contra mim prosperará."* (Isaías 54:17)\n\nEm nome de Jesus, Amém.`,
-  cura: (ctx) => `Jeová-Rafá, Deus que sara,\n\n*"Pela Sua ferida fomos sarados."* (Isaías 53:5)\n\nToca neste momento de necessidade${ctx ? ' — ' + ctx : ''} com a Tua mão poderosa. Que a cura divina se manifeste em corpo, alma e espírito. Que os Teus anjos ministrem saúde e restauração.\n\nEm nome de Jesus, Amém.`,
-  forca: (ctx) => `Deus de toda a força,\n\n*"Tudo posso naquele que me fortalece."* (Filipenses 4:13)\n\nNeste momento de fraqueza${ctx ? ' diante de ' + ctx : ''}, venho buscar renovação. *"Os que esperam no Senhor renovarão as suas forças; subirão com asas como águias."* (Isaías 40:31)\n\nEm nome de Jesus, Amém.`,
-  paz: (ctx) => `Príncipe da Paz,\n\n*"A Tua paz, que excede todo entendimento, guarde o meu coração."* (Filipenses 4:7)\n\nEntrego-Te toda a ansiedade, todo o medo${ctx ? ' sobre ' + ctx : ''}. Recebo a Tua paz — uma paz que não depende das circunstâncias, mas da Tua presença constante.\n\nEm nome de Jesus, Amém.`,
-  gratidao: (ctx) => `Pai Eterno,\n\n*"Entrai pelas Suas portas com acção de graças."* (Salmos 100:4)\n\nVenho diante de Ti com o coração transbordante. Obrigado pela vida, pelo amor, pela Tua fidelidade que nunca falha. ${ctx ? 'Obrigado especialmente por ' + ctx + '. ' : ''}Em tudo e sempre, a minha alma louva o Teu nome.\n\nEm nome de Jesus, Amém.`,
-  provisao: (ctx) => `Jeová-Jireh, Deus que provê,\n\n*"O meu Deus suprirá todas as vossas necessidades."* (Filipenses 4:19)\n\nTrago diante de Ti as minhas necessidades${ctx ? ' — ' + ctx : ''}. Confio que Tu és o mesmo Deus que multiplica pães, que abre mares, que faz o impossível. Abre as portas que só Tu podes abrir.\n\nEm nome de Jesus, Amém.`,
-};
-
-function selectPrayerTemplate(txt) {
-  const t = txt.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  if (/(protecao|protec|escudo|defesa|livrar|afastar)/.test(t)) return 'protecao';
-  if (/(cura|doenca|saude|hospital|sarar)/.test(t)) return 'cura';
-  if (/(forca|corage|cansado|fraco|desistir)/.test(t)) return 'forca';
-  if (/(paz|ansied|medo|calma|tranquil)/.test(t)) return 'paz';
-  if (/(grato|gratidao|louvor|agradecer)/.test(t)) return 'gratidao';
-  if (/(dinheiro|financa|provision|emprego|trabalho)/.test(t)) return 'provisao';
-  return 'default';
-}
-
-// ══════════════════════════════════════════════════════
-//  PHD FALLBACK — MENTOR ESPIRITUAL
-//  Nunca diz "não sei" — raciocina e gera resposta coerente
-// ══════════════════════════════════════════════════════
-function phdFallback(txt, domain) {
-  const verses = searchVerses(txt, 3);
-  const intro = PHD_PERSONA.fallback_intro[turnCount % PHD_PERSONA.fallback_intro.length];
-  const ending = PHD_PERSONA.hope_endings[turnCount % PHD_PERSONA.hope_endings.length];
-
-  // Build a coherent theological response based on the domain
-  let body = '';
-
-  if (domain === 'EXEGESE') {
-    body = `${intro}\n\nA exegese bíblica (do grego *exegeisthai* — "conduzir para fora") é a arte de extrair o sentido do texto a partir do seu contexto histórico, linguístico e teológico.\n\nPara a tua questão específica sobre **"${txt.substring(0, 60)}${txt.length > 60 ? '…' : ''}"**, o princípio hermenêutico fundamental é: **a Escritura interpreta a Escritura** — um texto obscuro é iluminado por outro mais claro sobre o mesmo tema.\n\nAlgumas passagens relacionadas nas Escrituras:`;
-  } else if (domain === 'ONTOLOGIA') {
-    body = `${intro}\n\nEsta é uma questão de **ontologia teológica** — o estudo do ser e da existência dos seres espirituais. A tradição bíblica e patrística desenvolveu ao longo de séculos um rico corpus de conhecimento sobre este tema.\n\nCom base nas escrituras canónicas e na tradição:`;
-  } else {
-    body = `${intro}\n\nA tradição espiritual cristã, alimentada por milénios de oração, estudo e experiência mística, ilumina esta questão de forma profunda.\n\nPassagens das escrituras que respondem a este tema:`;
-  }
-
-  return {
-    domain,
-    label: domain === 'EXEGESE' ? 'Exegese PHD' : 'Conhecimento Teológico',
-    compat: 75,
-    text: body,
-    verses: verses.slice(0, 2),
-    related: verses.slice(2, 4),
-    ending,
-    sugs: SUGS.default,
-    _phd: true,
-  };
-}
-
-// ══════════════════════════════════════════════════════
-//  SUGESTÕES DE LINKS
-// ══════════════════════════════════════════════════════
-const SUGS = {
-  angel:    [{ l:'👼 Orações Angélicas', h:'oracoes.html' }, { l:'📖 Bíblia', h:'biblia.html' }],
-  ritual:   [{ l:'🙏 Mais Orações', h:'oracoes.html' }, { l:'📚 eBooks Espirituais', h:'loja.html' }],
-  verse:    [{ l:'📖 Ler Bíblia Completa', h:'biblia.html' }, { l:'🌅 Devocionais', h:'devocionais.html' }],
-  topic:    [{ l:'✍️ Blog Espiritual', h:'blog.html' }, { l:'📚 eBooks', h:'loja.html' }],
-  support:  [{ l:'🙏 Orações', h:'oracoes.html' }, { l:'📚 Guia de Paz', h:'loja.html' }],
-  default:  [{ l:'📖 Bíblia', h:'biblia.html' }, { l:'🙏 Orações', h:'oracoes.html' }, { l:'🌅 Devocionais', h:'devocionais.html' }],
-};
-
-function getSugs(domain, entry) {
-  if (entry?._apocrif) return SUGS.topic;
-  if (domain === 'RITUALISTICA') return SUGS.ritual;
-  if (domain === 'APOIO') return SUGS.support;
-  if (domain === 'REF' || domain === 'EXEGESE') return SUGS.verse;
-  if (domain === 'ONTOLOGIA') {
-    const t = (entry?.tags || []).join(' ').toLowerCase();
-    if (/(angel|arcanjo|serafim|querubim)/.test(t)) return SUGS.angel;
-  }
-  return SUGS.default;
-}
-
-// ══════════════════════════════════════════════════════
-//  ENGINE PRINCIPAL — ORQUESTRADOR
-// ══════════════════════════════════════════════════════
-async function processar(txt) {
-  await sleep(350 + Math.random() * 300);
-  const domain = classifyDomain(txt);
-  const emotion = detectEmotion(txt);
-
-  // ─── 0. CHAT / SAUDAÇÃO ───────────────────────────────────────
-  if (domain.id === 'CHAT') {
-    const greets = [
-      'Olá! Que alegria ter a tua companhia. Sou o teu Mentor Espiritual PHD — posso ajudar-te com teologia, angelologia, exegese bíblica, rituais ou simplesmente conversar. Por onde queres começar? ✦',
-      'Bem-vindo! Estou aqui para guiar-te pelos mistérios das escrituras. Podes perguntar sobre qualquer tema bíblico, espiritual ou angelológico. 🌟',
-      'Sou a IA Bíblica Luz Divina, com conhecimento de teologia, angelologia, apócrifos e ritualística. O que desejas explorar hoje? ✦',
-    ];
-    return { domain: 'CHAT', label: 'Conversa', text: greets[turnCount % greets.length], sugs: SUGS.default };
-  }
-
-  // ─── 1. REFERÊNCIA DIRECTA (João 11:35) ───────────────────────
-  if (domain.id === 'REF' && domain.ref) {
-    const found = findVerseByRef(domain.ref.livro, domain.ref.cap, domain.ref.ver);
-    if (found) {
-      return {
-        domain: 'REF', label: 'Versículo Localizado', compat: 100,
-        text: `Aqui está **${found.livro} ${found.capitulo}:${found.versiculo}** nas escrituras sagradas:`,
-        verse: { ...found, compat: 100 },
-        sugs: SUGS.verse,
-      };
-    }
-  }
-
-  // ─── 1b. PERSONAGEM BÍBLICO ─────────────────────────────────────
-  // Triggered when domain is ONTOLOGIA or a name is detected in any domain
-  const personagem = (domain.id === 'ONTOLOGIA' || domain.id === 'EXEGESE' || domain.id === 'CHAT')
-    ? searchPersonagem(txt) : null;
-
-  // ─── 2. APOIO EMOCIONAL ────────────────────────────────────────
-  if (domain.id === 'APOIO' || emotion) {
-    const verses = searchVerses(txt + ' ' + (emotion?.w[0] || ''), 3);
-    const ack = emotion?.ack || 'Estou aqui contigo. ';
-    return {
-      domain: 'APOIO', label: 'Apoio Espiritual', compat: 90,
-      text: ack + 'As escrituras têm uma palavra de consolo especialmente para este momento:',
-      verses, sugs: SUGS.support,
-      ending: PHD_PERSONA.hope_endings[0],
-    };
-  }
-
-  // ─── 3. RITUALÍSTICA ──────────────────────────────────────────
-  if (domain.id === 'RITUALISTICA') {
-    const prayerJson = searchPrayer(txt);
-    const isPrayer = /(oração|prece|quero orar|ore por mim)/.test(txt.toLowerCase());
-
-    if (isPrayer) {
-      const tmplKey = selectPrayerTemplate(txt);
-      const oracao = PRAYER_TEMPLATES[tmplKey](null);
-      const verses = searchVerses(txt, 1);
-      return {
-        domain: 'RITUALISTICA', label: 'Oração Personalizada', compat: 95,
-        text: prayerJson
-          ? `Preparei esta oração especialmente para ti. Encontrei também nos nossos arquivos a oração **"${prayerJson.title}"** que pode edificar-te:`
-          : 'Com todo o amor e fé, preparei esta oração para o teu momento:',
-        prayer: oracao,
-        verse: verses[0] || null,
-        sugs: SUGS.ritual,
-        ending: PHD_PERSONA.hope_endings[1],
-      };
-    }
-
-    // Ritual composto
-    const tmplKey = selectRitualTemplate(txt);
-    const ritual = RITUAL_TEMPLATES[tmplKey];
-    const verses = searchVerses(txt, 2);
-    return {
-      domain: 'RITUALISTICA', label: 'Ritual Sagrado', compat: 95,
-      text: '',
-      ritual,
-      verse: ritual.versiculo ? { texto: ritual.versiculo.texto, ref: ritual.versiculo.ref, compat: 95 } : (verses[0] || null),
-      related: verses.slice(1),
-      sugs: SUGS.ritual,
-      ending: PHD_PERSONA.hope_endings[2],
-    };
-  }
-
-  // ─── 4. KNOWLEDGE.JS + APÓCRIFOS ─────────────────────────────
-  const kEntry = searchKnowledge(txt);
-  if (kEntry) {
-    const kVers = (kEntry.verses || []).map(r => {
-      const m = r.match(/(.+?)\s+(\d+):(\d+)/);
-      return m ? findVerseByRef(m[1], parseInt(m[2]), parseInt(m[3])) : null;
-    }).filter(Boolean);
-
-    return {
-      domain: domain.id || 'ONTOLOGIA',
-      label: kEntry._apocrif ? 'Texto Apócrifo' : (domain.id === 'EXEGESE' ? 'Exegese Bíblica' : 'Conhecimento Teológico'),
-      compat: kEntry._compat || 90,
-      title: kEntry.title,
-      text: kEntry.text,
-      verses: kVers.slice(0, 2),
-      personagem: personagem || null,
-      sugs: getSugs(domain.id, kEntry),
-      ending: PHD_PERSONA.hope_endings[turnCount % PHD_PERSONA.hope_endings.length],
-    };
-  }
-
-  // ─── 5. BUSCA SEMÂNTICA NA BÍBLIA ────────────────────────────
-  const bVerses = searchVerses(txt, 4);
-  if (bVerses.length && bVerses[0].compat >= 32) {
-    const intros = {
-      EXEGESE: ['Para esta questão exegética, as escrituras respondem:', 'A Palavra de Deus ilumina esta passagem:', 'No contexto bíblico, encontrei estas referências:'],
-      ONTOLOGIA: ['A tradição bíblica responde a esta questão teológica:', 'As escrituras ensinam sobre este tema:', 'Encontrei esta passagem fundamental nas escrituras:'],
-      default: ['As escrituras respondem:', 'A Palavra de Deus diz:', 'Encontrei nas escrituras:'],
-    };
-    const arr = intros[domain.id] || intros.default;
-    const intro = (emotion?.ack || '') + arr[Math.floor(Math.random() * arr.length)];
-
-    return {
-      domain: domain.id, label: 'Pesquisa Bíblica', compat: bVerses[0].compat,
-      text: intro,
-      verse: bVerses[0],
-      related: bVerses.slice(1, 3),
-      personagem: personagem || null,
-      sugs: getSugs(domain.id, null),
-      ending: PHD_PERSONA.hope_endings[turnCount % PHD_PERSONA.hope_endings.length],
-    };
-  }
-
-  // ─── 6. PHD FALLBACK — MENTOR NUNCA DIZ "NÃO SEI" ───────────
-  return phdFallback(txt, domain.id || 'ONTOLOGIA');
-}
-
-// ══════════════════════════════════════════════════════
-//  RENDERIZADOR — HTML FORMATADO
-// ══════════════════════════════════════════════════════
-function renderUser(txt) {
-  document.getElementById('emptyState')?.remove();
-  const msgs = document.getElementById('msgs');
-  const d = document.createElement('div');
-  d.className = 'msg msg-user';
-  d.innerHTML = `<div class="mu-label">Tu</div>${esc(txt)}`;
-  msgs.appendChild(d);
-  scrollBottom();
-}
-
-function renderBot(r) {
-  const msgs = document.getElementById('msgs');
-  const d = document.createElement('div');
-  d.className = 'msg msg-bot';
-
-  let html = `<div class="bot-label">✦ LUZ DIVINA`;
-  if (r.label) html += ` <span class="intent-tag">${r.label}</span>`;
-  html += `</div>`;
-
-  if (r.compat !== undefined && r.compat > 0) {
-    html += `<div class="compat">
-      <span class="compat-label">Relevância</span>
-      <div class="compat-track"><div class="compat-fill" style="width:0%" data-w="${r.compat}%"></div></div>
-      <span class="compat-pct">${r.compat}%</span>
-    </div>`;
-  }
-
-  // Title
-  if (r.title) {
-    html += `<div class="bot-body"><h3>${r.title}</h3>`;
-  } else {
-    html += `<div class="bot-body">`;
-  }
-
-  if (r.text) html += formatText(r.text);
-  html += `</div>`;
-
-  // Personagem bíblico
-  if (r.personagem) {
-    html += renderPersonagemBox(r.personagem);
-    // Show key verses from personagem
-    if (r.personagem.versiculos_chave?.length && !r.verse) {
-      const pv = r.personagem.versiculos_chave[0];
-      html += `<div class="ver-box"><div class="ver-text">"${pv.texto}"</div><div class="ver-ref">— ${pv.ref}</div></div>`;
-    }
-  }
-
-  // Ritual composto
-  if (r.ritual) {
-    const rt = r.ritual;
-    html += `<div class="ritual-box">
-      <div class="ritual-title">${rt.icone} ${rt.titulo}</div>
-      <div class="ritual-body">${formatText(rt.abertura)}</div>`;
-    rt.steps.forEach(s => {
-      html += `<div class="ritual-step"><div class="ritual-step-num">${s.num}</div><div>${formatText(s.texto)}</div></div>`;
-    });
-    if (rt.nota) html += `<div style="margin-top:.7rem;font-size:.78rem;color:var(--text3);font-style:italic">📝 ${rt.nota}</div>`;
-    html += `</div>`;
-  }
-
-  // Oração
-  if (r.prayer) {
-    html += `<div class="prayer-box"><div class="p-title">🙏 Oração</div>${r.prayer.replace(/\n/g, '<br>').replace(/\*(.*?)\*/g, '<em>$1</em>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</div>`;
-  }
-
-  // Versículo principal
-  if (r.verse) html += verseHTML(r.verse);
-
-  // Versículos múltiplos (apoio emocional)
-  if (r.verses?.length) {
-    html += verseHTML(r.verses[0]);
-    if (r.verses.length > 1) {
-      html += `<div class="related"><div class="related-title">Versículos relacionados</div>`;
-      r.verses.slice(1).forEach(v => {
-        html += `<div class="rel-item">"${v.texto?.substring(0, 95)}${(v.texto?.length || 0) > 95 ? '…' : ''}"<span class="rel-ref">— ${v.ref || v.livro + ' ' + v.capitulo + ':' + v.versiculo}</span></div>`;
-      });
-      html += `</div>`;
-    }
-  }
-
-  // Versículos relacionados
-  if (r.related?.length) {
-    html += `<div class="related"><div class="related-title">Passagens relacionadas</div>`;
-    r.related.forEach(v => {
-      if (!v) return;
-      html += `<div class="rel-item">"${v.texto?.substring(0, 90)}${(v.texto?.length || 0) > 90 ? '…' : ''}"<span class="rel-ref">— ${v.ref || v.livro + ' ' + v.capitulo + ':' + v.versiculo}</span></div>`;
-    });
-    html += `</div>`;
-  }
-
-  // Frase de esperança (PHD ending)
-  if (r.ending) {
-    html += `<div class="bot-body" style="margin-top:.5rem">${formatText(r.ending)}</div>`;
-  }
-
-  // Sugestões de links
-  if (r.sugs) {
-    html += `<div class="sug-row">`;
-    r.sugs.forEach(s => { html += `<a class="pill" href="${s.h}">${s.l}</a>`; });
-    html += `</div>`;
-  }
-
-  d.innerHTML = html;
-  msgs.appendChild(d);
-
-  // Animate compat bar
-  requestAnimationFrame(() => {
-    d.querySelectorAll('.compat-fill').forEach(el => { el.style.width = el.dataset.w; });
-  });
-  scrollBottom();
-}
-
-function verseHTML(v) {
-  if (!v) return '';
-  const ref = v.ref || `${v.livro} ${v.capitulo}:${v.versiculo}`;
-  const c = v.compat !== undefined ? `<span style="font-size:.63rem;color:var(--text3);margin-left:.4rem">${v.compat}%</span>` : '';
-  return `<div class="ver-box"><div class="ver-text">"${v.texto}"</div><div class="ver-ref">— ${ref}${c}</div></div>`;
-}
-
-function formatText(txt) {
+/* ── Formata markdown simples ─────────────────────── */
+function fmt(txt) {
   if (!txt) return '';
   return txt
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.*?)\*/g, '<em>$1</em>')
     .replace(/### (.+)/g, '<h4>$1</h4>')
     .replace(/## (.+)/g, '<h3>$1</h3>')
-    .replace(/^• (.+)$/gm, '<li>$1</li>')
-    .replace(/(<li>.*<\/li>)/s, m => `<ul>${m}</ul>`)
+    .replace(/^[-•] (.+)$/gm, '<li>$1</li>')
+    .replace(/(<li>[\s\S]*?<\/li>)/g, '<ul>$1</ul>')
     .replace(/\n\n/g, '</p><p>')
     .replace(/\n/g, '<br>')
-    .replace(/^(?!<[hup])/, '<p>')
+    .replace(/^(?!<[hupbl])/, '<p>')
     .replace(/(?<![>])$/, '</p>')
     .replace(/<p><\/p>/g, '');
 }
 
 function esc(s) {
-  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
 function scrollBottom() {
@@ -1157,202 +441,111 @@ function scrollBottom() {
   m.scrollTop = m.scrollHeight;
 }
 
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-// ══════════════════════════════════════════════════════
-//  CONFIGURAÇÃO GEMINI
-//  Chave gratuita: https://aistudio.google.com/app/apikey
-// ══════════════════════════════════════════════════════
-const GEMINI_CFG = {
-  key:   '',                   // ← Cola aqui a tua chave
-  model: 'gemini-2.0-flash',
-  get active() { return typeof this.key === 'string' && this.key.length > 10; },
-};
-
-// ══════════════════════════════════════════════════════
-//  CACHE LOCAL INTELIGENTE
-//  Armazena respostas Gemini em localStorage.
-//  Na próxima vez que alguém fizer pergunta semelhante,
-//  responde instantaneamente sem chamar a API.
-// ══════════════════════════════════════════════════════
-const GEMINI_CACHE = {
-  _data: JSON.parse(localStorage.getItem('ld_gemini_cache') || '{}'),
-  _MAX:  150, // máximo de entradas guardadas
-
-  // Chave normalizada — remove espaços/acentos para melhor correspondência
-  _key(txt) {
-    return txt.toLowerCase().trim()
-      .normalize('NFD').replace(/[̀-ͯ]/g, '')
-      .replace(/[^\w\s]/g, '')
-      .replace(/\s+/g, ' ')
-      .substring(0, 120);
-  },
-
-  get(txt) {
-    return this._data[this._key(txt)] || null;
-  },
-
-  set(txt, resposta) {
-    const k = this._key(txt);
-    this._data[k] = { r: resposta, ts: Date.now() };
-    // Se excede o limite, remove as entradas mais antigas
-    const keys = Object.keys(this._data);
-    if (keys.length > this._MAX) {
-      keys.sort((a, b) => (this._data[a].ts || 0) - (this._data[b].ts || 0));
-      keys.slice(0, keys.length - this._MAX).forEach(k2 => delete this._data[k2]);
-    }
-    try { localStorage.setItem('ld_gemini_cache', JSON.stringify(this._data)); } catch(e) {}
-  },
-
-  // Injeta resposta no motor local para enriquecer knowledge em sessão
-  injectIntoEngine(txt, resposta) {
-    if (!window.DIVINE_KNOWLEDGE) return;
-    const k = 'gemini_' + this._key(txt).replace(/\s/g, '_').substring(0, 40);
-    // Cria entrada dinâmica no DIVINE_KNOWLEDGE para esta sessão
-    window.DIVINE_KNOWLEDGE[k] = {
-      tags: txt.toLowerCase().split(/\s+/).filter(w => w.length > 3).slice(0, 8),
-      title: txt.substring(0, 60),
-      text:  resposta,
-      _gemini: true,
-    };
-    // Reconstrói o fuseKnow para incluir a nova entrada
-    if (typeof Fuse !== 'undefined' && window.DIVINE_KNOWLEDGE) {
-      const entries = Object.entries(window.DIVINE_KNOWLEDGE)
-        .filter(([k2]) => !k2.startsWith('_'))
-        .map(([id, e]) => ({ id, title: e.title || '', tagsStr: (e.tags || []).join(' ') }));
-      fuseKnow = new Fuse(entries, {
-        keys: [{ name: 'tagsStr', weight: 0.65 }, { name: 'title', weight: 0.35 }],
-        threshold: 0.38, includeScore: true, ignoreLocation: true, minMatchCharLength: 3,
-      });
-    }
-  },
-
-  // Estatísticas para debug
-  stats() {
-    const n = Object.keys(this._data).length;
-    return `${n} respostas em cache`;
-  },
-};
-
-// Historial multi-turno para contexto conversacional
-const geminiHistory = [];
-
-// ── System prompt PHD ────────────────────────────────────
-const GEMINI_SYSTEM = `Você é o "Mentor Teológico PHD" do portal Luz Divina — especialista em:
-• Teologia Bíblica, Exegese, Hermenêutica
-• Angelologia, Demonologia e hierarquia espiritual
-• Livros apócrifos: Enoque, Tobias, Sedrach, Jubileus, Pastor de Hermas
-• Ritualística cristã, orações e espiritualidade prática
-• Personagens bíblicos do AT e NT com contexto histórico
-
-PERSONALIDADE: sábio, acolhedor, profundo e humano. Nunca frio nem robótico.
-
-REGRAS DE RESPOSTA:
-1. Usa sempre Português Europeu/Brasileiro fluente
-2. Cita versículos no formato: "Texto do versículo." (Livro cap:vers)
-3. Usa **negrito** para conceitos importantes
-4. Estrutura com parágrafos — sem bullet points excessivos
-5. Termina SEMPRE com frase de esperança ou bênção espiritual
-6. Nunca diz "não sei" — raciocina com o conhecimento teológico disponível
-7. Resposta máxima: 4 parágrafos concisos — qualidade sobre quantidade`;
-
-// ── Chama Gemini API ─────────────────────────────────────
-async function chamarGemini(pergunta) {
-  // 1. Verifica cache primeiro
-  const cached = GEMINI_CACHE.get(pergunta);
-  if (cached) {
-    console.log('[Gemini] Cache hit ✓');
-    return { texto: cached.r, fromCache: true };
-  }
-
-  // 2. Adiciona ao historial
-  geminiHistory.push({ role: 'user', parts: [{ text: pergunta }] });
-  const ctx = geminiHistory.slice(-16); // últimos 8 turnos
-
-  const body = {
-    system_instruction: { parts: [{ text: GEMINI_SYSTEM }] },
-    contents: ctx,
-    generationConfig: { temperature: 0.82, maxOutputTokens: 900, topP: 0.9 },
-  };
-
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_CFG.model}:generateContent?key=${GEMINI_CFG.key}`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    throw new Error(err?.error?.message || `HTTP ${res.status}`);
-  }
-
-  const data = await res.json();
-  const texto = data?.candidates?.[0]?.content?.parts?.[0]?.text || null;
-
-  if (texto) {
-    // Guarda no historial
-    geminiHistory.push({ role: 'model', parts: [{ text: texto }] });
-    // Guarda no cache local persistente
-    GEMINI_CACHE.set(pergunta, texto);
-    // Injeta no motor local para enriquecer o conhecimento desta sessão
-    GEMINI_CACHE.injectIntoEngine(pergunta, texto);
-    console.log(`[Gemini] Resposta guardada. ${GEMINI_CACHE.stats()}`);
-  }
-  return { texto, fromCache: false };
+/* ── Renderiza mensagem do utilizador ─────────────── */
+function renderUser(txt) {
+  document.getElementById('emptyState')?.remove();
+  const d = document.createElement('div');
+  d.className = 'msg msg-user';
+  d.innerHTML = '<div class="mu-label">Tu</div>' + esc(txt);
+  document.getElementById('msgs').appendChild(d);
+  scrollBottom();
 }
 
-// ── Renderiza mensagem Gemini ─────────────────────────────
-function renderGeminiMsg(texto, pergunta, fromCache) {
+/* ── Determina classe CSS da fonte ───────────────── */
+function sourceClass(source) {
+  if (source === 'cache')   return 'source-cache';
+  if (source === 'claude')  return 'source-claude';
+  if (source === 'gemini')  return 'source-gemini';
+  return 'source-local';
+}
+
+/* ── Renderiza resposta do agente ────────────────── */
+function renderBot(result) {
   const msgs = document.getElementById('msgs');
-  const d = document.createElement('div');
+  const d    = document.createElement('div');
   d.className = 'msg msg-bot';
 
-  const dom = classifyDomain(pergunta);
-  const labels = {
-    ONTOLOGIA:'Teologia PHD', EXEGESE:'Exegese PHD',
-    RITUALISTICA:'Ritual PHD', APOIO:'Apoio Espiritual',
-    REF:'Versículo', CHAT:'Conversa',
-  };
-  const cacheIcon = fromCache
-    ? `<span style="font-size:.52rem;color:var(--green);border:1px solid rgba(74,222,128,.3);padding:.06rem .35rem;border-radius:5px;margin-left:.2rem">⚡ cache</span>`
-    : `<span style="font-size:.52rem;color:var(--purple);border:1px solid rgba(167,139,250,.3);padding:.06rem .35rem;border-radius:5px;margin-left:.2rem">✨ Gemini</span>`;
+  const compat = result.source === 'cache'  ? 99 :
+                 result.source === 'claude' ? 98 :
+                 result.source === 'gemini' ? 97 :
+                 result.source === 'local'  ? 85 : 75;
 
-  const sugs = (SUGS[dom.id === 'RITUALISTICA' ? 'ritual' : dom.id === 'APOIO' ? 'support' : 'default'] || SUGS.default)
-    .map(s => `<a class="pill" href="${s.h}">${s.l}</a>`).join('');
+  let html =
+    '<div class="bot-label">' +
+      '✦ LUZ DIVINA ' +
+      '<span class="source-tag ' + sourceClass(result.source) + '">' + (result.label || 'Saber Eterno') + '</span>' +
+    '</div>' +
+    '<div class="compat">' +
+      '<span class="compat-label">Relevância</span>' +
+      '<div class="compat-track"><div class="compat-fill" style="width:0%" data-w="' + compat + '%"></div></div>' +
+      '<span class="compat-pct">' + compat + '%</span>' +
+    '</div>' +
+    '<div class="bot-body">' + fmt(result.texto) + '</div>';
 
-  d.innerHTML = `
-    <div class="bot-label">
-      ✦ LUZ DIVINA
-      <span class="intent-tag">${labels[dom.id] || 'PHD'}</span>
-      ${cacheIcon}
-    </div>
-    <div class="compat">
-      <span class="compat-label">Relevância</span>
-      <div class="compat-track"><div class="compat-fill" style="width:0%" data-w="98%"></div></div>
-      <span class="compat-pct">98%</span>
-    </div>
-    <div class="bot-body">${formatText(texto)}</div>
-    <div class="sug-row">${sugs}</div>`;
+  /* Versículos do motor local como complemento */
+  if (result.localEntry && result.source !== 'local') {
+    const verses = (result.localEntry.verses || []).slice(0,1);
+    verses.forEach(function(ref) {
+      const v = findVerseByRef(ref);
+      if (v) html += verseHTML(v);
+    });
+  }
 
+  /* Links sugeridos */
+  const links = getSugLinks(result.source, result.localEntry);
+  if (links.length) {
+    html += '<div class="pill-row">';
+    links.forEach(function(l) { html += '<a class="pill" href="' + l.h + '">' + l.t + '</a>'; });
+    html += '</div>';
+  }
+
+  d.innerHTML = html;
   msgs.appendChild(d);
-  requestAnimationFrame(() => {
-    d.querySelectorAll('.compat-fill').forEach(el => { el.style.width = el.dataset.w; });
+
+  /* Anima barra de relevância */
+  requestAnimationFrame(function() {
+    d.querySelectorAll('.compat-fill').forEach(function(el) { el.style.width = el.dataset.w; });
   });
-  msgs.scrollTop = msgs.scrollHeight;
+  scrollBottom();
 }
 
-// ══════════════════════════════════════════════════════
-//  ENVIAR — Gemini sempre enriquece + cache local
-//  Fluxo:
-//  1. Motor local processa instantaneamente → mostra
-//  2. Gemini enriquece em paralelo (API ou cache)
-//  3. Resposta Gemini substitui/complementa o local
-//  4. Resultado guardado no cache e no motor local
-// ══════════════════════════════════════════════════════
+/* ── HTML de versículo ───────────────────────────── */
+function verseHTML(v) {
+  if (!v) return '';
+  var ref = v.ref || (v.livro + ' ' + v.capitulo + ':' + v.versiculo);
+  return '<div class="ver-box"><div class="ver-text">"' + v.texto + '"</div><div class="ver-ref">— ' + ref + '</div></div>';
+}
+
+/* ── Localiza versículo por referência ───────────── */
+function findVerseByRef(refStr) {
+  if (!DB.vers.length || !refStr) return null;
+  var m = refStr.match(/(.+?)\s+(\d+):(\d+)/);
+  if (!m) return null;
+  var lq = m[1].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  var cap = parseInt(m[2]), ver = parseInt(m[3]);
+  return DB.vers.find(function(v) {
+    var vl = v.livro.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+    return (vl.includes(lq) || lq.includes(vl)) && v.capitulo === cap && v.versiculo === ver;
+  }) || null;
+}
+
+/* ── Links sugeridos por contexto ────────────────── */
+function getSugLinks(source, entry) {
+  var tags = (entry && entry.tags) ? entry.tags.join(' ').toLowerCase() : '';
+  if (/(ritual|salomão|invocar|evocar|proteção|limpeza)/.test(tags))
+    return [{h:'oracoes.html',t:'🙏 Orações'},{h:'loja.html',t:'📚 eBooks'}];
+  if (/(anjo|arcanjo|serafim|querubim|angelolog)/.test(tags))
+    return [{h:'oracoes.html',t:'👼 Orações Angelicais'},{h:'biblia.html',t:'📖 Bíblia'}];
+  return [{h:'biblia.html',t:'📖 Bíblia'},{h:'oracoes.html',t:'🙏 Orações'},{h:'devocionais.html',t:'🌅 Devocionais'}];
+}
+
+/* ══════════════════════════════════════════════════
+   ENVIAR — ponto de entrada principal
+   Delega toda a lógica ao IaBiblica (ia-biblica.js)
+══════════════════════════════════════════════════ */
 async function enviar() {
-  const el = document.getElementById('txtInput');
-  const txt = el.value.trim();
+  var el  = document.getElementById('txtInput');
+  var txt = el.value.trim();
   if (!txt || busy) return;
 
   busy = true;
@@ -1363,292 +556,201 @@ async function enviar() {
 
   renderUser(txt);
 
-  const dom = classifyDomain(txt);
-  const hints = {
-    REF:          'A localizar o versículo…',
-    EXEGESE:      'A interpretar as escrituras…',
-    ONTOLOGIA:    'A consultar o conhecimento teológico…',
-    RITUALISTICA: 'A compor o ritual sagrado…',
-    APOIO:        'A encontrar palavras de conforto…',
-    CHAT:         'A preparar uma resposta…',
-  };
-  document.getElementById('typingTxt').textContent = GEMINI_CFG.active
-    ? '✨ ' + (hints[dom.id] || 'A processar…')
-    : hints[dom.id] || 'A processar…';
+  /* Dica de processamento */
+  var hints = [
+    'Consultando os registos eternos…',
+    'Percorrendo os arquivos da sabedoria…',
+    'Os anjos sussurram a resposta…',
+    'Desdobrando os pergaminhos sagrados…',
+  ];
+  document.getElementById('typingTxt').textContent = hints[turnCount % hints.length];
   document.getElementById('typing').classList.add('on');
 
-  if (!GEMINI_CFG.active) {
-    // ── Modo offline puro — só motor local ───────────────
-    const resp = await processar(txt);
+  try {
+    /* ── Delega ao agente ia-biblica.js ── */
+    var result = await IaBiblica.responder(txt);
     document.getElementById('typing').classList.remove('on');
-    renderBot(resp);
-
-  } else {
-    // ── Modo Gemini — enriquece sempre ───────────────────
-    // Verifica cache antes de qualquer processamento
-    const cached = GEMINI_CACHE.get(txt);
-
-    if (cached) {
-      // Cache hit — responde instantaneamente
-      document.getElementById('typing').classList.remove('on');
-      renderGeminiMsg(cached.r, txt, true);
-
-    } else {
-      // Sem cache — corre local e Gemini em paralelo
-      const [respLocal, geminiResult] = await Promise.allSettled([
-        processar(txt),
-        chamarGemini(txt),
-      ]);
-
-      document.getElementById('typing').classList.remove('on');
-
-      const local  = respLocal.status  === 'fulfilled' ? respLocal.value   : null;
-      const gemini = geminiResult.status === 'fulfilled' ? geminiResult.value : null;
-
-      if (gemini?.texto) {
-        // ── Gemini respondeu com sucesso ────────────────
-        // Para rituais/orações compostos: mostra local (mais rico em estrutura)
-        // e Gemini como aprofundamento teológico
-        if (local?.ritual || local?.prayer) {
-          renderBot(local);
-          // Separa visualmente
-          const sep = document.createElement('div');
-          sep.style.cssText = 'font-size:.6rem;color:var(--text3);text-align:center;padding:.15rem 0;letter-spacing:1.5px;opacity:.7';
-          sep.textContent = '── ✨ APROFUNDAMENTO TEOLÓGICO ──';
-          document.getElementById('msgs').appendChild(sep);
-          renderGeminiMsg(gemini.texto, txt, false);
-        } else {
-          // Para tudo o resto: Gemini é a resposta principal
-          renderGeminiMsg(gemini.texto, txt, false);
-          // Mostra versículos locais como complemento se existirem
-          if (local?.verse || local?.verses?.length || local?.personagem) {
-            const extras = document.createElement('div');
-            extras.className = 'msg msg-bot';
-            extras.style.cssText = 'max-width:95%;opacity:.9';
-            let xhtml = `<div class="bot-label" style="font-size:.54rem">📖 REFERÊNCIAS BÍBLICAS</div>`;
-            if (local.personagem) xhtml += renderPersonagemBox(local.personagem);
-            if (local.verse)      xhtml += verseHTML(local.verse);
-            if (local.verses?.[0] && !local.verse) xhtml += verseHTML(local.verses[0]);
-            extras.innerHTML = xhtml;
-            document.getElementById('msgs').appendChild(extras);
-            document.getElementById('msgs').scrollTop = document.getElementById('msgs').scrollHeight;
-          }
-        }
-      } else {
-        // ── Gemini falhou — usa motor local robusto ─────
-        if (local) {
-          renderBot(local);
-        } else {
-          renderBot(phdFallback(txt, dom.id));
-        }
-        // Mostra erro subtil se não for cache
-        if (geminiResult.status === 'rejected') {
-          console.warn('[Gemini] Indisponível:', geminiResult.reason?.message);
-          // Actualiza badge para offline temporariamente
-          const tag = document.getElementById('modeTag');
-          if (tag) { tag.textContent = 'OFFLINE'; tag.style.color = 'var(--text3)'; }
-        }
-      }
-    }
+    renderBot(result);
+  } catch(err) {
+    document.getElementById('typing').classList.remove('on');
+    /* Fallback de emergência */
+    renderBot({
+      texto:  'Os registos eternos estão temporariamente inacessíveis. *"Pede e dar-se-á."* — **Mateus 7:7**\n\nTenta novamente em instantes.',
+      source: 'fallback',
+      label:  '✦ Saber Eterno',
+    });
+    console.error('[UI] Erro inesperado:', err);
   }
 
   turnCount++;
-  conv.push({ u: txt.substring(0, 100), d: dom.id });
+  conv.push({ u: txt.substring(0,80), t: Date.now() });
   if (conv.length > 40) conv.splice(0, conv.length - 40);
-  localStorage.setItem('ld_phd_v1', JSON.stringify(conv));
+  localStorage.setItem('ld_conv_phd', JSON.stringify(conv));
 
   busy = false;
   el.disabled = false;
   document.getElementById('btnSend').disabled = false;
   el.focus();
 }
-function q(txt) {
-  document.getElementById('txtInput').value = txt;
-  enviar();
-}
 
+/* ── Atalhos ──────────────────────────────────────── */
+function q(txt)  { document.getElementById('txtInput').value = txt; enviar(); }
 function limpar() {
-  localStorage.removeItem('ld_phd_v1');
+  IaBiblica.cache.clear();
   conv = [];
-  turnCount = 0;
+  localStorage.removeItem('ld_conv_phd');
   location.reload();
 }
 
-// Auto-resize textarea
-document.getElementById('txtInput').addEventListener('input', function () {
+/* ── Auto-resize textarea ────────────────────────── */
+document.getElementById('txtInput').addEventListener('input', function() {
   this.style.height = 'auto';
   this.style.height = Math.min(this.scrollHeight, 120) + 'px';
 });
-document.getElementById('txtInput').addEventListener('keydown', e => {
+document.getElementById('txtInput').addEventListener('keydown', function(e) {
   if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); enviar(); }
 });
 
-// ══════════════════════════════════════════════════════
-//  BOOT — CARREGAMENTO MODULAR DE DADOS
-//  Ponto 4: facilmente extensível com novos JSONs
-// ══════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════
+   BOOT — carrega dados e inicializa Fuse.js
+══════════════════════════════════════════════════ */
 (async function boot() {
-  // ── Lista de fontes — adiciona novos JSON aqui sem reescrever o motor ──
-  const SOURCES = [
-    { key: 'biblia',      url: 'biblia.json',              type: 'biblia' },
-    { key: 'oracoes',     url: 'oracoes.json',             type: 'oracoes' },
-    { key: 'devocionais', url: 'devocionais.json',         type: 'devocionais' },
-    { key: 'sedrach',     url: 'sedrach.json',             type: 'apocrif_livro' },
-    { key: 'apocrif',     url: 'apocrif.json',             type: 'apocrif_index' },
-    { key: 'personagens', url: 'data/personagens.json',    type: 'personagens' },
-    // Biblioteca — livros individuais carregados sob demanda
-    { key: 'bib_enoque',  url: 'biblioteca/enoque.json',   type: 'biblioteca' },
-    { key: 'bib_tobias',  url: 'biblioteca/tobias.json',   type: 'biblioteca' },
-    { key: 'bib_hermas',  url: 'biblioteca/pastor_hermas.json', type: 'biblioteca' },
-    { key: 'bib_tome',    url: 'biblioteca/evangelho_tome.json', type: 'biblioteca' },
-    { key: 'bib_tiago',   url: 'biblioteca/protoevangelho_tiago.json', type: 'biblioteca' },
-    { key: 'bib_pedro',   url: 'biblioteca/apocalipse_pedro.json', type: 'biblioteca' },
-    { key: 'bib_sab',     url: 'biblioteca/sabedoria.json', type: 'biblioteca' },
-    { key: 'bib_mac',     url: 'biblioteca/macabeus.json',  type: 'biblioteca' },
-    { key: 'bib_baruc',   url: 'biblioteca/baruc.json',     type: 'biblioteca' },
-    { key: 'bib_jub',     url: 'biblioteca/jubileus.json',  type: 'biblioteca' },
-    // Para adicionar novo livro: { key:'novo', url:'biblioteca/novo.json', type:'biblioteca' }
+  var SOURCES = [
+    { url:'biblia/index.json',   type:'biblia_index' },
+    { url:'oracoes.json',        type:'oracoes'      },
+    { url:'devocionais.json',    type:'devocionais'  },
+    { url:'data/personagens.json', type:'personagens'},
+    { url:'sedrach.json',        type:'sedrach'      },
+    { url:'apocrif.json',        type:'apocrif'      },
+    { url:'biblioteca/enoque.json',   type:'biblioteca' },
+    { url:'biblioteca/tobias.json',   type:'biblioteca' },
+    { url:'biblioteca/sabedoria.json',type:'biblioteca' },
+    { url:'biblioteca/macabeus.json', type:'biblioteca' },
   ];
 
-  const results = await Promise.allSettled(
-    SOURCES.map(s => fetch(s.url).then(r => r.ok ? r.json() : null).catch(() => null))
+  var results = await Promise.allSettled(
+    SOURCES.map(function(s) {
+      return fetch(s.url).then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(d) { return { type: s.type, data: d }; })
+        .catch(function()  { return { type: s.type, data: null }; });
+    })
   );
 
-  results.forEach((res, i) => {
-    if (res.status !== 'fulfilled' || !res.value) return;
-    const data = res.value;
-    const src = SOURCES[i];
+  results.forEach(function(res) {
+    if (res.status !== 'fulfilled' || !res.value.data) return;
+    var d    = res.value.data;
+    var type = res.value.type;
 
-    switch (src.type) {
-      case 'biblia': {
-        const flat = [];
-        const proc = (livros) => livros.forEach(livro =>
-          livro.capitulos.forEach(cap =>
-            cap.versiculos.forEach(v => flat.push({
-              texto: v.texto,
-              ref: `${livro.nome} ${cap.capitulo}:${v.versiculo}`,
-              livro: livro.nome,
-              capitulo: cap.capitulo,
-              versiculo: v.versiculo,
-            }))
-          )
-        );
-        if (data.antigoTestamento) proc(data.antigoTestamento);
-        if (data.novoTestamento)   proc(data.novoTestamento);
-        DB.vers = flat;
-        break;
+    if (type === 'biblia_index') {
+      DB.bibliaIndex = d;
+      var allMeta = (d.antigoTestamento||[]).concat(d.novoTestamento||[]);
+      /* Pre-load key books */
+      var keyBooks = ['genesis','sao_joao','salmos','sao_mateus','isaias','romanos'];
+      keyBooks.forEach(function(slug) {
+        var meta = allMeta.find(function(m){ return m.slug === slug; });
+        if (!meta) return;
+        fetch(meta.file).then(function(r){ return r.ok ? r.json() : null; })
+          .then(function(livro){ if (livro) indexarLivro(livro); })
+          .catch(function(){});
+      });
+      /* Background load the rest */
+      setTimeout(function() {
+        allMeta.forEach(function(meta) {
+          if (keyBooks.includes(meta.slug)) return;
+          fetch(meta.file).then(function(r){ return r.ok ? r.json() : null; })
+            .then(function(livro){ if (livro) indexarLivro(livro); })
+            .catch(function(){});
+        });
+      }, 2500);
+    }
+    else if (type === 'oracoes')     { DB.oracoes     = d; }
+    else if (type === 'devocionais') { DB.devocionais = d; }
+    else if (type === 'personagens') { DB.personagens = (d.personagens || []); }
+    else if (type === 'sedrach') {
+      if (d.capitulos) d.capitulos.forEach(function(cap) {
+        cap.versiculos.forEach(function(v) {
+          DB.vers.push({ texto:v.texto, ref:d.titulo+' '+cap.numero+':'+v.v,
+            livro:d.titulo, capitulo:cap.numero, versiculo:v.v, _apocrif:true });
+        });
+      });
+    }
+    else if (type === 'apocrif') { DB.apocrif = d; }
+    else if (type === 'biblioteca') {
+      if (d.id) {
+        DB.biblioteca[d.id] = d;
+        /* Index versiculos from biblioteca */
+        (function collect(obj) {
+          if (!obj || typeof obj !== 'object') return;
+          if (Array.isArray(obj)) { obj.forEach(collect); return; }
+          if (obj.texto && obj.ref) {
+            DB.vers.push({ texto:obj.texto, ref:obj.ref, livro:d.titulo,
+              capitulo:0, versiculo:0, _apocrif:true });
+          }
+          Object.values(obj).forEach(collect);
+        })(d);
       }
-      case 'oracoes':
-        DB.oracoes = data;
-        break;
-      case 'devocionais':
-        DB.devocionais = data;
-        break;
-      case 'personagens':
-        DB.personagens = data.personagens || [];
-        break;
-      case 'biblioteca':
-        if (data.id) {
-          DB.biblioteca[data.id] = data;
-          // Add biblioteca versiculos to verse index
-          const allVersLib = [];
-          const collectVers = (obj) => {
-            if (Array.isArray(obj)) { obj.forEach(collectVers); return; }
-            if (obj && typeof obj === 'object') {
-              if (obj.texto && obj.ref) {
-                allVersLib.push({ texto: obj.texto, ref: obj.ref, livro: data.titulo, capitulo: 0, versiculo: 0, _apocrif: true });
-              }
-              Object.values(obj).forEach(collectVers);
-            }
-          };
-          collectVers(data);
-          if (allVersLib.length) DB.vers.push(...allVersLib);
-        }
-        break;
-      case 'apocrif_livro':
-        DB.sedrach = data;
-        // Add Sedrach verses to verse index
-        if (data.capitulos) {
-          data.capitulos.forEach(cap => cap.versiculos.forEach(v => {
-            DB.vers.push({
-              texto: v.texto,
-              ref: `${data.titulo} ${cap.numero}:${v.v}`,
-              livro: data.titulo,
-              capitulo: cap.numero,
-              versiculo: v.v,
-              _apocrif: true,
-            });
-          }));
-        }
-        break;
-      case 'apocrif_index':
-        DB.apocrif = data;
-        break;
     }
   });
 
-  // ── Fuse para versículos (Bíblia + Sedrach) ─────────────────
+  /* Fuse para versículos */
   if (DB.vers.length) {
     fuseVers = new Fuse(DB.vers, {
-      keys: [{ name: 'texto', weight: 0.85 }, { name: 'livro', weight: 0.10 }, { name: 'ref', weight: 0.05 }],
-      threshold: 0.45,
-      includeScore: true,
-      minMatchCharLength: 3,
-      ignoreLocation: true,
+      keys:[{name:'texto',weight:.85},{name:'livro',weight:.1},{name:'ref',weight:.05}],
+      threshold:.45, includeScore:true, minMatchCharLength:3, ignoreLocation:true,
     });
   }
 
-  // ── Fuse para orações ────────────────────────────────────────
-  if (DB.oracoes.length) {
-    fuseOrac = new Fuse(DB.oracoes, {
-      keys: [{ name: 'title', weight: 0.4 }, { name: 'tags', weight: 0.35 }, { name: 'category', weight: 0.25 }],
-      threshold: 0.4,
-      includeScore: true,
-    });
-  }
+  /* Fuse para knowledge.js */
+  buildFuseKnow();
 
-  // ── Fuse para base de conhecimento (knowledge.js) ───────────
-  if (window.DIVINE_KNOWLEDGE) {
-    const entries = Object.entries(window.DIVINE_KNOWLEDGE)
-      .filter(([k]) => !k.startsWith('_'))
-      .map(([id, e]) => ({
-        id,
-        title: e.title || '',
-        tagsStr: (e.tags || []).join(' '),
-      }));
-    fuseKnow = new Fuse(entries, {
-      keys: [{ name: 'tagsStr', weight: 0.65 }, { name: 'title', weight: 0.35 }],
-      threshold: 0.38,
-      includeScore: true,
-      ignoreLocation: true,
-      minMatchCharLength: 3,
-    });
-  }
-
-  const kCount = window.DIVINE_KNOWLEDGE
-    ? Object.keys(window.DIVINE_KNOWLEDGE).filter(k => !k.startsWith('_')).length
-    : 0;
-  const apocrifCount = DB.apocrif?.livros?.length || 0;
-
-  const biblioCount = Object.keys(DB.biblioteca).length;
-  const personCount = DB.personagens.length;
+  /* Actualiza status e mode badge */
+  var kCount = window.DIVINE_KNOWLEDGE
+    ? Object.keys(window.DIVINE_KNOWLEDGE).filter(function(k){ return !k.startsWith('_'); }).length : 0;
+  var cachedCount = IaBiblica.cache.stats();
   document.getElementById('iaStatus').textContent =
-    `${DB.vers.length.toLocaleString()} versículos · ${kCount} tópicos · ${personCount} personagens · ${biblioCount} livros`;
+    DB.vers.length.toLocaleString() + '+ versículos · ' + kCount + ' tópicos · ' + cachedCount;
 
-  // Update mode badge
-  const modeTag = document.getElementById('modeTag');
-  if (GEMINI_CFG.active) {
-    modeTag.textContent = '✨ GEMINI';
-    modeTag.style.background = 'rgba(167,139,250,.12)';
-    modeTag.style.color = 'var(--purple)';
-    modeTag.style.borderColor = 'rgba(167,139,250,.3)';
-  } else {
-    modeTag.textContent = 'OFFLINE';
+  var tag = document.getElementById('modeTag');
+  var hasApi = (IaBiblica.config.claude.active || IaBiblica.config.gemini.active);
+  if (hasApi) {
+    tag.textContent = IaBiblica.config.claude.active ? '✦ CLAUDE' : '✨ GEMINI';
+    tag.style.background = 'rgba(167,139,250,.12)';
+    tag.style.color      = 'var(--purple)';
+    tag.style.borderColor= 'rgba(167,139,249,.3)';
   }
 })();
+
+/* ── Helpers ─────────────────────────────────────── */
+function indexarLivro(livro) {
+  livro.capitulos.forEach(function(cap) {
+    cap.versiculos.forEach(function(v) {
+      DB.vers.push({ texto:v.texto,
+        ref:livro.nome+' '+cap.capitulo+':'+v.versiculo,
+        livro:livro.nome, capitulo:cap.capitulo, versiculo:v.versiculo });
+    });
+  });
+  if (fuseVers && typeof Fuse !== 'undefined') {
+    fuseVers = new Fuse(DB.vers, {
+      keys:[{name:'texto',weight:.85},{name:'livro',weight:.1},{name:'ref',weight:.05}],
+      threshold:.45, includeScore:true, minMatchCharLength:3, ignoreLocation:true,
+    });
+  }
+}
+
+function buildFuseKnow() {
+  if (!window.DIVINE_KNOWLEDGE || typeof Fuse === 'undefined') return;
+  var entries = Object.entries(window.DIVINE_KNOWLEDGE)
+    .filter(function(e){ return !e[0].startsWith('_'); })
+    .map(function(e){ return { id:e[0], title:e[1].title||'', tagsStr:(e[1].tags||[]).join(' ') }; });
+  global_fuseKnow = new Fuse(entries, {
+    keys:[{name:'tagsStr',weight:.65},{name:'title',weight:.35}],
+    threshold:.38, includeScore:true, ignoreLocation:true, minMatchCharLength:3,
+  });
+  /* Expõe para knowledge.js via IA_REBUILD_FUSE */
+  window.IA_REBUILD_FUSE = buildFuseKnow;
+}
 </script>
 
-<script src="knowledge.js"></script>
 <script src="navbar.js"></script>
 </body>
 </html>
