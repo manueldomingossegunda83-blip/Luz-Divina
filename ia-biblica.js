@@ -13,28 +13,25 @@
 
 (function (global) {
   'use strict';
-
   /* ════════════════════════════════════════════════════
-     1. CONFIGURAÇÃO DE APIs
-     Preenche as chaves nas constantes abaixo.
-     Claude:  https://console.anthropic.com/
-     Gemini:  https://aistudio.google.com/app/apikey
+     1. CONFIGURAÇÃO DE APIs (VERSÃO COFRE VITE)
   ════════════════════════════════════════════════════ */
   const CFG = {
     claude: {
-      key:   '',                      // ← Chave Anthropic
-      model: 'claude-sonnet-4-5',
+      // O Vite injeta as chaves aqui durante o build
+      key:   import.meta.env.VITE_CLAUDE_KEY || '', 
+      model: 'claude-3-5-sonnet-20240620', // Atualizado para a versão estável
       url:   'https://api.anthropic.com/v1/messages',
-      get active() { return this.key && this.key.length > 10; },
+      get active() { return this.key && this.key.length > 20; },
     },
     gemini: {
-      key:   '',                      // ← Chave Google AI Studio
-      model: 'gemini-2.0-flash',
+      key:   import.meta.env.VITE_GEMINI_KEY || '',
+      model: 'gemini-1.5-flash', // Versão rápida e gratuita
       get url() {
         return 'https://generativelanguage.googleapis.com/v1beta/models/' +
           this.model + ':generateContent?key=' + this.key;
       },
-      get active() { return this.key && this.key.length > 10; },
+      get active() { return this.key && this.key.length > 20; },
     },
   };
 
