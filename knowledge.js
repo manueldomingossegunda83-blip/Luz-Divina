@@ -1,3 +1,5 @@
+<script type="module" src="IA-BIBLICA.js"></script>
+
 /* ═══════════════════════════════════════════════════════════════════
    KNOWLEDGE.JS — Base de Conhecimento Bíblico Completa
    Luz Divina Portal — Carrega uma vez, fica em cache do browser
