@@ -19,13 +19,13 @@
   const CFG = {
     claude: {
       // O Vite injeta as chaves aqui durante o build
-      key:   import.meta.env.VITE_CLAUDE_KEY || '', 
+      key:   import.meta.VITE_CLAUDE_KEY || '', 
       model: 'claude-3-5-sonnet-20240620', // Atualizado para a versão estável
       url:   'https://api.anthropic.com/v1/messages',
       get active() { return this.key && this.key.length > 20; },
     },
     gemini: {
-      key:   import.meta.env.VITE_GEMINI_KEY || '',
+      key:   import.meta.VITE_GEMINI_KEY || '',
       model: 'gemini-1.5-flash', // Versão rápida e gratuita
       get url() {
         return 'https://generativelanguage.googleapis.com/v1beta/models/' +
