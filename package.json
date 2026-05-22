@@ -1,0 +1,12 @@
+{
+  "name": "luz-divina-portal",
+  "version": "1.0.0",
+  "description": "Portal Espiritual Universal - Luz Divina",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "mkdir -p dist && cp -r * dist/"
+  },
+  "author": "Luz Divina",
+  "license": "ISC"
+}
