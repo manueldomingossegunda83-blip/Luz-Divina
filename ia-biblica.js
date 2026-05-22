@@ -17,23 +17,21 @@
      1. CONFIGURAÇÃO DE APIs (VERSÃO COFRE VITE)
   ════════════════════════════════════════════════════ */
   const CFG = {
-    claude: {
-      // O Vite injeta as chaves aqui durante o build
-      key:   import.meta.VITE_CLAUDE_KEY || '', 
-      model: 'claude-3-5-sonnet-20240620', // Atualizado para a versão estável
-      url:   'https://api.anthropic.com/v1/messages',
-      get active() { return this.key && this.key.length > 20; },
-    },
-    gemini: {
-      key:   import.meta.VITE_GEMINI_KEY || '',
-      model: 'gemini-1.5-flash', // Versão rápida e gratuita
-      get url() {
-        return 'https://generativelanguage.googleapis.com/v1beta/models/' +
-          this.model + ':generateContent?key=' + this.key;
-      },
-      get active() { return this.key && this.key.length > 20; },
-    },
-  };
+  supabase: {
+    // Correção: No Vite, usa-se import.meta.env
+    url: import.meta.env.VITE_SUPABASE_URL || '',
+    key: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || '',
+    projectId: import.meta.env.VITE_SUPABASE_PROJECT_ID || '',
+    
+    // Verifica se as credenciais básicas estão presentes
+    get active() { 
+      return this.url.length > 10 && this.key.length > 20; 
+    }
+  }
+};
+
+// Exemplo de inicialização (se estiver usando a biblioteca do Supabase)
+// const supabase = createClient(CFG.supabase.url, CFG.supabase.key);
 
   /* ════════════════════════════════════════════════════
      2. PERSONALIDADE DO AGENTE
