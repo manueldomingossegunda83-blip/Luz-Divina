@@ -179,6 +179,19 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1.2
 </style>
   <link rel="stylesheet" href="navbar.css"/>
 </head>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function(reg) {
+          console.log('[PWA] Service Worker registado:', reg.scope);
+        })
+        .catch(function(err) {
+          console.warn('[PWA] Falhou o registo:', err);
+        });
+    });
+  }
+  </script>
 <body>
 <!-- NAVBAR UNIVERSAL -->
 <nav id="navbar">
