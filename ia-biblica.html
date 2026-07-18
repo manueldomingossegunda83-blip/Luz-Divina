@@ -322,7 +322,15 @@
   <div class="nav-actions">
     <button class="nav-btn" id="themeBtn" aria-label="Modo claro/escuro">☾</button>
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
-  </div>
+  <div id="luz-divina-chat" class="w-full max-w-2xl"></div>
+
+<script src="luz-divina-html.js"></script>
+<script>
+    LuzDivina.init({
+        apiKey: 'A_SUA_GEMINI_API_KEY_AQUI',
+        placeholder: 'Sintonize a sabedoria eterna...'
+    });
+</script>
 </nav>
 <div class="nav-overlay" id="navOverlay"></div>
 <div class="mobile-nav" id="mobileNav">
